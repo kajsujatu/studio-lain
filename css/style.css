@@ -5,6 +5,10 @@
 body {
 	padding: 0;
 	margin: 0;
+	display: grid;
+	grid-template-rows: 90px auto 50px;
+	justify-content: center;
+	background-color: #E7E9EC;
 }
 
 header {
@@ -16,4 +20,37 @@ header {
 #logo {
 	width: 126px;
 	height: 52px;
+}
+
+.container {
+	background-color: #E7E9EC;
+	width: 1048px;
+	height: auto;
+	display: grid;
+	align-self: center;
+	justify-content: center;
+	grid-template-columns: auto auto auto auto;
+	grid-column-start: 1;
+	column-gap: 18px;
+	row-gap: 36px;
+
+}
+
+#filters {
+	width: auto;
+	background-color: #DCDCDC;
+	
+}
+
+.cover {
+	width: 237px;
+	height: 318px;
+	background-color: antiquewhite;
+}
+
+footer {
+	width: auto;
+	height: 50px;
+	background-color: #121212;
+	align-self: end;
 }
