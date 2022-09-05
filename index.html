@@ -8,21 +8,40 @@
 </head>
 <body>
 
-<header>
-	<nav>
-		<img id="logo" src="img/studio-lain_logo.jpg" alt="Logo Studio Lain">
-		<ul>
-			<li>katalog</li>
-			<li>blog</li>
-			<li>o nas</li>
-		</ul>
+<header class="site-header">
+	<a href=""><img id="logo" src="img/studio-lain_logo.jpg" alt="Logo Studio Lain"></a>
+	<nav class="main-nav">
+		<menu>
+			<li><a href="">katalog</a></li>
+			<li><a href="">blog</a></li>
+			<li><a href="">o nas</a></li>
+		</menu>
 	</nav>
+	<a href=""><img src="img/icon-facebook.svg"></a>
+	<a href=""><img src="img/icon-search.svg"></a>
+	<a href=""><img src="img/icon-moon.svg"></a>
 </header>
 
+	<div id="customize">
+		<div id="sort">
+			<form action="#">
+     			<label for="sort">Sortuj wg:</label>
+      				<select name="sort" id="sort-input" size="1">
+						<option value="najnowsze" data-filter=".new">Najnowsze</option>
+						<option value="najstarsze" data-filter=".old">Najstarsze</option>
+						<option value="alfabetycznie">Alfabetycznie</option>
+						</select>
+			</form>
+		
+		
+		</div>
+		<div id="filters">Filtruj wg: <input></div>
+	</div>
+		
+	
 <div class="container">
 
-	<div id="filters">Sortuj wg: // Filtruj wg</div>
-	<div class="cover"></div>
+	<div class="cover new"></div>
 	<div class="cover"></div>
 	<div class="cover"></div>
 	<div class="cover"></div>

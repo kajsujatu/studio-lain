@@ -1,51 +1,111 @@
 *, *::before, *::after {
 	box-sizing: border-box;
-}
+	font-family: Poppins, sans-serif;
+	}
 
 body {
 	padding: 0;
 	margin: 0;
-	display: grid;
-	grid-template-rows: 90px auto 50px;
-	justify-content: center;
 	background-color: #E7E9EC;
+
 }
 
-header {
-	width: auto;
-	height: 90px;
-	background-color: #121212;
+a {
+	color: #9D9D9D;
+	text-decoration: none;
+	font-size: 20px;
 }
+
+a:hover {
+	color: #FFFFFF;
+}
+
+.site-header {
+	width: auto;
+	max-width: 1048px;
+	height: 90px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 150px auto 100px 100px 100px;
+	align-content: center;
+	background-color: #121212;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.main-nav > menu {
+	list-style: none;
+	text-align: center;
+}
+
+.main-nav > menu > li {
+	width: 117px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	display: inline-block;
+	border: 1;
+	border-right-color: #FFFFFF;
+}
+
 
 #logo {
 	width: 126px;
 	height: 52px;
+	margin-left: 15px;
+
+}
+
+#customize {
+	width: 1048px;
+	height: 60px;
+	margin-top: 30px;
+	background-color: #DCDCDC;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .container {
 	background-color: #E7E9EC;
-	width: 1048px;
+	max-width: 1048px;
 	height: auto;
 	display: grid;
-	align-self: center;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	justify-content: center;
-	grid-template-columns: auto auto auto auto;
-	grid-column-start: 1;
 	column-gap: 18px;
 	row-gap: 36px;
+	margin-right: auto;
+	margin-left: auto;
 
-}
-
-#filters {
-	width: auto;
-	background-color: #DCDCDC;
-	
 }
 
 .cover {
 	width: 237px;
 	height: 318px;
 	background-color: antiquewhite;
+}
+
+.new::before {
+	content: "";
+	top: 15px;
+	left: -20px;
+	padding: 10px 15px;
+	background-color: black;
+	position: relative;
+	transform: rotate(45deg) translateX(180px);
+}
+
+.new::after {
+	content: "NOWOŚĆ";
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 0 10px 10px 0;
+	color: #FFFFFF;
+	background-color: #2D7A85;
+	top: 30px;
+	left: -50px;
+	padding: 10px 15px;
+	position: relative;
 }
 
 footer {
