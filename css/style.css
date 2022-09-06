@@ -26,73 +26,106 @@ a:hover {
 	height: 90px;
 	display: grid;
 	grid-auto-flow: column;
-	grid-template-columns: 150px auto 100px 100px 100px;
+	grid-template-columns: 1fr 2fr 1fr 1fr;
 	align-content: center;
 	background-color: #121212;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.main-nav > menu {
-	list-style: none;
-	text-align: center;
+.main-nav {
+	display: flex;
+ 	justify-content: center;
+	align-self: center;
+	/* grid-template-columns: 117px 117px 117px 50px 3fr 50px;
+	align-content: center;
+	align-items: center; */
 }
 
-.main-nav > menu > li {
-	width: 117px;
+.main-nav > div {
+	padding: 0 20px;
+	height: 40px;
 	color: #FFFFFF;
 	text-transform: uppercase;
-	display: inline-block;
-	border: 1;
-	border-right-color: #FFFFFF;
+	text-align: center;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+   	border-right: 1px solid #797979;
 }
 
+#facebook {
+	place-self: center;
+   	border-right: 0;
+}
+
+#search {
+	justify-item: right;
+}
 
 #logo {
 	width: 126px;
 	height: 52px;
 	margin-left: 15px;
+}
 
+.icon {
+	width: 28px;
+	height: 28px;
 }
 
 #customize {
 	width: 1048px;
 	height: 60px;
-	margin-top: 30px;
-	background-color: #DCDCDC;
-	display: flex;
+	margin-top: 15px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-content: center;
 	margin-right: auto;
 	margin-left: auto;
 }
 
+#sort {
+	margin-left: 15px;
+}
+
 .container {
-	background-color: #E7E9EC;
 	max-width: 1048px;
 	height: auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(237px, 1fr));
+	grid-column-gap: 18px;
+	grid-row-gap: 36px;
 	justify-content: center;
-	column-gap: 18px;
-	row-gap: 36px;
+	margin-top: 15px;
+	margin-bottom: 30px;
 	margin-right: auto;
 	margin-left: auto;
-
+	background-color: #E7E9EC;
 }
 
 .cover {
 	width: 237px;
 	height: 318px;
-	background-color: antiquewhite;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
+	background-color: #FFFFFF;
+}
+
+#cover-metronom {
+	background-image: url(../img/main-covers/metro_1.jpg);
+	background-size: contain;
 }
 
 .new::before {
 	content: "";
-	top: 15px;
-	left: -20px;
+	top: 25px;
+	left: -40px;
 	padding: 10px 15px;
-	background-color: black;
 	position: relative;
-	transform: rotate(45deg) translateX(180px);
+	width: 0; 
+  	height: 0; 
+  	border-top: 10px solid transparent;
+    border-right:10px solid #235a62; 
 }
 
 .new::after {
@@ -106,6 +139,7 @@ a:hover {
 	left: -50px;
 	padding: 10px 15px;
 	position: relative;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
 }
 
 footer {
