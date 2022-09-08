@@ -19,6 +19,8 @@ a:hover {
 	color: #FFFFFF;
 }
 
+/* SITE HEADER */
+
 .site-header {
 	width: auto;
 	max-width: 1048px;
@@ -81,12 +83,15 @@ a:hover {
 	margin-top: 4px;
 }
 
+
+/* CUSTOMIZE PANEL */
+
 #customize {
 	width: 1048px;
 	height: 60px;
 	margin-top: 15px;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 40% 60%;
 	align-content: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -95,6 +100,24 @@ a:hover {
 #sort {
 	margin-left: 15px;
 }
+
+
+#sort-input {
+	width: 200px;
+	font-size: 15px;
+}
+
+#filters {
+	justify-self: end;
+	margin-right: 15px;
+}
+
+#filters-input {
+	width: 483px;
+	font-size: 15px;
+}
+
+/* MAIN CONTAINER */
 
 .container {
 	max-width: 1048px;
