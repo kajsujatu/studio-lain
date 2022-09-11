@@ -57,18 +57,49 @@ a:hover {
 #facebook {
 	place-self: center;
    	border-right: 0;
+	margin-top: 4px;
 }
 
 #search {
 	align-self: center;
 	justify-self: end;
+	display: flex;
+ 	justify-content: center;
+	align-self: center;
+	margin-top: 5px;
+	cursor: pointer;
+
 }
 
-#moon {
+#search-input {
+	margin-right: 10px;
+	height: 30px;
+	width: auto;
+	align-self: center;
+	background-color: #121212;
+	border: 1px solid #DCDCDC;
+	border: 0;
+	display: inherit;
+	transition: transform 2s;
+	transform: scaleX(1);
+}
+
+
+
+#moon, #sun {
 	align-self: center;
 	justify-self: center;
 	padding-left: 15px;
 	border-left: 1px solid #797979;
+	cursor: pointer;
+}
+
+#moon {
+	display: inherit;
+}
+
+#sun {
+	display: none;
 }
 
 #logo {
@@ -80,7 +111,6 @@ a:hover {
 .icon {
 	width: 28px;
 	height: 28px;
-	margin-top: 4px;
 }
 
 
@@ -119,7 +149,7 @@ a:hover {
 
 /* MAIN CONTAINER */
 
-.container {
+#container {
 	max-width: 1048px;
 	height: auto;
 	display: grid;
