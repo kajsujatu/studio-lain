@@ -29,7 +29,7 @@ search.addEventListener('click', function() {
 });
 
 
-// Objects
+/* // Objects
 function Comics(id, title, writer, art, status, filter, newComics) {
 	this.id = id;
 	this.title = title;
@@ -47,12 +47,85 @@ const metronom = new Comics(15, "Metronom", "Eric Corbeyran", "Grun", "Dostępne
 const allComics = [duam, metronom];
 
 
+*/
 
-console.log(allComics[1['id']]);
+/*
 
-console.log(allComics.sort());
+const duam = {
+	id: 20,
+	title: "Duam",
+	writer: "Felix Vega",
+	art: "Felix Vega",
+	statusOfAvailable: "Dostępne",
+	filter: "Antologie/Integrale",
+	newComics: false
+};
 
-console.log(duam['id']);
+const metronom = {
+	id: 15,
+	title: "Metronom",
+	writer: "Eric Corbeyran",
+	art: "Grun",
+	statusOfAvailable: "Dostępne",
+	filter: "Antologie/Integrale",
+	newComics: false
+};
 
-console.log(allComics['duam'['id']]);
+
+
+
+for (prop in duam) {
+	if(duam.hasOwnProperty(prop)) {
+		console.log("property: " + prop + ",  wartość: " + duam[prop]);
+	}
+}
+
+const allComics = [duam, metronom];
+*/
+
+
+
+
+const allComics = {
+	duam: {
+		id: 20,
+		title: "Duam",
+		writer: "Felix Vega",
+		art: "Felix Vega",
+		statusOfAvailable: "Dostępne",
+		filter: "Antologie/Integrale",
+		newComics: false
+	},
 	
+	metronom: {
+		id: 15,
+		title: "Metronom",
+		writer: "Eric Corbeyran",
+		art: "Grun",
+		statusOfAvailable: "Dostępne",
+		filter: "Antologie/Integrale",
+		newComics: false
+	}
+};
+
+const filterId = Object.values(allComics);
+
+
+
+
+	/*
+
+function Comics(id, title, writer, art, statusOfAvailable, filter, newComics) {
+	this.id = id;
+	this.title = title;
+	this.writer = writer;
+	this.art = art;
+	this.statusOfAvailable = statusOfAvailable;
+	this.filter = filter;
+	this.newComics = newComics
+};
+
+const duam = new Comics(20, "Duam", "Felix Vega", "Felix Vega", "Dostępne", "Antologie/Integrale", false)
+
+*/
+
