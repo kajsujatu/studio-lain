@@ -127,6 +127,10 @@ a:hover {
 	margin-left: auto;
 }
 
+.customize-text {
+	color: #000000;
+}
+
 #sort {
 	margin-left: 15px;
 }

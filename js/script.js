@@ -2,17 +2,19 @@
 const moon = document.getElementById('moon');
 const sun = document.getElementById('sun');
 const container = document.getElementById('container');
+const customizeText = document.querySelectorAll('.customize-text');
 
 // Dark and light mode - functions
 moon.addEventListener('click', function() {
-	document.body.style.backgroundColor = '#121212';
+	document.body.style.backgroundColor = "#121212";
 	sun.style.display = "inherit";
 	moon.style.display = "none";
-	container.style.backgroundColor = '#121212';
+	container.style.backgroundColor = "#121212";
+	//customizeText.style.color = "white";
 });
 
 sun.addEventListener('click', function() {
-	document.body.style.backgroundColor = '#E7E9EC';
+	document.body.style.backgroundColor = "#E7E9EC";
 	sun.style.display = "none";
 	moon.style.display = "inherit";
 	container.style.backgroundColor = "#E7E9EC";
@@ -85,6 +87,7 @@ const allComics = [duam, metronom];
 
 
 
+/*
 
 const allComics = {
 	duam: {
@@ -108,9 +111,20 @@ const allComics = {
 	}
 };
 
+
+const arrayOfComics = [duam, metronom];
+
+
+
+
 const filterId = Object.values(allComics);
 
+Object.entries
 
+allComics.sort(function(duam, metronom) {
+    return parseFloat(duam.id) - parseFloat(metronom.id);
+	}
+);
 
 
 	/*
@@ -128,4 +142,33 @@ function Comics(id, title, writer, art, statusOfAvailable, filter, newComics) {
 const duam = new Comics(20, "Duam", "Felix Vega", "Felix Vega", "Dostępne", "Antologie/Integrale", false)
 
 */
+
+//Array
+
+
+
+const duam = {
+	id: 20,
+	title: "Duam",
+	writer: "Felix Vega",
+	art: "Felix Vega",
+	statusOfAvailable: "Dostępne",
+	filter: "Antologie/Integrale",
+	newComics: false
+};
+
+const metronom = {
+	id: 15,
+	title: "Metronom",
+	writer: "Eric Corbeyran",
+	art: "Grun",
+	statusOfAvailable: "Dostępne",
+	filter: "Antologie/Integrale",
+	newComics: false
+};
+
+const comicsArray = [];
+	
+comicsArray[0] = duam;
+comicsArray[1] = "metronom";
 
