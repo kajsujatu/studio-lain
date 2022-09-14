@@ -7,7 +7,7 @@ const customizeText = document.querySelectorAll('.customize-text');
 // Dark and light mode - functions
 moon.addEventListener('click', function() {
 	document.body.style.backgroundColor = "#121212";
-	sun.style.display = "inherit";
+	sun.style.display = "inline";
 	moon.style.display = "none";
 	container.style.backgroundColor = "#121212";
 	//customizeText.style.color = "white";
@@ -16,7 +16,7 @@ moon.addEventListener('click', function() {
 sun.addEventListener('click', function() {
 	document.body.style.backgroundColor = "#E7E9EC";
 	sun.style.display = "none";
-	moon.style.display = "inherit";
+	moon.style.display = "inline";
 	container.style.backgroundColor = "#E7E9EC";
 });
 
