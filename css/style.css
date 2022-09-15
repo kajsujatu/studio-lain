@@ -81,7 +81,7 @@ a:hover {
 	align-self: center;
 	border: 0;
 	visibility: hidden;
-	animation:  increase-input 1s ease-out backwards;
+	animation: increase-input 1s ease-out backwards;
 }
 
 @keyframes increase-input {

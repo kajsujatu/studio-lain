@@ -30,145 +30,95 @@ search.addEventListener('click', function() {
 	//searchInput.style.backgroundColor: "#DCDCDC";
 });
 
+//Array of all Comics
+const Comics = [
+	// Metronom
+		{
+			id: 15, 
+			title: "Metronom",
+			writer: "Eric Corbeyran",
+			art: "Grun",
+			statusOfAvailable: true,
+			filter: "Antologie/Integrale",
+			newComics: false
+		},
+		
+	// Wiek Evy - XXe ciel.com
+		{
+			id: 2, 
+			title: "Wiek Evy - XXe ciel.comganie",
+			writer: "Bernard Yslaire",
+			art: "Bernard Yslaire",
+			statusOfAvailable: true,
+			filter: "Antologie/Integrale",
+			newComics: false
+		},		
 
-/* // Objects
-function Comics(id, title, writer, art, status, filter, newComics) {
-	this.id = id;
-	this.title = title;
-	this.writer = writer;
-	this.art = art;
-	this.status = status;
-	this.filter = filter;
-	this.newComics = Boolean;
-}
+	// Duam 
+		{
+			id: 20,
+			title: "Duam",
+			writer: "Felix Vega",
+			art: "Felix Vega",
+			statusOfAvailable: true,
+			filter: "Antologie/Integrale",
+			newComics: false
+		},
 
-const duam = new Comics(20, "Duam", "Felix Vega", "Felix Vega", "Dostępne", "Antologie/Integrale", false);
-const metronom = new Comics(15, "Metronom", "Eric Corbeyran", "Grun", "Dostępne", "Antologie/Integrale", false);
+	// Korriganie
+		{
+			id: 16, 
+			title: "Korriganie",
+			writer: "Thomas Mosdi",
+			art: "Emmanuel Civiello",
+			statusOfAvailable: true,
+			filter: "Antologie/Integrale",
+			newComics: false
+		},
 
+];
 
-const allComics = [duam, metronom];
+// Sort - Alphabetical Order - by Title
+const copyComicsA = Comics.slice();
 
-
-*/
-
-/*
-
-const duam = {
-	id: 20,
-	title: "Duam",
-	writer: "Felix Vega",
-	art: "Felix Vega",
-	statusOfAvailable: "Dostępne",
-	filter: "Antologie/Integrale",
-	newComics: false
-};
-
-const metronom = {
-	id: 15,
-	title: "Metronom",
-	writer: "Eric Corbeyran",
-	art: "Grun",
-	statusOfAvailable: "Dostępne",
-	filter: "Antologie/Integrale",
-	newComics: false
-};
-
-
-
-
-for (prop in duam) {
-	if(duam.hasOwnProperty(prop)) {
-		console.log("property: " + prop + ",  wartość: " + duam[prop]);
+const sortAlphabetical = copyComicsA.sort((a, b) => {
+	const titleA = a.title.toUpperCase();
+	const titleB = b.title.toUpperCase();
+	if (titleA < titleB) {
+	  return -1;
 	}
-}
-
-const allComics = [duam, metronom];
-*/
-
-
-
-/*
-
-const allComics = {
-	duam: {
-		id: 20,
-		title: "Duam",
-		writer: "Felix Vega",
-		art: "Felix Vega",
-		statusOfAvailable: "Dostępne",
-		filter: "Antologie/Integrale",
-		newComics: false
-	},
-	
-	metronom: {
-		id: 15,
-		title: "Metronom",
-		writer: "Eric Corbeyran",
-		art: "Grun",
-		statusOfAvailable: "Dostępne",
-		filter: "Antologie/Integrale",
-		newComics: false
+	if (titleA > titleB) {
+	  return 1;
 	}
-};
+  	return 0;
+  });
+
+// Sort - Newest - by Id - Descending
+//const copyComicsN = Comics.slice();
+
+//const sortComicsByIdNewest = copyComicsN.sort((a, b) => b.id - a.id);
+
+// Sort - Oldest - by Id - Ascending
+const copyComicsO = Comics.slice();
+
+const sortComicsByIdOldest = copyComicsO.sort((a, b) => a.id - b.id);
 
 
-const arrayOfComics = [duam, metronom];
+const sortInput = document.getElementById('sort-input');
 
+const sortNewest = sortInput.options['newest'];
 
+sortNewest.addEventListener('click', function() {
 
+	const copyComicsN = Comics.slice();
+	const sortComicsByIdNewest = copyComicsN.sort((a, b) => b.id - a.id);
 
-const filterId = Object.values(allComics);
+console.log('OK');
 
-Object.entries
+	return sortComicsByIdNewest
 
-allComics.sort(function(duam, metronom) {
-    return parseFloat(duam.id) - parseFloat(metronom.id);
-	}
-);
-
-
-	/*
-
-function Comics(id, title, writer, art, statusOfAvailable, filter, newComics) {
-	this.id = id;
-	this.title = title;
-	this.writer = writer;
-	this.art = art;
-	this.statusOfAvailable = statusOfAvailable;
-	this.filter = filter;
-	this.newComics = newComics
-};
-
-const duam = new Comics(20, "Duam", "Felix Vega", "Felix Vega", "Dostępne", "Antologie/Integrale", false)
-
-*/
-
-//Array
+});
 
 
 
-const duam = {
-	id: 20,
-	title: "Duam",
-	writer: "Felix Vega",
-	art: "Felix Vega",
-	statusOfAvailable: "Dostępne",
-	filter: "Antologie/Integrale",
-	newComics: false
-};
-
-const metronom = {
-	id: 15,
-	title: "Metronom",
-	writer: "Eric Corbeyran",
-	art: "Grun",
-	statusOfAvailable: "Dostępne",
-	filter: "Antologie/Integrale",
-	newComics: false
-};
-
-const comicsArray = [];
-	
-comicsArray[0] = duam;
-comicsArray[1] = "metronom";
 
