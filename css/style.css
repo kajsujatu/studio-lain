@@ -189,7 +189,11 @@ a:hover {
 	width: 237px;
 	height: 318px;
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
-	background-color: #FFFFFF;
+	background-size: cover;
+}
+
+#cover-brygada {
+	display: visible;
 }
 
 #cover-metronom {
@@ -228,4 +232,20 @@ footer {
 	height: 50px;
 	background-color: #121212;
 	align-self: end;
+}
+
+
+#container-page {
+	max-width: 1048px;
+	height: auto;
+	display: grid;
+	grid-template-columns: 50%;
+	grid-column-gap: 18px;
+	grid-row-gap: 36px;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #E7E9EC;
 }
