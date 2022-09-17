@@ -234,18 +234,37 @@ footer {
 	align-self: end;
 }
 
-
+/* Site */ 
 #container-page {
 	max-width: 1048px;
 	height: auto;
-	display: grid;
-	grid-template-columns: 50%;
-	grid-column-gap: 18px;
-	grid-row-gap: 36px;
+	display: flex;
 	justify-content: center;
 	margin-top: 15px;
 	margin-bottom: 30px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #E7E9EC;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	border: 17px solid #000000;
+	padding: 28px;
 }
+
+#cover-regular {
+	width: 433px;
+	height: 580px;
+}
+
+#cover-regular-thumbnail, #cover-alternative1 {
+	width: 102px;
+	height: 137px;
+}
+
+#title {
+	text-align: center;
+}
+
+
+.authors {
+border: 1px solid #797979
+};

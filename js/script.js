@@ -91,12 +91,13 @@ const Comics = [
 				},
 			img: 
 				{
-				coverRegular: "img/komiks/brygada/brygada_cover_regular-min.jpg",
-				coverAlternative1: "img/komiks/brygada/brygada_cover_alternative1.jpg",
-				inside1: "img/komiks/brygada/brygada_inside1.jpg",
-				inside2: "img/komiks/brygada/brygada_inside2.jpg",
-				inside3: "img/komiks/brygada/brygada_inside3.jpg",
-				inside4: "img/komiks/brygada/brygada_inside4.jpg",
+				coverRegular: "../img/komiks/brygada/brygada_cover_regular-max.jpg",
+				coverRegularThumbnail: "../img/komiks/brygada/brygada_cover_regular-min.jpg",
+				coverAlternative1: "../img/komiks/brygada/brygada_cover_alternative1.jpg",
+				inside1: "../img/komiks/brygada/brygada_inside1.jpg",
+				inside2: "../img/komiks/brygada/brygada_inside2.jpg",
+				inside3: "../img/komiks/brygada/brygada_inside3.jpg",
+				inside4: "../img/komiks/brygada/brygada_inside4.jpg",
 				},
 			availability: true,
 			filter: "Antologie/Integrale",
@@ -104,49 +105,55 @@ const Comics = [
 		}
 ];
 
-
-// Comics Brygada - Details
-const comicsBrygada = Comics[4];
-
-// Comics Brygada - Details - Title
-const titleBrygada = comicsBrygada.title;
-document.getElementById('title').innerHTML = titleBrygada;
-
-// Comics Brygada - Details - Writer
-const writerBrygada = comicsBrygada.writer;
-document.getElementById('writer').innerHTML = writerBrygada;
-
-// Comics Brygada - Details - Art
-const artBrygada = comicsBrygada.art;
-document.getElementById('art').innerHTML = artBrygada;
-
-// Comics Brygada - Details - Translator
-const translatorBrygada = comicsBrygada.translator;
-document.getElementById('translator').innerHTML = translatorBrygada;
-
-// Comics Brygada - Details - Proofreader
-const proofreaderBrygada = comicsBrygada.proofreader;
-document.getElementById('proofreader').innerHTML = proofreaderBrygada;
-
-// Comics Brygada - Details - Cover
-const coverBrygada = comicsBrygada.img.coverRegular;
-document.getElementById('cover-brygada').style.backgroundImage = `url(${coverBrygada}`;
-
-
-function chooseComics(number) {
+// Choose number of Comics and fill divs with data
+function chooseComics(num) {
 	
-}
+	// Title
+	const comicsTitle = Comics[num].title;
+	document.getElementById('title').innerHTML = comicsTitle;
 
+	// Writer
+	const comicsWriter = Comics[num].writer;
+	document.getElementById('writer').innerHTML = comicsWriter;		
 
+	// Art
+	const comicsArt = Comics[num].art;
+	document.getElementById('art').innerHTML = comicsArt;
 
+	// Translator
+	const comicsTranslator = Comics[num].translator;
+	document.getElementById('translator').innerHTML = comicsTranslator;
 
+	// Proofreader
+	const comicsProofreader = Comics[num].proofreader;
+	document.getElementById('proofreader').innerHTML = comicsProofreader;
 
-// Comics Metronom - Details
-const comicsMetronom = Comics[0];
+	// Cover - Main Site
+	// const comicsCover = Comics[num].img.coverRegular;
+	// document.getElementById('cover-regular').style.backgroundImage = `url(${comicsCover}`;
 
-//const titleMetronom = comicsMetronom.title;
-//document.getElementById("title").innerHTML = titleMetronom;
+	// Cover
+	const comicsCover = Comics[num].img.coverRegular;
+	document.getElementById('cover-regular').src = `${comicsCover}`;
 
+	// Cover
+	const comicsCoverRegularThumbnail = Comics[num].img.coverRegular;
+	document.getElementById('cover-regular-thumbnail').src = `${comicsCoverRegularThumbnail}`;
+
+	// Cover Alternative 1
+	const comicsCoverAlt1 = Comics[num].img.coverAlternative1;
+	document.getElementById('cover-alternative1').src = `${comicsCoverAlt1}`;
+
+	// Description Bold
+	const comicsDescriptionBold = Comics[num].description.bold;
+	document.getElementById('description-bold').innerHTML = comicsDescriptionBold;
+
+	// Description Normal
+	const comicsDescriptionNormal = Comics[num].description.normal;
+	document.getElementById('description-normal').innerHTML = comicsDescriptionNormal;
+
+	return;
+};
 
 
 // Sort - Alphabetical Order - by Title
