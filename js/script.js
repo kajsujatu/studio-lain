@@ -36,12 +36,48 @@ const Comics = [
 	// Metronom
 		{
 			id: 15, 
-			title: "Metronom",
-			writer: "Eric Corbeyran",
+			title: "Metronom'",
+			writer: "Éric Corbeyran",
 			art: "Grun",
-			statusOfAvailable: true,
+			translator: "Anna Winiarska",
+			proofreader: "Bartłomiej Wiśniewski, Słowobraz",
+			description:
+				{
+				bold: "Komiks polecany przez samego Enki Bilala, autora m.in. kultowej Trylogii Nikopola. Mistrz europejskiego komiksu napisał w przedmowie - Wchodzimy do szarej strefy, która, tak jak być powinno, jest naszym lustrzanym odbiciem i w której widać zmagającego się z rzeczywistością człowieka. To świat zarazem bliski i odległy, znajomy i niepokojący, doświadczony przez kolejne kryzysy, lecz zasadniczo stojący w miejscu. Tak było wczoraj, tak będzie jutro, bez dwóch zdań.",
+				normal: "Niedaleka przyszłość. Totalitaryzm został przebrany w szaty demokracji bezpośredniej. Każdy system ma jednak luki, a za puszczeniem rewolucyjnego domina w ruch często stoi zwykły przypadek. Młoda kobieta o imieniu Lynn szuka informacji o swoim mężu. Nie wrócił z kosmicznej misji na jednej ze stacji orbitalnych. Dążenie do odkrycia, co naprawdę się wydarzyło, sprawi, że uruchomione zostaną siły, które zachwieją nie tylko jej światem. Czy jednostka ma szanse w starciu z bezwzględnym systemem? Czy rewolucja zawsze zżera swój własny ogon? Czy prawda faktycznie wyzwala?"
+				},
+			img: 
+				{
+				coverRegular: "../img/komiks/metronom/metronom_cover_regular-max.jpg",
+				coverRegularThumbnail: "../img/komiks/metronom/metronom_cover_regular-max.jpg",
+				coverAlternative1: "../img/komiks/metronom/metronom_cover_alternative1.jpg",
+				coverAlternative2: "../img/komiks/metronom/metronom_cover_alternative2.jpg",
+				inside1: "../img/komiks/metronom/metronom_inside1.jpg",
+				inside2: "../img/komiks/metronom/metronom_inside2.jpg",
+				inside3: "../img/komiks/metronom/metronom_inside3.jpg",
+				inside4: "../img/komiks/metronom/metronom_inside4.jpg"
+				},
+			details:
+				{
+				format: "210x295 mm",
+				pages: 280,
+				print: "kolorowy",
+				paper: "kredowy",
+				typeOfBookCover: "twarda",
+				date: "sierpień 2020",
+				edition: "I",
+				ISBN: "978-83-958554-0-5",
+				price: "99,90 zł"
+				},
+			detailsOriginalEdition:
+				{
+				title: "Metronom'",
+				publisher: "Glenat",
+				date: "2010-2015"
+				},
 			filter: "Antologie/Integrale",
-			newComics: false
+			new: false,		
+			availability: true
 		},	
 	// Wiek Evy - XXe ciel.com
 		{
@@ -97,11 +133,29 @@ const Comics = [
 				inside1: "../img/komiks/brygada/brygada_inside1.jpg",
 				inside2: "../img/komiks/brygada/brygada_inside2.jpg",
 				inside3: "../img/komiks/brygada/brygada_inside3.jpg",
-				inside4: "../img/komiks/brygada/brygada_inside4.jpg",
+				inside4: "../img/komiks/brygada/brygada_inside4.jpg"
 				},
-			availability: true,
+			details:
+				{
+				format: "A4",
+				pages: 96,
+				print: "kolorowy",
+				paper: "kredowy",
+				typeOfBookCover: "twarda",
+				date: "listopad 2018",
+				edition: "I",
+				ISBN: "978-83-950587-6-9",
+				price: "64,90 zł"
+				},
+			detailsOriginalEdition:
+				{
+				title: "Brigada",
+				publisher: "AME Ediciones",
+				date: "2015 (2013-2015)"
+				},
 			filter: "Antologie/Integrale",
-			new: false			
+			new: false,		
+			availability: true
 		}
 ];
 
@@ -139,11 +193,21 @@ function chooseComics(num) {
 	// Cover
 	const comicsCoverRegularThumbnail = Comics[num].img.coverRegular;
 	document.getElementById('cover-regular-thumbnail').src = `${comicsCoverRegularThumbnail}`;
+	document.getElementById('cover-regular-thumbnail').style.display = "inline";
 
 	// Cover Alternative 1
 	const comicsCoverAlt1 = Comics[num].img.coverAlternative1;
 	document.getElementById('cover-alternative1').src = `${comicsCoverAlt1}`;
+	document.getElementById('cover-alternative1').style.display = "inline";
 
+	// Cover Alternative 2
+	const comicsCoverAlt2 = Comics[num].img.coverAlternative2;
+	document.getElementById('cover-alternative2').src = `${comicsCoverAlt2}`;
+	if (document.getElementById('cover-alternative2') != null) {
+	document.getElementById('cover-alternative2').style.display = "inline";
+	} else {
+		document.getElementById('cover-alternative2').style.display = "none";
+	};
 	// Description Bold
 	const comicsDescriptionBold = Comics[num].description.bold;
 	document.getElementById('description-bold').innerHTML = comicsDescriptionBold;
@@ -154,6 +218,8 @@ function chooseComics(num) {
 
 	return;
 };
+
+chooseComics(4);
 
 
 // Sort - Alphabetical Order - by Title
@@ -196,3 +262,5 @@ console.log('OK');
 	return sortComicsByIdNewest
 
 });
+
+

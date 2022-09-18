@@ -3,6 +3,11 @@
 	font-family: Poppins, sans-serif;
 	}
 
+p {
+	font-family: Open Sans, sans-serif;
+
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -239,7 +244,7 @@ footer {
 	max-width: 1048px;
 	height: auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	margin-top: 15px;
 	margin-bottom: 30px;
 	margin-right: auto;
@@ -255,16 +260,48 @@ footer {
 	height: 580px;
 }
 
-#cover-regular-thumbnail, #cover-alternative1 {
+#cover-regular-thumbnail, #cover-alternative1, #cover-alternative2 {
 	width: 102px;
 	height: 137px;
+	display: none;
 }
 
 #title {
 	text-align: center;
 }
 
+#main-info {
+	width: 477px;
+}
 
 .authors {
-border: 1px solid #797979
-};
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: repeat(2, 60px);
+	justify-content: center;
+	row-gap: 20px;
+	line-height: 11px;
+	vertical-align: middle;
+}
+
+.authors-role {
+	text-align: right;
+	padding-right: 13px;
+	border-right: 2px solid #797979;
+}
+
+.authors-name {
+	text-align: left;
+	padding-left: 13px;
+	font-weight: 500;
+}
+
+#description-bold {
+	margin-top: 30px; 
+	font-weight: 700;
+}
+
+#choose-cover {
+	font-size: 15px;
+	color: #808080;
+}
