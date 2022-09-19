@@ -132,6 +132,10 @@ a:hover {
 	height: 28px;
 }
 
+.icon:hover {
+	fill: #FFFFFF;
+}
+
 .icon-moon, .icon-sun {
 	margin-top: 5px;
 }
@@ -215,7 +219,7 @@ a:hover {
 	width: 0; 
   	height: 0; 
   	border-top: 10px solid transparent;
-    border-right:10px solid #235a62; 
+    border-right: 10px solid #235a62; 
 }
 
 .new::after {
@@ -245,6 +249,7 @@ footer {
 	height: auto;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	margin-top: 15px;
 	margin-bottom: 30px;
 	margin-right: auto;
@@ -255,14 +260,22 @@ footer {
 	padding: 28px;
 }
 
-#cover-regular {
-	width: 433px;
-	height: 580px;
+#container-covers {
+	order: 1;
 }
 
-#cover-regular-thumbnail, #cover-alternative1, #cover-alternative2 {
+#cover-big {
+	width: 433px;
+	height: 580px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+
+#cover-regular-thumbnail, #cover-alternative1-thumbnail, #cover-alternative2-thumbnail {
 	width: 102px;
 	height: 137px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+	margin-right: 19px;
+	cursor: pointer;
 	display: none;
 }
 
@@ -272,6 +285,7 @@ footer {
 
 #main-info {
 	width: 477px;
+	order: 2;
 }
 
 .authors {
@@ -282,6 +296,18 @@ footer {
 	row-gap: 20px;
 	line-height: 11px;
 	vertical-align: middle;
+}
+
+.details {
+	display: grid;
+	order: 3;
+	margin-right: auto;
+	margin-top: 35px;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	line-height: 11px;
+	vertical-align: middle;
+	height: 259px;
 }
 
 .authors-role {
@@ -304,4 +330,23 @@ footer {
 #choose-cover {
 	font-size: 15px;
 	color: #808080;
+}
+
+#img-inside {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.inside-thumbnails {
+	height: 290px;
+}
+
+#inside-samples {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#inside-samples::before {
+	content: url(../img/icon-zoom-in.svg);
+	margin-right: 6px;
 }
