@@ -131,6 +131,7 @@ const Comics = [
 				coverRegularThumbnail: "../img/komiks/brygada/brygada_cover_regular-min.jpg",
 				coverAlternative1: "../img/komiks/brygada/brygada_cover_alternative1.jpg",
 				inside1: "../img/komiks/brygada/brygada_inside1.jpg",
+				inside1Alt: "przykładowa plansza komiksu Brygada",
 				inside2: "../img/komiks/brygada/brygada_inside2.jpg",
 				inside3: "../img/komiks/brygada/brygada_inside3.jpg",
 				inside4: "../img/komiks/brygada/brygada_inside4.jpg"
@@ -249,27 +250,24 @@ function chooseComics(num) {
 
 	// Inside 1
 	const comicsInside1 = Comics[num].img.inside1;
-	if (Comics[num].img.inside1 = 1) {
+	const comicsInside1Alt = Comics[num].img.inside1Alt;
 	document.getElementById('inside1-thumbnail').src = `${comicsInside1}`;
-	};
+	document.getElementById('inside1-thumbnail').setAttribute("alt",`${comicsInside1Alt}`);
 
 	// Inside 2
 	const comicsInside2 = Comics[num].img.inside2;
-	if (Comics[num].img.inside2 = 1) {
-		document.getElementById('inside2-thumbnail').src = `${comicsInside2}`;
-	};
-
+	Comics[num].img.inside2
+	document.getElementById('inside2-thumbnail').src = `${comicsInside2}`;
+	
 	// Inside 3
 	const comicsInside3 = Comics[num].img.inside3;
-	if (Comics[num].img.inside3 = 1) {
+	Comics[num].img.inside3
 	document.getElementById('inside3-thumbnail').src = `${comicsInside3}`;
-	};
 
 	// Inside 4
 	const comicsInside4 = Comics[num].img.inside4;
-	if (Comics[num].img.inside4) {
+	Comics[num].img.inside4
 	document.getElementById('inside4-thumbnail').src = `${comicsInside4}`;
-	};
 
 	// Description Bold
 	const comicsDescriptionBold = Comics[num].description.bold;
@@ -319,6 +317,27 @@ function chooseComics(num) {
 };
 
 chooseComics(4);
+
+
+function getPics() {} //just for this demo
+const imgs = document.querySelectorAll('.gallery-img');
+const fullPage = document.querySelector('#fullpage');
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPage.style.backgroundImage = 'url(' + img.src + ')';
+    fullPage.style.display = 'block';
+  });
+});
+
+const leftArrow = document.getElementById('left-arrow');
+const rightArrow = document.getElementById('right-arrow');
+
+leftArrow.addEventListener('click', function() {
+console.log("Działa");
+});
+
+
 
 // Sort - Alphabetical Order - by Title
 const copyComicsA = Comics.slice();
