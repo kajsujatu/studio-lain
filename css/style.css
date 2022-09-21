@@ -199,15 +199,12 @@ a:hover {
 	height: 318px;
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
 	background-size: cover;
+	cursor: pointer;
 }
 
-#cover-brygada {
-	display: visible;
-}
-
-#cover-metronom {
-	background-image: url(../img/main-covers/metro_1.jpg);
-	background-size: contain;
+#cover-metronom, #cover-brygada {
+/*	background-image: url(../img/main-covers/metro_1.jpg); */
+	background-size: cover;
 }
 
 .new::before {

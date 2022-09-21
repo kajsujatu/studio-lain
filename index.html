@@ -5,7 +5,8 @@
 	<title>Studio lain</title>
 	
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js" async></script>
+
+	<script src="js/main-site.js" type="module" async></script>
 </head>
 <body>
 
@@ -77,15 +78,13 @@
 <!-- Main container -->	
 <div id="container">
 
-	<!--<img id="cover-brygada">-->
-	<a href="komiks/metronom/metronom.html"><div class="cover new" id="cover-metronom"></div></a>
-	<a href="komiks/brygada.html"><div class="cover" id="cover-brygada"></div></a>
-	<a href=""><div class="cover"></div></a>
-	<a href=""><div class="cover"></div></a>
-	<a href=""><div class="cover"></div></a>
-	<a href=""><div class="cover"></div></a>
-	<a href=""><div class="cover"></div></a>		
-	
+	<div class="cover new" id="cover-metronom"><a href="komiks/metronom.html"></a></div>
+	<div class="cover" id="cover-brygada"><a href="komiks/brygada.html"></a></div>
+	<div class="cover" style="order: 1; background-color: red"></div>
+	<div class="cover" style="order: 0; background-color: black"></div>
+	<div class="cover"></div>
+	<div class="cover"></div>
+	<div class="cover"></div>
 </div>
 	
 	
