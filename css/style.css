@@ -244,21 +244,22 @@ footer {
 #container-page {
 	max-width: 1048px;
 	height: auto;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(6, auto-fit);
+	justify-content: space-between;
 	margin-top: 15px;
 	margin-bottom: 30px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #FFFFFF;
+	background-color: #f3f3f3;
 	border-radius: 10px;
 	border: 17px solid #000000;
 	padding: 28px;
 }
 
 #container-covers {
-	order: 1;
+	height: 570px;
 }
 
 #cover-big {
@@ -281,8 +282,9 @@ footer {
 }
 
 #main-info {
+	grid-column-start: 2;
+	grid-row: 1 / span 3;
 	width: 477px;
-	order: 2;
 }
 
 .authors {
@@ -307,9 +309,63 @@ footer {
 	height: 259px;
 }
 
+.buy {
+	order: 4;
+	width: 163px;
+	height: 48px;
+	background-color: #19A538;
+	border-radius: 10px;
+	border: 0;
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: 500;
+	grid-column: 1 / span 2;
+	justify-self: center;
+}
+
+.buy::before {
+	content: url(../img/icon-buy.svg);
+	position: relative;
+	top: 3px;
+	right: 12px;
+}
+
+#related-comics {
+	width: 148px;
+	height: 198px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+
+.details-original {
+	display: grid;
+	order: 4;
+	margin-right: auto;
+	margin-top: 35px;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	line-height: 11px;
+	vertical-align: middle;
+	height: 90px;
+}
+
+.details-original-headline {
+	grid-row: 1 / span 2;
+}
+
 .authors-role {
 	text-align: right;
 	padding-right: 13px;
+	position: relative;
+
+}
+
+.authors-role::before {
+	content: "";
+	height: 90%;
+	position: absolute;
+	top: 12px;
+	bottom: 12px;
+	right: 0;
 	border-right: 2px solid #797979;
 }
 

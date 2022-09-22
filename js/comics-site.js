@@ -113,9 +113,12 @@ function chooseComics(num) {
 	document.getElementById('inside4-thumbnail').src = `${comicsInside4}`;
 
 	// Description Bold
-	const comicsDescriptionBold = Comics[num].description.bold;
-	document.getElementById('description-bold').innerHTML = comicsDescriptionBold;
 
+	const comicsDescriptionBold = Comics[num].description.bold;
+	if (comicsDescriptionBold != null) {
+	document.getElementById('description-bold').innerHTML = comicsDescriptionBold;
+	};
+	
 	// Description Normal
 	const comicsDescriptionNormal = Comics[num].description.normal;
 	document.getElementById('description-normal').innerHTML = comicsDescriptionNormal;
@@ -156,10 +159,27 @@ function chooseComics(num) {
 	const comicsDetailsPrice = Comics[num].details.price;
 	document.getElementById('details-price').innerHTML = comicsDetailsPrice;
 
+	// Details Orignal Edition - Title
+	const comicsDetailOriginalsEditionTitle = Comics[num].detailsOriginalEdition.title;
+	document.getElementById('details-original-edition-title').innerHTML = comicsDetailOriginalsEditionTitle;
+
+	// Details Original Edition - Publisher
+	const comicsDetailOriginalsEditionPublisher = Comics[num].detailsOriginalEdition.publisher;
+	document.getElementById('details-original-edition-publisher').innerHTML = comicsDetailOriginalsEditionPublisher;
+
+	// Details Original Edition - Date
+	const comicsDetailOriginalsEditionDate = Comics[num].detailsOriginalEdition.date;
+	document.getElementById('details-original-edition-date').innerHTML = comicsDetailOriginalsEditionDate;
+
+	// Related Comics
+	const comicsRelatedComics = Comics[num].rleatedComics.img1;
+	document.getElementById('related-comics').src = `${comicsRelatedComics}`;
+	return;
+
 	return;
 };
 
-chooseComics(4);
+chooseComics(3);
 
 
 function getPics() {}

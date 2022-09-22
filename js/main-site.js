@@ -82,9 +82,49 @@ const Comics = [
 			title: "Korriganie",
 			writer: "Thomas Mosdi",
 			art: "Emmanuel Civiello",
-			statusOfAvailable: true,
+			translator: "",
+			proofreader: "",
+			description:
+				{
+				normal: `Wspaniale zilustrowane dark fantasy dla dorosłych. Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na runku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu.
+				Opowieść rozgrywa się w roku 1100 naszej ery. Główną bohaterką jest mała irlandzka dziewczynka imieniem Luaine. Jej rodzina zostaje napadnięta przez stwory z innego świata. Ojciec ginie, a matka i dziadek zostają porwani do innego wymiaru, gdzie rządzi mroczna bestia Balor. Szczęśliwym zbiegiem okoliczności dziewczynka zostaje przygarnięta przez Korriganów, plemię, będące skrzyżowaniem krasnoludów z czarownicami. Wraz z nimi Luaine podejmuje próbę odnalezienia swoich bliskich…`
+				},
+			img: 
+				{
+				coverMainSite: "../img/komiks/korriganie/korriganie_okladka_regularna.jpg",
+				coverRegular: "../img/komiks/korriganie/korriganie_okladka_regularna.jpg",
+				coverRegularThumbnail: "../img/komiks/korriganie/korriganie_okladka_regularna.jpg",
+				coverAlternative1: "../img/komiks/korriganie/korriganie_okladka_alternatywna.jpg",
+				inside1: "../img/komiks/korriganie/korriganie_str1.jpg",
+				inside1Alt: "przykładowa plansza komiksu Korriganie",
+				inside2: "../img/komiks/korriganie/korriganie_str2.jpg",
+				inside3: "../img/komiks/korriganie/korriganie_str3.jpg",
+				},
+			details:
+				{
+				format: "210x295 mm",
+				pages: 220,
+				print: "kolorowy",
+				paper: "kredowy",
+				typeOfBookCover: "twarda",
+				date: "wrzesień 2021",
+				edition: "I",
+				ISBN: "978-83-958554-6-7",
+				price: "89,90 zł"
+				},
+			detailsOriginalEdition:
+				{
+				title: "Korrigans",
+				publisher: "Delcourt",
+				date: "2012 (2000-2007)"
+				},
+			relatedComics: 
+				{
+				},
 			filter: "Antologie/Integrale",
-			newComics: false
+			new: false,		
+			availability: true,
+			url: "../komiks/korriganie.html"
 		},
 	
 	// Brygada
@@ -130,17 +170,16 @@ const Comics = [
 				publisher: "AME Ediciones",
 				date: "2015 (2013-2015)"
 				},
+			relatedComics: 
+				{
+				img1: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_cover_regular.jpg"
+				},
 			filter: "Antologie/Integrale",
 			new: false,		
 			availability: true,
 			url: "../komiks/brygada.html"
 		}
 ];
-
-
-
-
-
 
 
 // Cover - Main Site
@@ -167,16 +206,6 @@ const coverBrygada = document.getElementById('cover-brygada');
 coverBrygada.addEventListener("click", function(){
 	window.location = "../komiks/brygada.html";
 });
-
-//document.getElementById('cover-brygada').setAttribute("href", comicsLink);
-
-
-
-
-
-
-
-
 
 
 // Sort - Alphabetical Order - by Title
