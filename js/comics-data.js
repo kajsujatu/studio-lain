@@ -1,9 +1,8 @@
-
 //Array of all Comics
 export const Comics = [
 	// Metronom
 		{
-			id: 1, 
+			id: 3, 
 			title: "Metronom'",
 			writer: "Éric Corbeyran",
 			art: "Grun",
@@ -49,9 +48,9 @@ export const Comics = [
 				img1: ""
 				},				
 			filter: "Antologie/Integrale",
-			new: true,		
+			new: false,		
 			availability: true,
-			url: "../komiks/metronom.html"			
+			url: "../komiks/comics-site.html"			
 		},
 
 	// Wiek Evy - XXe ciel.com
@@ -104,12 +103,12 @@ export const Comics = [
 			filter: "Antologie/Integrale",
 			new: false,		
 			availability: true,
-			url: "../komiks/wiek-evy.html"			
+			url: "../komiks/comics-site.html"			
 		},		
 
 	// Duam 
 		{
-			id: 20,
+			id: 5,
 			title: "Duam",
 			writer: "Felix Vega",
 			art: "Felix Vega",
@@ -118,19 +117,19 @@ export const Comics = [
 			description:
 				{
 				normal: "Ludzie i bogowie toczyli wojnę o panowanie nad światem. Okrutną i zaciętą. Bezkompromisową i krwawą. Kiedy ludzie odnaleźli kryształy, które spadły z nieba, szala przechyliła się na ich stronę. Wtedy zawarto rozejm. Bogowie obiecali, że będą zjadać dusze tylko tych, którzy umarli, a ludzie mieli się im nie przeciwstawiać. Rozejm właśnie został złamany..." +
- 				"Duam jest potężną szamanką. Jako dziecko nie potrafiła pogodzić się ze śmiercią bliskich jej istot. Zdobyła więc jeden z kamieni światła, by przywracać do życia tych, którzy odeszli. Zapłaciła jednak za to wysoką cenę, sama jeszcze nie wie, jak wielką." +
+ 				`\n Duam\n jest potężną szamanką. Jako dziecko nie potrafiła pogodzić się ze śmiercią bliskich jej istot. Zdobyła więc jeden z kamieni światła, by przywracać do życia tych, którzy odeszli. Zapłaciła jednak za to wysoką cenę, sama jeszcze nie wie, jak wielką.` +
 				"Razem z gwiazdą hiszpańskiego komiksu Féliksem Vegą wyrusz w niezwykłą podróż po okrutnym, ale i pięknym świecie, gdzie ludzie znów stają naprzeciwko bogów. Historia inspirowana jest wierzeniami Indian Mapuche, a okraszona została przepięknymi ilustracjami godnymi największych mistrzów komiksu.",
 				},
 			img: 
 				{
-				coverMainSite: "../img/komiks/duam/duam_okladka_regularna.jpg",
-				coverRegular: "../img/komiks/duam/duam_okladka_regularna.jpg",
+				coverMainSite: "../img/komiks/duam/duam_okladka_regularna.jpeg",
+				coverRegular: "../img/komiks/duam/duam_okladka_regularna.jpeg",
 				coverRegularThumbnail: "../img/komiks/duam/duam_okladka_regularna.jpg",
 				coverAlternative1: "../img/komiks/duam/duam_okladka_alternatywna1.jpg",
 				coverAlternative2: "../img/komiks/duam/duam_okladka_alternatywna2.jpg",
-				inside1: "../img/komiks/duam/duam_str1.jpg",
-				inside2: "../img/komiks/duam/duam_str2.jpg",
-				inside3: "../img/komiks/duam/duam_str3.jpg"
+				inside1: "../img/komiks/duam/duam_str1.jpeg",
+				inside2: "../img/komiks/duam/duam_str2.jpeg",
+				inside3: "../img/komiks/duam/duam_str3.jpeg"
 				},
 			details:
 				{
@@ -157,12 +156,12 @@ export const Comics = [
 			filter: "Antologie/Integrale",
 			new: true,		
 			availability: true,
-			url: "../komiks/duam.html"			
+			url: "../komiks/comics-site.html"			
 		},
 
 	// Korriganie
 		{
-			id: 16, 
+			id: 4, 
 			title: "Korriganie",
 			writer: "Thomas Mosdi",
 			art: "Emmanuel Civiello",
@@ -209,12 +208,12 @@ export const Comics = [
 			filter: "Antologie/Integrale",
 			new: false,		
 			availability: true,
-			url: "../komiks/korriganie.html"
+			url: "../komiks/comics-site.html"
 		},
 	
 	// Brygada
 		{
-			id: 4, 
+			id: 1, 
 			title: "Brygada",
 			writer: "Enrique Fernandez",
 			art: "Enrique Fernandez",
@@ -262,7 +261,6 @@ export const Comics = [
 			filter: "Antologie/Integrale",
 			new: false,		
 			availability: true,
-			url: "../komiks/brygada.html"
+			url: "../komiks/comics-site.html"
 		}
 ];
-

@@ -1,6 +1,7 @@
+// Import Database of comics
 import {
 	Comics
-} from './script.js';
+} from './comics-data.js';
 
 
 // Choose number of Comics and fill divs with data
@@ -25,10 +26,6 @@ function chooseComics(num) {
 	// Proofreader
 	const comicsProofreader = Comics[num].proofreader;
 	document.getElementById('proofreader').innerHTML = comicsProofreader;
-
-	// Cover - Main Site
-	// const comicsCover = Comics[num].img.coverRegular;
-	// document.getElementById('cover-regular').style.backgroundImage = `url(${comicsCover}`;
 
 	// Cover
 	const comicsCover = Comics[num].img.coverRegular;
@@ -70,6 +67,7 @@ function chooseComics(num) {
 			coverBig.src = Comics[num].img.coverRegular;
 			coverRegularThumbnail.style.opacity = "50%";
 			coverAlternative1Thumbnail.style.opacity = "100%";
+			coverAlternative2Thumbnail.style.opacity = "100%";
 		};
 	});
 	
@@ -118,7 +116,7 @@ function chooseComics(num) {
 	if (comicsDescriptionBold != null) {
 	document.getElementById('description-bold').innerHTML = comicsDescriptionBold;
 	};
-	
+
 	// Description Normal
 	const comicsDescriptionNormal = Comics[num].description.normal;
 	document.getElementById('description-normal').innerHTML = comicsDescriptionNormal;
@@ -172,15 +170,21 @@ function chooseComics(num) {
 	document.getElementById('details-original-edition-date').innerHTML = comicsDetailOriginalsEditionDate;
 
 	// Related Comics
-	const comicsRelatedComics = Comics[num].rleatedComics.img1;
+	const comicsRelatedComics = Comics[num].relatedComics.img1;
+	if (comicsRelatedComics != null) {
 	document.getElementById('related-comics').src = `${comicsRelatedComics}`;
-	return;
+	};
 
 	return;
 };
 
-chooseComics(3);
+chooseComics(1);
 
+//O - Metronom
+//1 - WiekEvy
+//2 - Duam
+//3 - Korriganie
+//4 - Brygada
 
 function getPics() {}
 const imgs = document.querySelectorAll('.gallery-img');
