@@ -2,7 +2,7 @@
 export const Comics = [
 	// Metronom
 		{
-			id: 3, 
+			id: 47, 
 			title: "Metronom'",
 			writer: "Éric Corbeyran",
 			art: "Grun",
@@ -55,7 +55,7 @@ export const Comics = [
 
 	// Wiek Evy - XXe ciel.com
 		{
-			id: 2, 
+			id: 46, 
 			title: "Wiek Evy - XXe ciel.com",
 			writer: "Bernard Yslaire",
 			art: "Bernard Yslaire",
@@ -108,7 +108,7 @@ export const Comics = [
 
 	// Duam 
 		{
-			id: 5,
+			id: 49,
 			title: "Duam",
 			writer: "Felix Vega",
 			art: "Felix Vega",
@@ -161,7 +161,7 @@ export const Comics = [
 
 	// Korriganie
 		{
-			id: 4, 
+			id: 48, 
 			title: "Korriganie",
 			writer: "Thomas Mosdi",
 			art: "Emmanuel Civiello",
@@ -213,7 +213,7 @@ export const Comics = [
 	
 	// Brygada
 		{
-			id: 1, 
+			id: 43, 
 			title: "Brygada",
 			writer: "Enrique Fernandez",
 			art: "Enrique Fernandez",
@@ -262,5 +262,58 @@ export const Comics = [
 			new: false,		
 			availability: true,
 			url: "../komiks/comics-site.html"
-		}
+		},
+
+	// Armie zdobywcy
+			{
+				id: 44, 
+				title: "Armie Zdobywcy",
+				writer: "Jean-Pierre Dionnet, Picaret",
+				art: "Jean-Claude Gal",
+				translator: "Anna Winiarska",
+				proofreader: "Damian Pietrzak",
+				description:
+					{
+					bold: "Arcydzieło komiksu europejskiego. Mistrz gatunku Jean-Claude Gal w najlepszej formie.",
+					normal: "Album na prawie 200 stronach zbiera historie – Katedra, Fanastyczna Armia i Cykl Arna. To prace, które na zawsze zmieniły oblicze komiksu. To absolutna klasyka, która w ogóle się nie zestarzała. Zachwyca dokładnie tak samo, jak w dniu swojej premiery. Dzięki obsesyjnie szczegółowej kresce, pełnych rozmachu kadrach możemy wybrać się w niezwykłą podróż do fantastycznych światów. Krain rodem z klasyków gatunku fantasy, pełnych niezwykłych budowli, pradawnych tajemnic i kultu zła czającego się w mroku. To także dzięki komiksom z tego albumu magazyn Heavy Metal stał się kultowy, a Jean-Claude Gal wymieniany jest obok takich mistrzów jak Moebius, Caza, Bilal czy Corben. Lektura obowiązkowa i uczta dla oczu! Zawiera: Katedra, Fanastyczna Armia, Zemsta Arna, Triumf Arna" 
+					},
+				img: 
+					{
+					coverMainSite: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
+					coverRegular: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
+					coverRegularThumbnail: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
+					coverAlternative1: "../img/komiks//armie-zdobywcy/armie-zdobywcy-okladka-alternatywna.jpg",
+					inside1: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str1.jpg",
+					inside1Alt: "przykładowa plansza komiksu Armie Zdobywcy",
+					inside2: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str2.jpg",
+					inside3: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str3.jpg",
+					inside4: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str4.jpg"
+					},
+				details:
+					{
+					format: "240x320 mm",
+					pages: 192,
+					print: "czarno-biały",
+					paper: "kredowy",
+					typeOfBookCover: "twarda",
+					date: "grudzień 2018",
+					edition: "I",
+					ISBN: "978-83-950587-8-3",
+					price: "69,90 zł"
+					},
+				detailsOriginalEdition:
+					{
+					title: "Épopées fantastiques",
+					publisher: "Les Humanoides Associés",
+					date: "2002 (1977-1988)"
+					},
+				relatedComics: 
+					{
+					img1: ""
+					},
+				filter: "Antologie/Integrale",
+				new: false,		
+				availability: false,
+				url: "../komiks/comics-site.html"
+			}
 ];
