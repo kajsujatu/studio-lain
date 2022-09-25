@@ -4,16 +4,15 @@ import {
 } from './comics-data.js';
 
 // Adding Covers on Main Site
-
-
-
-
+const mainContainer = document.getElementById('container');
 
 for (let i=0; i<Comics.length; i++) {
 
-	const mainContainer = document.getElementById('container');
 	const mainCover = document.createElement('div');
+	mainCover.classList.add('cover');
+	mainContainer.appendChild(mainCover);
 
+	// Adding attributes from Comics Array to Cover Class:
 		// Cover
 		mainCover.style.backgroundImage = `url(${Comics[i].img.coverMainSite}`;
 		// Order Newest by default
@@ -24,6 +23,9 @@ for (let i=0; i<Comics.length; i++) {
 		});
 		// Alt
 		mainCover.setAttribute("alt",`${Comics[i].title}`);
+		// Data Filter
+		// mainCover.setAttribute("filter", `${Comics[i].filter}`);
+		mainCover.classList.add(`${Comics[i].filter}`);
 		// if New
 		if (Comics[i].new != false) {
 			mainCover.classList.add("new");
@@ -31,144 +33,49 @@ for (let i=0; i<Comics.length; i++) {
 		// if Sold
 		if (Comics[i].availability == false) {
 		mainCover.classList.add("sold");
-	};
+		};
 
-	mainCover.classList.add('cover');
-	mainContainer.appendChild(mainCover);
-	//const mainCoversOrder = mainCovers.style.order;
-	//const sortCoversOldest = mainCoversOrder.sort((a, b) => a.value - b.value);
+	// Sorting elements
+		const sortInput = document.getElementById('sort-input')		
+
+		sortInput.addEventListener('change', function() {
+			// Sort by Newest (deafult)
+			if (sortInput.value == "najnowsze") {
+				mainCover.style.order = -(Comics[i].id);
+			}
+			// Sort by Oldest
+			else if (sortInput.value == "najstarsze") {
+				mainCover.style.order = Comics[i].id;
+			}
+			// Sort Alphabetically
+			else if (sortInput.value == "alfabetycznie") {
+				mainCover.style.order = Comics[i].title.charCodeAt(0);
+			};
+		});
+
 		
 
+		console.log(mainCover.className); 
+
+	// Filtering elements
+		const filtersInput = document.getElementById('filters-input');	
+		//const mainCoverFilter = document.querySelectorAll('[data-filter]');
 
 
-//	const mainCovers = document.getElementsByClassName('cover').style.order = "1";
-
-	// console.log(mainCover);
-	// console.log(mainContainer);
-
-
-	const zonk = document.getElementById('test');
-	zonk.addEventListener('click', function(){
-
-
-		mainCover = Array.prototype.slice.call(mainCover, 0);
-
-		mainCover.sort(function(a, b) {
-			var aord = +a.id.split('-')[1];
-			var bord = +b.id.split('-')[1];
-			return aord - bord;
-		});
+		filtersInput.addEventListener('change', function() {
+				if (mainCover.classList.contains(`${filtersInput.value}`) != true) {
+					mainCover.style.display = "none";
+				}
+				else if (filtersInput.value == "nowosci") {
+					mainCover.className('new').style.display = "none";
+				}
 		});
 
 
-//const mainCoversOrder = mainCovers.style.order;
-//const sortCoversOldest = mainCoversOrder.sort((a, b) => a.value - b.value);
 
-	
-//		for (let i=0; i<Comics.length; i++) {
-//		
-//			const mainContainer = document.getElementById('container');
-//			const mainCover = document.createElement('div');
-//			
-//			// Order Oldest
-//			return mainCover.style.order = Comics[i].id;
-//	
-//	}
-//	
-	
-	};
+};
 
-	// const mainCovers = document.querySelectorAll('.cover');
+// const zonk = document.getElementById('test');
 
-	
-	//const sortCoverAlphapetical = mainCovers.sort((a, b) => {
-	//	const titleA = mainCovers.attr("alt").toUpperCase();
-	//	const titleB = mainCovers.attr("alt").toUpperCase();
-	//	if (titleA < titleB) {
-	//	  return -1;
-	//	}
-	//	if (titleA > titleB) {
-	//	  return 1;
-	//	}
-	//	  return 0;
-	//  });
-
-
-  
-
-// const mainCoversOrder = mainCovers.style.order;
-//
-// const sortCoversOldest = mainCoversOrder.sort((a, b) => a.value - b.value);
-//
-// const sortCoversNewest = mainCoversOrder.sort((a, b) => b - a);
-//
-//
-//
-//   const sortInput = document.getElementById('sort-input');
-//
-// const sortNewest = sortInput.options['newest'];
-// 
-//
-//
-// 
-// sortInput.addEventListener('change', function() {
-// 
-//	const mainCoversOrder = mainCovers.style.order;
-//	const sortCoversNewest = mainCoversOrder.sort((a, b) => b.id - a.id);
-// 
-// console.log('OK');
-// 
-//	  return sortCoversNewest
-// 
-// });
-//
-
-
-// Sort - Alphabetical Order - by Title
-//const copyComicsA = Comics.slice();
-//
-//const sortAlphabetical = copyComicsA.sort((a, b) => {
-//	const titleA = a.title.toUpperCase();
-//	const titleB = b.title.toUpperCase();
-//	if (titleA < titleB) {
-//	  return -1;
-//	}
-//	if (titleA > titleB) {
-//	  return 1;
-//	}
-//  	return 0;
-//  });
-//
-// Sort - Newest - by Id - Descending
-//const copyComicsN = Comics.slice();
-
-//const sortComicsByIdNewest = copyComicsN.sort((a, b) => b.id - a.id);
-
-// Sort - Oldest - by Id - Ascending
-//const copyComicsO = Comics.slice();
-//
-//const sortComicsByIdOldest = copyComicsO.sort((a, b) => a.id - b.id);
-//
-//
-//const sortInput = document.getElementById('sort-input');
-//
-//const sortNewest = sortInput.options['newest'];
-//
-//sortNewest.addEventListener('click', function() {
-//
-//	const copyComicsN = Comics.slice();
-//	const sortComicsByIdNewest = copyComicsN.sort((a, b) => b.id - a.id);
-//
-//console.log('OK');
-//
-//	return sortComicsByIdNewest
-//
-//});
-
-
-
-
-
-
-
+// const zonk2 = document.getElementById('test2');
 

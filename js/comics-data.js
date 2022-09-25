@@ -47,7 +47,7 @@ export const Comics = [
 				{
 				img1: ""
 				},				
-			filter: "Antologie/Integrale",
+			filter: "antologie-integrale",
 			new: false,		
 			availability: true,
 			url: "../komiks/comics-site.html"			
@@ -100,7 +100,7 @@ export const Comics = [
 				{
 				img1: ""
 				},				
-			filter: "Antologie/Integrale",
+			filter: "antologie-integrale",
 			new: false,		
 			availability: true,
 			url: "../komiks/comics-site.html"			
@@ -153,7 +153,7 @@ export const Comics = [
 				{
 				img1: ""
 				},
-			filter: "Antologie/Integrale",
+			filter: "antologie-integrale",
 			new: true,		
 			availability: true,
 			url: "../komiks/comics-site.html"			
@@ -205,7 +205,7 @@ export const Comics = [
 				{
 				img1: ""
 				},
-			filter: "Antologie/Integrale",
+			filter: "antologie-integrale",
 			new: false,		
 			availability: true,
 			url: "../komiks/comics-site.html"
@@ -258,7 +258,7 @@ export const Comics = [
 				{
 				img1: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_cover_regular.jpg"
 				},
-			filter: "Antologie/Integrale",
+			filter: "enrique-fernandez",
 			new: false,		
 			availability: true,
 			url: "../komiks/comics-site.html"
@@ -311,7 +311,7 @@ export const Comics = [
 					{
 					img1: ""
 					},
-				filter: "Antologie/Integrale",
+				filter: "antologie-integrale",
 				new: false,		
 				availability: false,
 				url: "../komiks/comics-site.html"

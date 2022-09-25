@@ -39,8 +39,8 @@
 			<form action="#">
      			<label for="sort">Sortuj wg:</label>
       				<select name="sort" id="sort-input" size="1">
-						<option value="najnowsze" data-filter=".new" id="newest">Najnowsze</option>
-						<option value="najstarsze" data-filter=".old">Najstarsze</option>
+						<option value="najnowsze" id="newest">Najnowsze</option>
+						<option value="najstarsze">Najstarsze</option>
 						<option value="alfabetycznie">Alfabetycznie</option>
 					</select>
 			</form>	
@@ -50,26 +50,25 @@
 			<form action="#">
      			<label for="filters">Filtruj wg:</label>
       				<select name="filters" id="filters-input" size="1">
-						<option value="">Wszystkie</option>
-						<option value="">Nowości</option>
-						<option value="">Alfabetycznie</option>
-						<option value="">Dostępne</option>
-						<option value="">Wyprzedane</option>
-						<option value="">Antologie/Integrale</option>
-						<option value="">Alan Moore</option>
-						<option value="">Enrique Fernandez</option>
-						<option value="">Łukasz Kowalczuk</option>
-						<option value="">seria ABC Warriors</option>
-						<option value="">seria Absalom</option>
-						<option value="">seria Sędzia Dredd</option>
-						<option value="">seria uniwersum Dredda - Sędzia Anderson</option>
-						<option value="">seria uniwersum Dredda - Lawless</option>
-						<option value="">seria uniwersum Dredda - Mroczni Sędziowie</option>
-						<option value="">seria Sláine</option>
-						<option value="">seria SOLO</option>						
-						<option value="">seria Stickleback</option>						
-						<option value="">seria Strażnicy Masery</option>
-						<option value="">seria Yiu</option>
+						<option value="wszystkie">Wszystkie</option>
+						<option value="nowosci">Nowości</option>
+						<option value="dostepne">Dostępne</option>
+						<option value="wyprzedane">Wyprzedane</option>
+						<option value="antologie-integrale" data-filter=".antologie-integrale">Antologie/Integrale</option>
+						<option value="alan-moore">Alan Moore</option>
+						<option value="enrique-fernandez">Enrique Fernandez</option>
+						<option value="lukasz-kowalczuk">Łukasz Kowalczuk</option>
+						<option value="seria-abc-warriors">seria ABC Warriors</option>
+						<option value="seria-absalom">seria Absalom</option>
+						<option value="seria-sedzia-dredd">seria Sędzia Dredd</option>
+						<option value="seria-uniwersum-dredda-sedzia-anderson">seria uniwersum Dredda - Sędzia Anderson</option>
+						<option value="seria-uniwersum-dredda-lawless">seria uniwersum Dredda - Lawless</option>
+						<option value="seria-uniwersum-dredda-mroczni-sedziowie">seria uniwersum Dredda - Mroczni Sędziowie</option>
+						<option value="seria-slaine">seria Sláine</option>
+						<option value="seria-solo">seria SOLO</option>						
+						<option value="seria-stickelback">seria Stickleback</option>						
+						<option value="seria-straznicy-masery">seria Strażnicy Masery</option>
+						<option value="seria-yiu">seria Yiu</option>
 					</select>
 			</form>
 		
@@ -79,19 +78,13 @@
 		
 <!-- Main container -->	
 <div id="container">
-
-	<!--<div class="cover" id="cover-metronom"></div>
-	<div class="cover" id="cover-brygada"></div>
-	<div class="cover" id="cover-korriganie"></div>
-	<div class="cover" id="cover-wiek-evy"></div>
-	<div class="cover" id="cover-duam"></div> -->
 </div>
 	
 	
 <footer>
-	<button id="test" style="width: 300px; height: 40px;"></button>
+<!--	<button data-filter=".antologie-integrale" id="test" style="width: 300px; height: 40px;">Najstarsze</button>
+
+	<button id="test2" style="width: 300px; height: 40px;">Alfabetycznie</button> -->
 </footer>	
-
-
 </body>
 </html>
