@@ -175,6 +175,21 @@ a:hover {
 #sort-input {
 	width: 200px;
 	font-size: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #CBCBCB
+}
+
+select {
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    height: 34px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+    -webkit-appearance: none;
+    background-position-x: 244px;
 }
 
 #filters {
@@ -210,6 +225,27 @@ a:hover {
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
 	background-size: cover;
 	cursor: pointer;
+
+}
+
+.cover:hover {
+	rotate: -2deg;
+}
+
+.cover-details {
+	width: 237px;
+	height: 318px;
+
+
+}
+
+.cover:hover .cover-details {
+	width: 237px;
+	height: 318px;
+	top: 5px;
+    left: 0%;
+	background-color: #000000;
+	transition: .5s;
 }
 
 .new::before {

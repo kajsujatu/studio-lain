@@ -10,6 +10,7 @@ for (let i=0; i<Comics.length; i++) {
 
 	const mainCover = document.createElement('div');
 	mainCover.classList.add('cover');
+	mainCover.classList.add('cover-details');
 	mainContainer.appendChild(mainCover);
 
 	// Adding attributes from Comics Array to Cover Class:
@@ -53,10 +54,6 @@ for (let i=0; i<Comics.length; i++) {
 			};
 		});
 
-		
-
-		console.log(mainCover.className); 
-
 	// Filtering elements
 		const filtersInput = document.getElementById('filters-input');	
 		//const mainCoverFilter = document.querySelectorAll('[data-filter]');
@@ -66,9 +63,9 @@ for (let i=0; i<Comics.length; i++) {
 				if (mainCover.classList.contains(`${filtersInput.value}`) != true) {
 					mainCover.style.display = "none";
 				}
-				else if (filtersInput.value == "nowosci") {
-					mainCover.className('new').style.display = "none";
-				}
+				else if (filtersInput.value != "nowosci") {
+					mainCover.classList.contains('new').style.display = "none";
+				};
 		});
 
 
