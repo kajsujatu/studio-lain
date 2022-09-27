@@ -24,7 +24,7 @@ a:hover {
 	color: #FFFFFF;
 }
 
-/* SITE HEADER */
+/* **************** SITE HEADER **************** */
 
 .site-header {
 	width: auto;
@@ -150,7 +150,7 @@ a:hover {
 	margin-top: 5px;
 }
 
-/* CUSTOMIZE PANEL */
+/* **************** CUSTOMIZE PANEL **************** */
 
 #customize {
 	width: 1048px;
@@ -171,25 +171,51 @@ a:hover {
 	margin-left: 15px;
 }
 
+select {
+    font-size: 15px;
+	text-indent: 10px;
+	background-color: #F5F5F5;
+	border: 1px solid #CBCBCB;
+    border-radius: 0 10px 10px 0;
+    height: 34px;
+	line-height: 1.5em;
+	padding: 0.5em 3.5em 0.5em 1em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image:
+    	linear-gradient(45deg, transparent 50%, gray 50%),
+    	linear-gradient(135deg, gray 50%, transparent 50%),
+    	linear-gradient(to right, #ccc, #ccc);
+  	background-position:
+    	calc(100% - 20px) calc(1em + 2px),
+    	calc(100% - 15px) calc(1em + 2px),
+    	calc(100% - 2.5em) 0.5em;
+  	background-size:
+    	5px 5px,
+    	5px 5px,
+    	1px 1.5em;
+  	background-repeat: no-repeat;
+}
+
+select:focus {
+	background-image:
+    	linear-gradient(45deg, gray 50%, transparent 50%),
+    	linear-gradient(135deg, transparent 50%, gray 50%),
+    	linear-gradient(to right, #ccc, #ccc);
+  	background-position:
+    	calc(100% - 15px) 1em,
+    	calc(100% - 20px) 1em,
+    	calc(100% - 2.5em) 0.5em;
+ 	 background-size:
+    	5px 5px,
+    	5px 5px,
+    	1px 1.5em;
+ 	background-repeat: no-repeat;
+  	outline: 0;
+}
 
 #sort-input {
 	width: 200px;
-	font-size: 15px;
-	background-color: #F5F5F5;
-	border: 1px solid #CBCBCB
-}
-
-select {
-    width: 268px;
-    padding: 5px;
-    font-size: 16px;
-    line-height: 1;
-    border: 0;
-    border-radius: 5px;
-    height: 34px;
-    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
-    -webkit-appearance: none;
-    background-position-x: 244px;
 }
 
 #filters {
@@ -199,10 +225,9 @@ select {
 
 #filters-input {
 	width: 483px;
-	font-size: 15px;
 }
 
-/* MAIN CONTAINER */
+/* **************** MAIN CONTAINER **************** */
 
 #container {
 	max-width: 1048px;
@@ -225,27 +250,24 @@ select {
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
 	background-size: cover;
 	cursor: pointer;
-
 }
 
-.cover:hover {
-	rotate: -2deg;
+.cover:after {
+	content: "text";
+	width: 100%;
+	height: 40%;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background-color: red;
+	text-align: center;
+	background-color:rgba(0, 0, 0, .4);
+	visibility: hidden;
 }
 
-.cover-details {
-	width: 237px;
-	height: 318px;
 
-
-}
-
-.cover:hover .cover-details {
-	width: 237px;
-	height: 318px;
-	top: 5px;
-    left: 0%;
-	background-color: #000000;
-	transition: .5s;
+.cover:hover .cover:after {
+	visibility: visible;
 }
 
 .new::before {
@@ -288,30 +310,33 @@ select {
 footer {
 	width: auto;
 	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
 	background-color: #121212;
 	align-self: end;
 }
 
-/* Site */ 
+/* **************** SITE PAGE **************** */ 
 #container-page {
 	max-width: 1048px;
-	height: auto;
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	grid-template-rows: 800px 300px 400px;
+	height: 100%;
+	display: flex;
+	flex-flow: column wrap;
 	justify-content: space-between;
-	margin-top: 15px;
-	margin-bottom: 30px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 15px auto 30px auto;
 	background-color: #f3f3f3;
 	border-radius: 10px;
 	border: 17px solid #000000;
 	padding: 28px;
+	flex-basis: 30%;
+	column-count: 2;
 }
 
 #container-covers {
-	height: 570px;
+	height: 800px;
+	width: 470px;
+	order: 1;
 }
 
 #cover-big {
@@ -329,14 +354,32 @@ footer {
 	display: none;
 }
 
-#title {
+#choose-cover {
+	margin-top: 5px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #808080;
+}
+
+#title-section {
+	max-width: 470px;
+	height: 100px;
+	order: 6;
 	text-align: center;
+	break-before: column;
 }
 
 #main-info {
-	grid-column-start: 2;
-	grid-row: 1 / span 3;
-	width: 477px;
+	order: 7;
+	max-width: 400px;
+}
+
+#description {
+	order: 8;
+}
+
+#inside-panels {
+	order: 9;
 }
 
 .authors {
@@ -351,7 +394,7 @@ footer {
 
 .details {
 	display: grid;
-	order: 3;
+	order: 2;
 /*	margin-right: auto; 
 	margin-top: 60px; */
 	grid-template-columns: auto auto;
@@ -359,11 +402,10 @@ footer {
 	line-height: 11px;
 	vertical-align: middle;
 	height: 259px;
-	justify-self: center;
+	align-self: flex-start;
 }
 
 .buy {
-	order: 4;
 	width: 163px;
 	height: 48px;
 	background-color: #19A538;
@@ -383,21 +425,16 @@ footer {
 	right: 12px;
 }
 
-#related-comics {
-	width: 148px;
-	height: 198px;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
-}
-
 .details-original {
 	display: grid;
-	order: 4;
+	order: 3;	
 	margin-right: auto;
 	margin-top: 35px;
 	grid-template-columns: auto auto;
 	justify-content: center;
 	line-height: 11px;
 	vertical-align: middle;
+	align-self: flex-start;
 	height: 90px;
 }
 
@@ -410,7 +447,6 @@ footer {
 	text-align: right;
 	padding-right: 13px;
 	position: relative;
-
 }
 
 .authors-role::before {
@@ -429,14 +465,20 @@ footer {
 	font-weight: 500;
 }
 
+#related-comics-section {
+	order: 4;
+	align-self: flex-start;
+}
+
+#related-comics {
+	width: 148px;
+	height: 198px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+
 #description-bold {
 	margin-top: 30px; 
 	font-weight: 700;
-}
-
-#choose-cover {
-	font-size: 15px;
-	color: #808080;
 }
 
 #img-inside {

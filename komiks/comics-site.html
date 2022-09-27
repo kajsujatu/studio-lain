@@ -33,15 +33,17 @@
 
 <!-- Main container -->	
 <div id="container-page">
+
+	<!-- COVER -->
     <div id="container-covers">
 		<img src="" alt="" id="cover-big">
-
 		<p id="choose-cover">Wybierz wersję okładki:</p>
 		<img src="" alt="" id="cover-regular-thumbnail">
 		<img src="" alt="" id="cover-alternative1-thumbnail">
 		<img src="" alt="" id="cover-alternative2-thumbnail">
 	</div>
 
+	<!-- DETAILS -->
 	<div class="details">
 		<div class="authors-role">
 			<p>Format</p>
@@ -66,33 +68,37 @@
 			<p id="details-price"></p>
 		</div>
 	
-		<button class="buy">KUPUJĘ</button>
-	
+		<button class="buy">KUPUJĘ</button>	
 	</div>
 
-		<div class="details-original">
-			<p class="details-original-headline">Dane oryginalnego wydania:</p>
-			<div class="authors-role">
-				<p>Tytuł</p>
-				<p>Wydawca</p>
-				<p>Data wydania</p>
-			</div>	
+	<!-- DETAILS ORIGINAL -->
+	<div class="details-original">
+		<p class="details-original-headline">Dane oryginalnego wydania:</p>
+		<div class="authors-role">
+			<p>Tytuł</p>
+			<p>Wydawca</p>
+			<p>Data wydania</p>
+		</div>	
 		<div class="authors-name">
 			<p id="details-original-edition-title"></p>
 			<p id="details-original-edition-publisher"></p>
 			<p id="details-original-edition-date"></p>
 		</div>
-
-
-	<div><p>Powiązane tytuły:</p>
-		<img src="" id="related-comics">
 	</div>
 
+	<!-- RELATED COMICS -->
+	<div id="related-comics-section">
+		<p>Powiązane tytuły:</p>
+			<img src="" id="related-comics">
 	</div>
-
-	<div id="main-info">
+	
+	<!-- TITLE -->
+	<div id="title-section">	
 		<h1 id="title"></h1>
+	</div>
 
+	<!-- MAIN INFO -->
+	<div id="main-info">
 		<div class="authors">
 			<div class="authors-role">
 				<p>Scenariusz</p>
@@ -111,10 +117,16 @@
 				<p id="translator"></p>
 			</div>	
 		</div>
+	</div>
 
+	<!-- DESCRIPTION -->
+	<div id="description">
 		<p id="description-bold"></p>
 		<p id="description-normal"></p>
+	</div>
 
+	<!-- INSIDE PANELS -->
+	<div id="inside-panels">
 		<span id="inside-samples">PRZYKŁADOWE PLANSZE</span>
 		<div id="img-inside">
 			<img src="" alt="" id="inside1-thumbnail" class="inside-thumbnails gallery-img">
@@ -122,10 +134,9 @@
 			<img src="" alt="" id="inside3-thumbnail" class="inside-thumbnails">
 			<img src="" alt="" id="inside4-thumbnail" class="inside-thumbnails">
 		</div>			
-
 	</div>
 
-	</div>
+
 	<div id="fullpage" onclick="this.style.display='none';">
 		<div id="left-arrow">
 
@@ -135,7 +146,8 @@
 		</div>
 
 	</div>
-	
+</div>
+
 <footer>
 	
 </footer>	
