@@ -31,9 +31,19 @@
 </header>
 
 
+<div id="breadcrumbs">
+	<div>
+		<span>< Wróć</span>
+	</div>
+	<div>
+		<span>Katalog > Title</span>
+	</div>
+</div>
+
 <!-- Main container -->	
 <div id="container-page">
 
+	<div id="first-column">
 	<!-- COVER -->
     <div id="container-covers">
 		<img src="" alt="" id="cover-big">
@@ -43,6 +53,7 @@
 		<img src="" alt="" id="cover-alternative2-thumbnail">
 	</div>
 
+	<div id="details-panel">
 	<!-- DETAILS -->
 	<div class="details">
 		<div class="authors-role">
@@ -92,50 +103,57 @@
 			<img src="" id="related-comics">
 	</div>
 	
-	<!-- TITLE -->
-	<div id="title-section">	
-		<h1 id="title"></h1>
 	</div>
 
-	<!-- MAIN INFO -->
-	<div id="main-info">
-		<div class="authors">
-			<div class="authors-role">
-				<p>Scenariusz</p>
-				<p>Ilustracje</p>
-			</div>	
-			<div class="authors-name">
-				<p id="writer"></p>
-				<p id="art"></p>
+	</div>
+
+	<div id="second-column">
+		<!-- TITLE -->
+		<div id="title-section">	
+			<h1 id="title"></h1>
+		</div>
+
+		<!-- MAIN INFO -->
+		<div id="main-info">
+			<div class="authors">
+				<div class="authors-role">
+					<p>Scenariusz</p>
+					<p>Ilustracje</p>
+				</div>	
+				<div class="authors-name">
+					<p id="writer"></p>
+					<p id="art"></p>
+				</div>
+				<div class="authors-role">
+					<p>Tłumaczenie</p>
+					<p>Korekta</p>
+				</div>
+				<div class="authors-name">	
+					<p id="proofreader"></p>
+					<p id="translator"></p>
+				</div>	
 			</div>
-			<div class="authors-role">
-				<p>Tłumaczenie</p>
-				<p>Korekta</p>
-			</div>
-			<div class="authors-name">	
-				<p id="proofreader"></p>
-				<p id="translator"></p>
-			</div>	
+		</div>
+
+		<!-- DESCRIPTION -->
+		<div id="description">
+			<p id="description-bold"></p>
+			<p id="description-normal"></p>
+		</div>
+	
+
+
+		<!-- INSIDE PANELS -->
+		<div id="inside-panels">
+			<span id="inside-samples">PRZYKŁADOWE PLANSZE</span>
+			<div id="img-inside">
+				<img src="" alt="" id="inside1-thumbnail" class="inside-thumbnails gallery-img">
+				<img src="" alt="" id="inside2-thumbnail" class="inside-thumbnails">
+				<img src="" alt="" id="inside3-thumbnail" class="inside-thumbnails">
+				<img src="" alt="" id="inside4-thumbnail" class="inside-thumbnails">
+			</div>			
 		</div>
 	</div>
-
-	<!-- DESCRIPTION -->
-	<div id="description">
-		<p id="description-bold"></p>
-		<p id="description-normal"></p>
-	</div>
-
-	<!-- INSIDE PANELS -->
-	<div id="inside-panels">
-		<span id="inside-samples">PRZYKŁADOWE PLANSZE</span>
-		<div id="img-inside">
-			<img src="" alt="" id="inside1-thumbnail" class="inside-thumbnails gallery-img">
-			<img src="" alt="" id="inside2-thumbnail" class="inside-thumbnails">
-			<img src="" alt="" id="inside3-thumbnail" class="inside-thumbnails">
-			<img src="" alt="" id="inside4-thumbnail" class="inside-thumbnails">
-		</div>			
-	</div>
-
 
 	<div id="fullpage" onclick="this.style.display='none';">
 		<div id="left-arrow">

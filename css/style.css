@@ -143,7 +143,7 @@ a:hover {
 }
 
 .icon:hover {
-	fill: #FFFFFF;
+	filter: brightness(1.5);
 }
 
 .icon-moon, .icon-sun {
@@ -163,23 +163,19 @@ a:hover {
 	margin-left: auto;
 }
 
-.customize-text {
-	color: #000000;
-}
-
 #sort {
 	margin-left: 15px;
 }
 
 select {
     font-size: 15px;
-	text-indent: 10px;
+	padding-left: 10px;
+	margin-left: 5px;
 	background-color: #F5F5F5;
 	border: 1px solid #CBCBCB;
     border-radius: 0 10px 10px 0;
     height: 34px;
 	line-height: 1.5em;
-	padding: 0.5em 3.5em 0.5em 1em;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-image:
@@ -189,7 +185,7 @@ select {
   	background-position:
     	calc(100% - 20px) calc(1em + 2px),
     	calc(100% - 15px) calc(1em + 2px),
-    	calc(100% - 2.5em) 0.5em;
+    	calc(100% - 2.5em) 0.35em;
   	background-size:
     	5px 5px,
     	5px 5px,
@@ -205,7 +201,7 @@ select:focus {
   	background-position:
     	calc(100% - 15px) 1em,
     	calc(100% - 20px) 1em,
-    	calc(100% - 2.5em) 0.5em;
+    	calc(100% - 2.5em) 0.35em;
  	 background-size:
     	5px 5px,
     	5px 5px,
@@ -249,25 +245,17 @@ select:focus {
 	height: 318px;
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
 	background-size: cover;
+	background-repeat: no-repeat;
 	cursor: pointer;
+	filter: brightness(1);
+	outline: 0;
+/*	transition-property: filter;
+	transition-duration: 2s; */
 }
 
-.cover:after {
-	content: "text";
-	width: 100%;
-	height: 40%;
-	position: absolute;
-	bottom: 0;
-	color: white;
-	background-color: red;
-	text-align: center;
-	background-color:rgba(0, 0, 0, .4);
-	visibility: hidden;
-}
-
-
-.cover:hover .cover:after {
-	visibility: visible;
+.cover:hover {
+	outline: 2px solid #DCDCDC;
+/*	filter: brightness(0.8); */
 }
 
 .new::before {
@@ -291,7 +279,7 @@ select:focus {
 	background-color: #2D7A85;
 	top: 30px;
 	left: -50px;
-	padding: 10px 15px;
+	padding: 10px 15px 7px 15px;
 	position: relative;
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
 }
@@ -302,9 +290,12 @@ select:focus {
 	font-weight: bold;
 	color: #DCDCDC;
 	background-color: #303030;
-	padding: 10px 33px;
+	width: 400px;
+	padding: 10px 32.25px;
+	margin: auto;
 	position: relative;
-	bottom: -258px;
+	top: 50%;
+	right: 0;
 }
 
 footer {
@@ -318,30 +309,52 @@ footer {
 }
 
 /* **************** SITE PAGE **************** */ 
+
+#breadcrumbs {
+	display: inline-grid;
+	grid-template-columns: auto auto;
+	gap: 20px;
+	max-width: 800px;
+	margin: 32px auto 0 auto;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+}
+
+#breadcrumbs > * {
+	background-color: #f3f3f3;
+	border-radius: 10px 10px 0 0;
+	text-align: center;
+	padding: 0 15px;
+}
+
 #container-page {
 	max-width: 1048px;
-	height: 100%;
+	height: auto;
 	display: flex;
-	flex-flow: column wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 15px auto 30px auto;
+	margin: 0 auto 30px auto;
 	background-color: #f3f3f3;
 	border-radius: 10px;
 	border: 17px solid #000000;
 	padding: 28px;
-	flex-basis: 30%;
-	column-count: 2;
+}
+
+#first-column {
+	max-width: 475px;
+	width: auto;
 }
 
 #container-covers {
 	height: 800px;
-	width: 470px;
-	order: 1;
+	background-color: pink;
 }
 
 #cover-big {
-	width: 433px;
-	height: 580px;
+	max-width: 433px;
+	width: 100vw;
+	max-height: 580px;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
 }
 
@@ -361,25 +374,28 @@ footer {
 	color: #808080;
 }
 
+#second-column {
+	order: 2;
+	width: 470px;
+	background-color: green; 
+}
+
 #title-section {
-	max-width: 470px;
-	height: 100px;
-	order: 6;
 	text-align: center;
-	break-before: column;
 }
 
 #main-info {
-	order: 7;
-	max-width: 400px;
+	background-color: green;
 }
 
 #description {
-	order: 8;
+	order: 4;
+	background-color: red;
 }
 
 #inside-panels {
 	order: 9;
+	background-color: blue;
 }
 
 .authors {
@@ -392,17 +408,20 @@ footer {
 	vertical-align: middle;
 }
 
+#details-panel {
+	order: 3;
+}
+
 .details {
 	display: grid;
-	order: 2;
-/*	margin-right: auto; 
-	margin-top: 60px; */
+	order: 6;
 	grid-template-columns: auto auto;
 	justify-content: center;
 	line-height: 11px;
 	vertical-align: middle;
 	height: 259px;
 	align-self: flex-start;
+	background-color: lightblue;
 }
 
 .buy {
@@ -436,6 +455,7 @@ footer {
 	vertical-align: middle;
 	align-self: flex-start;
 	height: 90px;
+	background-color: brown;
 }
 
 .details-original-headline {
@@ -468,6 +488,8 @@ footer {
 #related-comics-section {
 	order: 4;
 	align-self: flex-start;
+	width: auto;
+	background-color: purple;
 }
 
 #related-comics {

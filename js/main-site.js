@@ -10,7 +10,6 @@ for (let i=0; i<Comics.length; i++) {
 
 	const mainCover = document.createElement('div');
 	mainCover.classList.add('cover');
-	mainCover.classList.add('cover-details');
 	mainContainer.appendChild(mainCover);
 
 	// Adding attributes from Comics Array to Cover Class:

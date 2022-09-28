@@ -178,7 +178,7 @@ function chooseComics(num) {
 	return;
 };
 
-chooseComics(5);
+chooseComics(0);
 
 //O - Metronom
 //1 - WiekEvy

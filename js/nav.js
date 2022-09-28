@@ -2,7 +2,7 @@
 const moon = document.getElementById('moon');
 const sun = document.getElementById('sun');
 const container = document.getElementById('container');
-const customizeText = document.querySelectorAll('.customize-text');
+const customize = document.getElementById('customize');
 
 // Dark and light mode - functions
 moon.addEventListener('click', function() {
@@ -10,7 +10,7 @@ moon.addEventListener('click', function() {
 	sun.style.display = "inline";
 	moon.style.display = "none";
 	container.style.backgroundColor = "#121212";
-	//customizeText.style.color = "white";
+	customize.style.color = "#d7d7d7";
 });
 
 sun.addEventListener('click', function() {
@@ -18,6 +18,7 @@ sun.addEventListener('click', function() {
 	sun.style.display = "none";
 	moon.style.display = "inline";
 	container.style.backgroundColor = "#E7E9EC";
+	customize.style.color = "#000000";
 });
 
 // Search button
