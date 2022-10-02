@@ -97,17 +97,17 @@ function chooseComics(num) {
 
 	// Inside 2
 	const comicsInside2 = Comics[num].img.inside2;
-	Comics[num].img.inside2
+
 	document.getElementById('inside2-thumbnail').src = `${comicsInside2}`;
 	
 	// Inside 3
 	const comicsInside3 = Comics[num].img.inside3;
-	Comics[num].img.inside3
+
 	document.getElementById('inside3-thumbnail').src = `${comicsInside3}`;
 
 	// Inside 4
 	const comicsInside4 = Comics[num].img.inside4;
-	Comics[num].img.inside4
+
 	document.getElementById('inside4-thumbnail').src = `${comicsInside4}`;
 
 	// Description Bold
@@ -172,13 +172,16 @@ function chooseComics(num) {
 	// Related Comics
 	const comicsRelatedComics = Comics[num].relatedComics.img1;
 	if (comicsRelatedComics != null) {
+	document.getElementById('related-comics-section').style.display = "block";
 	document.getElementById('related-comics').src = `${comicsRelatedComics}`;
 	};
 
 	return;
 };
 
-chooseComics(0);
+
+
+chooseComics(3);
 
 //O - Metronom
 //1 - WiekEvy
@@ -201,5 +204,6 @@ const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
 leftArrow.addEventListener('click', function() {
-console.log("Działa");
+	fullPage.style.backgroundImage = 'url(' + img.src[+1] + ')';
+	fullPage.style.display = 'block';
 });

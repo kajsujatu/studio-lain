@@ -45,7 +45,7 @@ export const Comics = [
 				},
 			relatedComics: 
 				{
-				img1: ""
+				
 				},				
 			filter: "antologie-integrale",
 			new: false,		
@@ -98,7 +98,7 @@ export const Comics = [
 				},
 			relatedComics: 
 				{
-				img1: ""
+				
 				},				
 			filter: "antologie-integrale",
 			new: false,		
@@ -151,7 +151,7 @@ export const Comics = [
 				},
 			relatedComics: 
 				{
-				img1: ""
+				
 				},
 			filter: "antologie-integrale",
 			new: true,		
@@ -169,7 +169,8 @@ export const Comics = [
 			proofreader: "Łukasz Sosiński, Kasia Mała",
 			description:
 				{
-				normal: `Wspaniale zilustrowane dark fantasy dla dorosłych. Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na runku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu.
+				bold: "Wspaniale zilustrowane dark fantasy dla dorosłych.",
+				normal: `Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na rynku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu.
 				Opowieść rozgrywa się w roku 1100 naszej ery. Główną bohaterką jest mała irlandzka dziewczynka imieniem Luaine. Jej rodzina zostaje napadnięta przez stwory z innego świata. Ojciec ginie, a matka i dziadek zostają porwani do innego wymiaru, gdzie rządzi mroczna bestia Balor. Szczęśliwym zbiegiem okoliczności dziewczynka zostaje przygarnięta przez Korriganów, plemię, będące skrzyżowaniem krasnoludów z czarownicami. Wraz z nimi Luaine podejmuje próbę odnalezienia swoich bliskich…`
 				},
 			img: 
@@ -203,7 +204,7 @@ export const Comics = [
 				},
 			relatedComics: 
 				{
-				img1: ""
+				
 				},
 			filter: "antologie-integrale",
 			new: false,		
@@ -309,7 +310,7 @@ export const Comics = [
 					},
 				relatedComics: 
 					{
-					img1: ""
+					
 					},
 				filter: "antologie-integrale",
 				new: false,		

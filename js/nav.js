@@ -3,6 +3,8 @@ const moon = document.getElementById('moon');
 const sun = document.getElementById('sun');
 const container = document.getElementById('container');
 const customize = document.getElementById('customize');
+/* const containerPage = document.getElementById('container-page'); 
+const textColor = document.querySelectorAll('p'); */
 
 // Dark and light mode - functions
 moon.addEventListener('click', function() {
@@ -11,6 +13,8 @@ moon.addEventListener('click', function() {
 	moon.style.display = "none";
 	container.style.backgroundColor = "#121212";
 	customize.style.color = "#d7d7d7";
+	containerPage.style.backgroundColor = "#121212";
+	textColor.style.color = "#FFFFFF";
 });
 
 sun.addEventListener('click', function() {
