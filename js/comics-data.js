@@ -103,7 +103,7 @@ export const Comics = [
 			filter: "antologie-integrale",
 			new: false,		
 			availability: true,
-			url: "../komiks/comics-site.html"			
+			url: "../komiks/wiek-evy.html"			
 		},		
 
 	// Duam 
@@ -156,7 +156,7 @@ export const Comics = [
 			filter: "antologie-integrale",
 			new: true,		
 			availability: true,
-			url: "../komiks/comics-site.html"			
+			url: "../komiks/duam.html"			
 		},
 
 	// Korriganie
@@ -209,7 +209,7 @@ export const Comics = [
 			filter: "antologie-integrale",
 			new: false,		
 			availability: true,
-			url: "../komiks/comics-site.html"
+			url: "../komiks/korriganie.html"
 		},
 	
 	// Brygada
@@ -262,7 +262,7 @@ export const Comics = [
 			filter: "enrique-fernandez",
 			new: false,		
 			availability: true,
-			url: "../komiks/comics-site.html"
+			url: "../komiks/brygada.html"
 		},
 
 	// Armie zdobywcy
@@ -315,6 +315,6 @@ export const Comics = [
 				filter: "antologie-integrale",
 				new: false,		
 				availability: false,
-				url: "../komiks/comics-site.html"
+				url: "../komiks/armie-zdobywcy.html"
 			}
 ];

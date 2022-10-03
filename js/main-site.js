@@ -57,7 +57,6 @@ for (let i=0; i<Comics.length; i++) {
 		const filtersInput = document.getElementById('filters-input');	
 		//const mainCoverFilter = document.querySelectorAll('[data-filter]');
 
-
 		filtersInput.addEventListener('change', function() {
 				if (mainCover.classList.contains(`${filtersInput.value}`) != true) {
 					mainCover.style.display = "none";
@@ -67,11 +66,4 @@ for (let i=0; i<Comics.length; i++) {
 				};
 		});
 
-
-
 };
-
-// const zonk = document.getElementById('test');
-
-// const zonk2 = document.getElementById('test2');
-

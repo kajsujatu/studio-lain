@@ -180,24 +180,10 @@ function chooseComics(num) {
 	document.getElementById('related-comics-section').style.display = "block";
 	document.getElementById('related-comics').src = `${comicsRelatedComics}`;
 	};
-			
+
+				
 	return;
 };
-
-// Back link
-	const backLinkTop = document.getElementById('back-link-top');
-	
-	console.log(backLinkTop);
-
-
-	backLinkTop.setAttribute("href", "history.back()");
-
-
-
-
-	
-
-
 
 //const windowUrl = window.location.href;
 
@@ -209,13 +195,10 @@ function chooseComics(num) {
 //			console.log('blabla');
 //}
 
-function siteCom(i) {
-if (window.location.pathname = Comics[i].url) {	
-	chooseComics(i);
-};
+// if (window.location.href = Comics[0].url) {	
+// 	chooseComics(0);
+// };
 
-
-siteCom(i);
 
 
 //const comicsMetronom = Comics[0].url;
@@ -228,7 +211,7 @@ siteCom(i);
 
 // chooseComics(4);
 
-// chooseComics(0);
+chooseComics(2);
 
 //O - Metronom
 //1 - WiekEvy

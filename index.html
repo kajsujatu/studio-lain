@@ -14,24 +14,32 @@
 </head>
 <body>
 
-<!-- Site header: Logo, sections, icons (fb, search, dark mode) -->
-<!-- Divs in navigation change to list -->
-<header class="site-header">
+<!-- Navigation: Logo, sections, icons (fb, search, dark mode) -->
+<nav class="navbar">
 	<a href="index.html"><img id="logo" src="img/studio-lain_logo.jpg" alt="Logo Studio Lain"></a>
-	<nav class="main-nav">
-		<div><a href="" aria-current="page">katalog</a></div>
-		<div><a href="">blog</a></div>
-		<div><a href="">o nas</a></div>
-		<div id="facebook"><a href=""><img class="icon" src="img/icon-facebook.svg" alt="Facebook icon"></a></div>
-	</nav>
-	
-		<div id="search">
-			<input id="search-input">
-			<img class="icon" src="img/icon-search.svg" alt="Wyszukaj">
-		</div>
+
+	<div class="navbar-links">
+		<ul>
+			<li><a href="" class="current-page">katalog</a></li>
+			<li><a href="">blog</a></li>
+			<li><a href="">o nas</a></li>
+			<li id="facebook"><a href=""><img class="icon" src="img/icon-facebook.svg" alt="Facebook icon"></a></li>
+		</ul>
+	</div>
+
+	<a href="#" class="toggle-button">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</a>
+
+	<div id="search">
+		<input id="search-input">
+		<img class="icon" src="img/icon-search.svg" alt="Wyszukaj">
+	</div>
 		<div id="moon"><img class="icon icon-moon" src="img/icon-moon.svg" alt="Tryb nocny"></div>
 		<div id="sun"><img class="icon icon-sun" src="img/icon-sun.svg" alt="Tryb dzienny"></div>
-</header>
+</nav>
 
 
 <!-- Customize options: sort, filters -->
@@ -84,10 +92,6 @@
 	
 <footer>
 	Copyright © 2022 Studio Lain
-
-<!--	<button data-filter=".antologie-integrale" id="test" style="width: 300px; height: 40px;">Najstarsze</button>
-
-	<button id="test2" style="width: 300px; height: 40px;">Alfabetycznie</button> -->
 </footer>	
 </body>
 </html>
