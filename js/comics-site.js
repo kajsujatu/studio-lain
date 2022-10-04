@@ -5,6 +5,13 @@ import {
 
 
 
+// Back link
+const backLinkTop = document.getElementById('back-link-top');
+backLinkTop.addEventListener('click', function() {
+	history.back();
+});
+
+
 // Choose number of Comics and fill divs with data
 function chooseComics(num) {
 	
@@ -184,16 +191,6 @@ function chooseComics(num) {
 	return;
 };
 
-// Back link
-	const backLinkTop = document.getElementById('back-link-top');
-	
-	console.log(backLinkTop);
-
-
-	backLinkTop.setAttribute("href", "history.back()");
-
-
-
 
 	
 
@@ -209,13 +206,24 @@ function chooseComics(num) {
 //			console.log('blabla');
 //}
 
-function siteCom(i) {
+//function siteCom(i) {
+
+
+		
+for (let i=0; i<Comics.length-2; i++) {
+
 if (window.location.pathname = Comics[i].url) {	
 	chooseComics(i);
+
+	window.stop()
+
+	console.log(pathNum);
+	console.log(window.location.pathname);
+	console.log(Comics[i].url);
+	};
+
 };
-
-
-siteCom(i);
+	//};
 
 
 //const comicsMetronom = Comics[0].url;

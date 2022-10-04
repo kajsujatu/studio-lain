@@ -103,7 +103,7 @@ export const Comics = [
 			filter: "antologie-integrale",
 			new: false,		
 			availability: true,
-			url: "../komiks/wiek-evy.html"			
+			url: "../komiks/comics-site.html"			
 		},		
 
 	// Duam 
