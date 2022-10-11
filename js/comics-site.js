@@ -104,23 +104,26 @@ function chooseComics(num) {
 	// Inside 1
 	const comicsInside1 = Comics[num].img.inside1;
 	const comicsInside1Alt = Comics[num].img.inside1Alt;
-	document.getElementById('inside1-thumbnail').src = `${comicsInside1}`;
-	document.getElementById('inside1-thumbnail').setAttribute("alt",`${comicsInside1Alt}`);
+	document.getElementsByClassName('inside-thumbnails')[0].src = `${comicsInside1}`;
+	document.getElementsByClassName('inside-thumbnails')[0].setAttribute("alt",`${comicsInside1Alt}`);
 
 	// Inside 2
 	const comicsInside2 = Comics[num].img.inside2;
 
-	document.getElementById('inside2-thumbnail').src = `${comicsInside2}`;
+	document.getElementsByClassName('inside-thumbnails')[1].src = `${comicsInside2}`;
 	
 	// Inside 3
 	const comicsInside3 = Comics[num].img.inside3;
 
-	document.getElementById('inside3-thumbnail').src = `${comicsInside3}`;
+	document.getElementsByClassName('inside-thumbnails')[2].src = `${comicsInside3}`;
 
 	// Inside 4
 	const comicsInside4 = Comics[num].img.inside4;
 
-	document.getElementById('inside4-thumbnail').src = `${comicsInside4}`;
+	if (comicsInside4 != null) {
+	//	document.getElementById('inside4-thumbnail').style.display = "block";
+	document.getElementsByClassName('inside-thumbnails')[3].src = `${comicsInside4}`;
+	}
 
 	// Description Bold
 
@@ -209,21 +212,27 @@ function chooseComics(num) {
 //function siteCom(i) {
 
 
-		
-for (let i=0; i<Comics.length-2; i++) {
+	//	!!!!!!!!!!!!!!!!
+//for (let i=0; i<Comics.length-2; i++) {
+//
+//if (window.location.pathname = Comics[i].url) {	
+//	chooseComics(i);
+//
+//	window.stop()
+//
+//	console.log(pathNum);
+//	console.log(window.location.pathname);
+//	console.log(Comics[i].url);
+//	};
+//
+//};
 
-if (window.location.pathname = Comics[i].url) {	
-	chooseComics(i);
 
-	window.stop()
 
-	console.log(pathNum);
-	console.log(window.location.pathname);
-	console.log(Comics[i].url);
-	};
+chooseComics(0);
 
-};
-	//};
+
+//	//};
 
 
 //const comicsMetronom = Comics[0].url;
@@ -248,17 +257,46 @@ function getPics() {}
 const imgs = document.querySelectorAll('.gallery-img');
 const fullPage = document.querySelector('#fullpage');
 
+const leftArrow = document.getElementById('left-arrow');
+const rightArrow = document.getElementById('right-arrow');
+
 imgs.forEach(img => {
   img.addEventListener('click', function() {
     fullPage.style.backgroundImage = 'url(' + img.src + ')';
     fullPage.style.display = 'block';
   });
+
+
+  leftArrow.addEventListener('click', function() {
+	fullPage.style.backgroundImage = 'url(' + img.previousElementSibling.src + ')';
+	fullPage.style.display = 'block';
 });
 
-const leftArrow = document.getElementById('left-arrow');
-const rightArrow = document.getElementById('right-arrow');
+rightArrow.addEventListener('click', function() {
+	fullPage.style.backgroundImage = 'url(' + img.nextElementSibling.src + ')';
+	fullPage.style.display = 'block';
+});
 
-leftArrow.addEventListener('click', function() {
+
+});
+
+
+//leftArrow.addEventListener('click', function() {
+//	fullPage.style.backgroundImage = 'url(' + imgs[2].previousElementSibling.src + ')';
+//	fullPage.style.display = 'block';
+//});
+
+rightArrow.addEventListener('click', function() {
 	fullPage.style.backgroundImage = 'url(' + img.src[+1] + ')';
 	fullPage.style.display = 'block';
 });
+
+
+
+
+
+
+
+
+
+

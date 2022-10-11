@@ -697,7 +697,7 @@ h1.title {
 #fullpage {
 	display: none;
 	position: fixed;
-	z-index: 9999;
+	z-index: 999;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -711,16 +711,19 @@ h1.title {
   #left-arrow {
 	height: 100%;
 	width: 10%;
-	position: relative;
+	position: absolute;
 	left: 0;
+	background-color: red;
+	z-index: 9999;
   }
 
   #right-arrow {
 	height: 100%;
 	width: 10%;
-	position: relative;
+	position: absolute;
 	right: 0;
 	background-color: green;
+	z-index: 9999;
 }
 
 .current-page {

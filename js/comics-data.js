@@ -23,7 +23,7 @@ export const Comics = [
 				inside1: "../img/komiks/metronom/metronom_inside1.jpg",
 				inside2: "../img/komiks/metronom/metronom_inside2.jpg",
 				inside3: "../img/komiks/metronom/metronom_inside3.jpg",
-				inside4: "../img/komiks/metronom/metronom_inside4.jpg"
+				inside4: ""
 				},
 			details:
 				{
