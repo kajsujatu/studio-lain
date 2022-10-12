@@ -555,11 +555,6 @@ h1.title {
 /*	background-color: green; */
 }
 
-#description {
-	order: 4;
-/*	background-color: red; */
-}
-
 #inside-panels {
 	order: 9;
 /*	background-color: blue; */
@@ -668,9 +663,10 @@ h1.title {
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
 }
 
-#description-bold {
-	margin-top: 30px; 
-	font-weight: 700;
+#description {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	line-height: 1.6rem;
 }
 
 #img-inside {
@@ -694,10 +690,9 @@ h1.title {
 	margin-right: 6px;
 }
 
-#fullpage {
+#fullpage-container {
 	display: none;
 	position: fixed;
-	z-index: 999;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -705,25 +700,40 @@ h1.title {
 	background-size: auto auto;
 	background-repeat: no-repeat no-repeat;
 	background-position: center center;
-	background-color: black;
+	background-color: var(--main-color);
+	cursor: pointer;
   }
 
-  #left-arrow {
+#img-inside-big {
+	width: 80%;
 	height: 100%;
+	position: absolute;
+	left: 10%;	
+  }
+
+ .arrows {
+	top: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40%;
 	width: 10%;
 	position: absolute;
+	background-color: #303030;
+	cursor: pointer;
+	font-size: 10rem;
+  }
+
+ .arrows:hover {
+	background-color: #181818;
+}
+
+ #left-arrow {
 	left: 0;
-	background-color: red;
-	z-index: 9999;
   }
 
-  #right-arrow {
-	height: 100%;
-	width: 10%;
-	position: absolute;
+ #right-arrow {
 	right: 0;
-	background-color: green;
-	z-index: 9999;
 }
 
 .current-page {

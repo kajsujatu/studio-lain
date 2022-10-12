@@ -101,40 +101,53 @@ function chooseComics(num) {
 		};
 	});
 
-	// Inside 1
-	const comicsInside1 = Comics[num].img.inside1;
-	const comicsInside1Alt = Comics[num].img.inside1Alt;
-	document.getElementsByClassName('inside-thumbnails')[0].src = `${comicsInside1}`;
-	document.getElementsByClassName('inside-thumbnails')[0].setAttribute("alt",`${comicsInside1Alt}`);
+
+	const imagesInside = document.getElementById('img-inside');
+
+
+	const comicsInsideImages = Comics[num].img.insidePanels;
+
+	for (let i=0; i<Object.values(comicsInsideImages).length; i++) {
+
+	const comicsInside = document.createElement('img');
+	comicsInside.classList.add('inside-thumbnails');
+	imagesInside.appendChild(comicsInside);
+
+	comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
+
+	};
+	// const comicsInside1Alt = Comics[num].img.inside1Alt;
+	//document.getElementsByClassName('inside-thumbnails')[0].src = `${comicsInside1}`;
+	//document.getElementsByClassName('inside-thumbnails')[0].setAttribute("alt",`${comicsInside1Alt}`);
 
 	// Inside 2
-	const comicsInside2 = Comics[num].img.inside2;
+//	const comicsInside2 = document.createElement('img');
+//	comicsInside2.classList.add('inside-thumbnails');
+//	imagesInside.appendChild(comicsInside2);
+//
+//	comicsInside2.src = Comics[num].img.inside2;
 
-	document.getElementsByClassName('inside-thumbnails')[1].src = `${comicsInside2}`;
+
+	
+
+
+	//document.getElementsByClassName('inside-thumbnails')[1].src = `${comicsInside2}`;
 	
 	// Inside 3
-	const comicsInside3 = Comics[num].img.inside3;
-
-	document.getElementsByClassName('inside-thumbnails')[2].src = `${comicsInside3}`;
+	//	const comicsInside3 = Comics[num].img.inside3;
+	//document.getElementsByClassName('inside-thumbnails')[2].src = `${comicsInside3}`;
 
 	// Inside 4
-	const comicsInside4 = Comics[num].img.inside4;
+	 // const comicsInside4 = Comics[num].img.inside4;
 
-	if (comicsInside4 != null) {
+	// if (comicsInside4 != null) {
 	//	document.getElementById('inside4-thumbnail').style.display = "block";
-	document.getElementsByClassName('inside-thumbnails')[3].src = `${comicsInside4}`;
-	}
+	// document.getElementsByClassName('inside-thumbnails')[3].src = `${comicsInside4}`;
+	//}
 
-	// Description Bold
-
-	const comicsDescriptionBold = Comics[num].description.bold;
-	if (comicsDescriptionBold != null) {
-	document.getElementById('description-bold').innerHTML = comicsDescriptionBold;
-	};
-
-	// Description Normal
-	const comicsDescriptionNormal = Comics[num].description.normal;
-	document.getElementById('description-normal').innerHTML = comicsDescriptionNormal;
+	// Description
+	const comicsDescription = Comics[num].description;
+	document.getElementById('description').innerHTML = comicsDescription;
 
 	// Details Format
 	const comicsDetailsFormat = Comics[num].details.format;
@@ -229,8 +242,14 @@ function chooseComics(num) {
 
 
 
-chooseComics(0);
+chooseComics(1);
 
+//O - Metronom
+//1 - WiekEvy
+//2 - Duam
+//3 - Korriganie
+//4 - Brygada
+//5 - Armie zdobywcy
 
 //	//};
 
@@ -243,53 +262,62 @@ chooseComics(0);
 //	console.log('blabla');
 //};
 
-// chooseComics(4);
 
-// chooseComics(0);
 
-//O - Metronom
-//1 - WiekEvy
-//2 - Duam
-//3 - Korriganie
-//4 - Brygada
 
-function getPics() {}
-const imgs = document.querySelectorAll('.gallery-img');
-const fullPage = document.querySelector('#fullpage');
-
+const imgs = document.getElementsByClassName('inside-thumbnails');
+const fullPageContainer = document.getElementById('fullpage-container');
+const imgInsideBig = document.getElementById('img-inside-big');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
-imgs.forEach(img => {
-  img.addEventListener('click', function() {
-    fullPage.style.backgroundImage = 'url(' + img.src + ')';
-    fullPage.style.display = 'block';
-  });
+//imgs.forEach(img => {
+for(let img of imgs) {
+
+	img.addEventListener('click', function() {
+		fullPageContainer.style.display = 'block';
+    	fullPageContainer.style.backgroundImage = 'url(' + img.src + ')';
+  	});
+
+  	imgInsideBig.addEventListener('click', function() {
+		fullPageContainer.style.display = 'none';
+	});
 
 
-  leftArrow.addEventListener('click', function() {
-	fullPage.style.backgroundImage = 'url(' + img.previousElementSibling.src + ')';
-	fullPage.style.display = 'block';
-});
+	//for (let i=0; i<imgs.length; i++) {
 
-rightArrow.addEventListener('click', function() {
-	fullPage.style.backgroundImage = 'url(' + img.nextElementSibling.src + ')';
-	fullPage.style.display = 'block';
-});
+	leftArrow.addEventListener('click', function() {
+		//fullPageContainer.style.display = 'block';
+		let prevImage = fullPageContainer.style.backgroundImage = 'url(' + img.previousElementSibling.src + ')';
+		prevImage = ullPageContainer.style.backgroundImage = 'url(' + img.src + ')';
+	});
+	
+	rightArrow.addEventListener('click', function() {
+		//fullPageContainer.style.display = 'block';
+		fullPageContainer.style.backgroundImage = 'url(' + img.nextElementSibling.src + ')';
+	});
 
 
-});
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //leftArrow.addEventListener('click', function() {
 //	fullPage.style.backgroundImage = 'url(' + imgs[2].previousElementSibling.src + ')';
 //	fullPage.style.display = 'block';
 //});
-
-rightArrow.addEventListener('click', function() {
-	fullPage.style.backgroundImage = 'url(' + img.src[+1] + ')';
-	fullPage.style.display = 'block';
-});
 
 
 

@@ -8,11 +8,7 @@ export const Comics = [
 			art: "Grun",
 			translator: "Anna Winiarska",
 			proofreader: "Bartłomiej Wiśniewski, Słowobraz",
-			description:
-				{
-				bold: "Komiks polecany przez samego Enki Bilala, autora m.in. kultowej Trylogii Nikopola. Mistrz europejskiego komiksu napisał w przedmowie - Wchodzimy do szarej strefy, która, tak jak być powinno, jest naszym lustrzanym odbiciem i w której widać zmagającego się z rzeczywistością człowieka. To świat zarazem bliski i odległy, znajomy i niepokojący, doświadczony przez kolejne kryzysy, lecz zasadniczo stojący w miejscu. Tak było wczoraj, tak będzie jutro, bez dwóch zdań.",
-				normal: "Niedaleka przyszłość. Totalitaryzm został przebrany w szaty demokracji bezpośredniej. Każdy system ma jednak luki, a za puszczeniem rewolucyjnego domina w ruch często stoi zwykły przypadek. Młoda kobieta o imieniu Lynn szuka informacji o swoim mężu. Nie wrócił z kosmicznej misji na jednej ze stacji orbitalnych. Dążenie do odkrycia, co naprawdę się wydarzyło, sprawi, że uruchomione zostaną siły, które zachwieją nie tylko jej światem. Czy jednostka ma szanse w starciu z bezwzględnym systemem? Czy rewolucja zawsze zżera swój własny ogon? Czy prawda faktycznie wyzwala?"
-				},
+			description: "<p><b>Komiks polecany przez samego <i>Enki Bilala</i>, autora m.in. kultowej <i>Trylogii Nikopola</i>.</b> Mistrz europejskiego komiksu napisał w przedmowie - <i>Wchodzimy do szarej strefy, która, tak jak być powinno, jest naszym lustrzanym odbiciem i w której widać zmagającego się z rzeczywistością człowieka. To świat zarazem bliski i odległy, znajomy i niepokojący, doświadczony przez kolejne kryzysy, lecz zasadniczo stojący w miejscu. Tak było wczoraj, tak będzie jutro, bez dwóch zdań.</i> </p><p> Niedaleka przyszłość. Totalitaryzm został przebrany w szaty demokracji bezpośredniej. Każdy system ma jednak luki, a za puszczeniem rewolucyjnego domina w ruch często stoi zwykły przypadek. Młoda kobieta o imieniu Lynn szuka informacji o swoim mężu. Nie wrócił z kosmicznej misji na jednej ze stacji orbitalnych. Dążenie do odkrycia, co naprawdę się wydarzyło, sprawi, że uruchomione zostaną siły, które zachwieją nie tylko jej światem. Czy jednostka ma szanse w starciu z bezwzględnym systemem? Czy rewolucja zawsze zżera swój własny ogon? Czy prawda faktycznie wyzwala?</p>",
 			img: 
 				{
 				coverMainSite: "../img/komiks/metronom/metronom_cover_main-site.jpg",
@@ -61,11 +57,7 @@ export const Comics = [
 			art: "Bernard Yslaire",
 			translator: "Jacek i Przemysław Barteccy",
 			proofreader: "Mała Kasia",
-			description:
-				{
-				bold: "Komiksowe arcydzieło, opus magnum Yslaire'a, autora świetnie znanego polskiemu czytelnikowi z cyklu Sambre. W tym komiksie mierzy się on z historią poprzedniego wieku, wieku cudów, ale i milionów ofiar.",
-				normal: "Prawie 100-letnia psychoanalityk Eva Stern, uczennica Freuda, zaczyna otrzymywać anonimowe multimedialne wiadomości. Zawierają one serie zdjęć pokazujących wojny, nazizm, bolszewizm, podbój kosmosu i tym podobne. Rzekomo miał je zrobić brat kobiety, który oficjalnie zginął jednak w 1916 roku. Ten rebus będzie musiała rozgryźć umierająca kobieta i kilka innych osób. To historia o wieczności, miłości, szaleństwie, wolności, idei, która pokonuje śmierć, o kłamstwie, o prawdzie, o nieśmiertelności, o wojnie. O XX wieku, o fejkach i post prawdzie zanim te słowa powstały. Od strony wizualnej komiks zachwyca nietuzinkową oprawą, pięknym malarskim stylem i eksperymentami z gatunkiem. Pozycja ta uznana została za dzieło sztuki komiksowej. Polskie wydanie to kompletny i zamknięty zbiór pięciu albumów, wydanych w powiększonym formacie."  
-				},
+			description: "<p><b>Komiksowe arcydzieło, opus magnum <i>Yslaire'a</i>, autora świetnie znanego polskiemu czytelnikowi z cyklu <i>Sambre</i>.</b> W tym komiksie mierzy się on z historią poprzedniego wieku, wieku cudów, ale i milionów ofiar.</p><p>Prawie 100-letnia psychoanalityk Eva Stern, uczennica Freuda, zaczyna otrzymywać anonimowe multimedialne wiadomości. Zawierają one serie zdjęć pokazujących wojny, nazizm, bolszewizm, podbój kosmosu i tym podobne. Rzekomo miał je zrobić brat kobiety, który oficjalnie zginął jednak w 1916 roku. Ten rebus będzie musiała rozgryźć umierająca kobieta i kilka innych osób. To historia o wieczności, miłości, szaleństwie, wolności, idei, która pokonuje śmierć, o kłamstwie, o prawdzie, o nieśmiertelności, o wojnie. O XX wieku, o fejkach i post prawdzie zanim te słowa powstały.</p><p> Od strony wizualnej komiks zachwyca nietuzinkową oprawą, pięknym malarskim stylem i eksperymentami z gatunkiem. Pozycja ta uznana została za dzieło sztuki komiksowej. Polskie wydanie to kompletny i zamknięty zbiór pięciu albumów, wydanych w powiększonym formacie.</p>",
 			img: 
 				{
 				coverMainSite: "../img/komiks/wiek-evy/wiek-evy_okladka_regularna.jpg",
@@ -73,11 +65,14 @@ export const Comics = [
 				coverRegularThumbnail: "../img/komiks/wiek-evy/wiek-evy_okladka_regularna.jpg",
 				coverAlternative1: "../img/komiks/wiek-evy/wiek-evy_okladka_alternatywna1.jpg",
 				coverAlternative2: "../img/komiks/wiek-evy/wiek-evy_okladka_alternatywna2.jpg",
-				inside1: "../img/komiks/wiek-evy/wiek-evy_str1.jpg",
-				inside2: "../img/komiks/wiek-evy/wiek-evy_str2.jpg",
-				inside3: "../img/komiks/wiek-evy/wiek-evy_str3.jpg",
-				inside4: "../img/komiks/wiek-evy/wiek-evy_str4.jpg"
-				},
+				insidePanels:
+					{
+					inside1: "../img/komiks/wiek-evy/wiek-evy_str1.jpg",
+					inside2: "../img/komiks/wiek-evy/wiek-evy_str2.jpg",
+					inside3: "../img/komiks/wiek-evy/wiek-evy_str3.jpg",
+					inside4: "../img/komiks/wiek-evy/wiek-evy_str4.jpg"
+					},
+				},	
 			details:
 				{
 				format: "240x320 mm",
