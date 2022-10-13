@@ -104,16 +104,15 @@ function chooseComics(num) {
 
 	const imagesInside = document.getElementById('img-inside');
 
-
 	const comicsInsideImages = Comics[num].img.insidePanels;
 
 	for (let i=0; i<Object.values(comicsInsideImages).length; i++) {
 
-	const comicsInside = document.createElement('img');
-	comicsInside.classList.add('inside-thumbnails');
-	imagesInside.appendChild(comicsInside);
+		const comicsInside = document.createElement('img');
+		comicsInside.classList.add('inside-thumbnails');
+		imagesInside.appendChild(comicsInside);
 
-	comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
+		comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
 
 	};
 	// const comicsInside1Alt = Comics[num].img.inside1Alt;
@@ -208,7 +207,7 @@ function chooseComics(num) {
 };
 
 
-	
+console.log(Object.values(Comics[0].img.insidePanels));
 
 
 
@@ -242,7 +241,7 @@ function chooseComics(num) {
 
 
 
-chooseComics(1);
+chooseComics(2);
 
 //O - Metronom
 //1 - WiekEvy
@@ -265,39 +264,55 @@ chooseComics(1);
 
 
 
+// gallery
 const imgs = document.getElementsByClassName('inside-thumbnails');
 const fullPageContainer = document.getElementById('fullpage-container');
 const imgInsideBig = document.getElementById('img-inside-big');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
-//imgs.forEach(img => {
-for(let img of imgs) {
+for (let img of imgs) {
 
+	// enlarge image
 	img.addEventListener('click', function() {
 		fullPageContainer.style.display = 'block';
     	fullPageContainer.style.backgroundImage = 'url(' + img.src + ')';
+		let currentImage = this;
+
+		// left arrow
+		leftArrow.addEventListener('click', prevImage);
+		function prevImage() {
+			currentImage = currentImage.previousElementSibling;
+			if (currentImage != null) {
+			fullPageContainer.style.backgroundImage = 'url(' + currentImage.src + ')';
+			} else { 
+				leftArrow.removeEventListener('click', prevImage);
+				leftArrow.style.display = "none";
+			};
+		};
+
+		// right arrow
+		rightArrow.addEventListener('click', nextImage);
+		function nextImage() {
+			currentImage = currentImage.nextElementSibling;
+			if (currentImage != null) {
+			fullPageContainer.style.backgroundImage = 'url(' + currentImage.src + ')';
+			} else if
+				(currentImage = imgs[imgs.length-1]) {
+					console.log('ostatnie');
+				//rightArrow.style.backgroundColor = "red";
+				}
+				else { 
+				rightArrow.removeEventListener('click', nextImage);
+				rightArrow.style.display = "none";
+			};
+		};
   	});
 
+	// close full-page
   	imgInsideBig.addEventListener('click', function() {
 		fullPageContainer.style.display = 'none';
 	});
-
-
-	//for (let i=0; i<imgs.length; i++) {
-
-	leftArrow.addEventListener('click', function() {
-		//fullPageContainer.style.display = 'block';
-		let prevImage = fullPageContainer.style.backgroundImage = 'url(' + img.previousElementSibling.src + ')';
-		prevImage = ullPageContainer.style.backgroundImage = 'url(' + img.src + ')';
-	});
-	
-	rightArrow.addEventListener('click', function() {
-		//fullPageContainer.style.display = 'block';
-		fullPageContainer.style.backgroundImage = 'url(' + img.nextElementSibling.src + ')';
-	});
-
-
 };
 
 
@@ -307,24 +322,15 @@ for(let img of imgs) {
 
 
 
-
-
-
-
-
-
+//
+//rightArrow.addEventListener('click', function() {
+//	//fullPageContainer.style.display = 'block';
+//	fullPageContainer.style.backgroundImage = 'url(' + nextElementSibling.src + ')';
+//});
 
 //leftArrow.addEventListener('click', function() {
 //	fullPage.style.backgroundImage = 'url(' + imgs[2].previousElementSibling.src + ')';
 //	fullPage.style.display = 'block';
 //});
-
-
-
-
-
-
-
-
 
 

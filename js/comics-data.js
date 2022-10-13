@@ -16,11 +16,13 @@ export const Comics = [
 				coverRegularThumbnail: "../img/komiks/metronom/metronom_cover_regular-max.jpg",
 				coverAlternative1: "../img/komiks/metronom/metronom_cover_alternative1.jpg",
 				coverAlternative2: "../img/komiks/metronom/metronom_cover_alternative2.jpg",
-				inside1: "../img/komiks/metronom/metronom_inside1.jpg",
-				inside2: "../img/komiks/metronom/metronom_inside2.jpg",
-				inside3: "../img/komiks/metronom/metronom_inside3.jpg",
-				inside4: ""
-				},
+				insidePanels:
+					{
+					inside1: "../img/komiks/metronom/metronom_inside1.jpg",
+					inside2: "../img/komiks/metronom/metronom_inside2.jpg",
+					inside3: "../img/komiks/metronom/metronom_inside3.jpg",
+					},
+				},	
 			details:
 				{
 				format: "210x295 mm",
@@ -109,12 +111,7 @@ export const Comics = [
 			art: "Felix Vega",
 			translator: "-",
 			proofreader: "-",
-			description:
-				{
-				normal: "Ludzie i bogowie toczyli wojnę o panowanie nad światem. Okrutną i zaciętą. Bezkompromisową i krwawą. Kiedy ludzie odnaleźli kryształy, które spadły z nieba, szala przechyliła się na ich stronę. Wtedy zawarto rozejm. Bogowie obiecali, że będą zjadać dusze tylko tych, którzy umarli, a ludzie mieli się im nie przeciwstawiać. Rozejm właśnie został złamany..." +
- 				`\n Duam\n jest potężną szamanką. Jako dziecko nie potrafiła pogodzić się ze śmiercią bliskich jej istot. Zdobyła więc jeden z kamieni światła, by przywracać do życia tych, którzy odeszli. Zapłaciła jednak za to wysoką cenę, sama jeszcze nie wie, jak wielką.` +
-				"Razem z gwiazdą hiszpańskiego komiksu Féliksem Vegą wyrusz w niezwykłą podróż po okrutnym, ale i pięknym świecie, gdzie ludzie znów stają naprzeciwko bogów. Historia inspirowana jest wierzeniami Indian Mapuche, a okraszona została przepięknymi ilustracjami godnymi największych mistrzów komiksu.",
-				},
+			description: "<b>Ludzie i bogowie toczyli wojnę o panowanie nad światem. Okrutną i zaciętą. Bezkompromisową i krwawą.</b> Kiedy ludzie odnaleźli kryształy, które spadły z nieba, szala przechyliła się na ich stronę. Wtedy zawarto rozejm. Bogowie obiecali, że będą zjadać dusze tylko tych, którzy umarli, a ludzie mieli się im nie przeciwstawiać. Rozejm właśnie został złamany...</p><p> Duam jest potężną szamanką. Jako dziecko nie potrafiła pogodzić się ze śmiercią bliskich jej istot. Zdobyła więc jeden z kamieni światła, by przywracać do życia tych, którzy odeszli. Zapłaciła jednak za to wysoką cenę, sama jeszcze nie wie, jak wielką. </p><p>Razem z gwiazdą hiszpańskiego komiksu <i>Féliksem Vegą</i> wyrusz w niezwykłą podróż po okrutnym, ale i pięknym świecie, gdzie ludzie znów stają naprzeciwko bogów. Historia inspirowana jest wierzeniami Indian Mapuche, a okraszona została przepięknymi ilustracjami godnymi największych mistrzów komiksu.",
 			img: 
 				{
 				coverMainSite: "../img/komiks/duam/duam_okladka_regularna.jpeg",
@@ -122,9 +119,12 @@ export const Comics = [
 				coverRegularThumbnail: "../img/komiks/duam/duam_okladka_regularna.jpg",
 				coverAlternative1: "../img/komiks/duam/duam_okladka_alternatywna1.jpg",
 				coverAlternative2: "../img/komiks/duam/duam_okladka_alternatywna2.jpg",
-				inside1: "../img/komiks/duam/duam_str1.jpeg",
-				inside2: "../img/komiks/duam/duam_str2.jpeg",
-				inside3: "../img/komiks/duam/duam_str3.jpeg"
+				insidePanels:
+					{
+					inside1: "../img/komiks/duam/duam_str1.jpeg",
+					inside2: "../img/komiks/duam/duam_str2.jpeg",
+					inside3: "../img/komiks/duam/duam_str3.jpeg"
+					},
 				},
 			details:
 				{
