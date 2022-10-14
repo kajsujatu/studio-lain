@@ -241,7 +241,7 @@ console.log(Object.values(Comics[0].img.insidePanels));
 
 
 
-chooseComics(2);
+chooseComics(0);
 
 //O - Metronom
 //1 - WiekEvy
