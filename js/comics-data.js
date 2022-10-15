@@ -48,6 +48,16 @@ export const Comics = [
 			filter: "antologie-integrale",
 			new: false,		
 			availability: true,
+			buyShops:
+				{
+				buyShop1: "gidlia.pl",
+				buyShop2: "robmydobrze.pl"
+				},
+			buyLinks:
+				{
+				buyLink1: "https://www.gildia.pl/komiksy/436616-metronom",
+				buyLink2: "https://robmydobrze.pl/produkt/metronom-eric-corbeyran-i-grun"
+				}, 
 			url: "../komiks/comics-site.html"			
 		},
 

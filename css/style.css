@@ -744,9 +744,10 @@ h1.title {
 	font-size: 1.3rem;
 	color: var(--white-color);
 	font-weight: 500;
-	grid-column: 1 / span 2;
-	justify-self: center;
+/*	grid-column: 1 / span 2; */
+	justify-self: center; 
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .buy::before {
@@ -754,6 +755,17 @@ h1.title {
 	position: relative;
 	top: 3px;
 	right: 12px;
+}
+
+.buy-links {
+	display: block;
+	width: 163px;
+	height: auto;
+	list-style: none;
+}
+
+.buy-link {
+	height: 40px;
 }
 
 

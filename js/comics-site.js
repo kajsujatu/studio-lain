@@ -102,19 +102,44 @@ function chooseComics(num) {
 	});
 
 
-	const imagesInside = document.getElementById('img-inside');
 
+	// Inside Panels
+	const imagesInside = document.getElementById('img-inside');
 	const comicsInsideImages = Comics[num].img.insidePanels;
 
 	for (let i=0; i<Object.values(comicsInsideImages).length; i++) {
-
 		const comicsInside = document.createElement('img');
 		comicsInside.classList.add('inside-thumbnails');
 		imagesInside.appendChild(comicsInside);
-
 		comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
-
 	};
+
+	
+	
+	// Links to Buy
+	const buyLinksButton = document.getElementById('buy-links');
+	const buyLinks = Comics[num].buyLinks;
+	const buyShops = Comics[num].buyShops;
+
+	for (let i=0; i<Object.values(buyShops).length; i++) {
+		const buyLink = document.createElement('li');
+		buyLink.classList.add('buy-link');
+		buyLinksButton.appendChild(buyLink);
+		buyShops.textContent = `${Object.values(buyShops)[i]}`;
+	};
+
+
+
+	for (let i=0; i<Object.values(buyLinks).length; i++) {
+		const buyLinkListItem = document.getElementsByClassName('buy-link')[i];
+		const buyLinkItemLink = document.createElement('a');
+		buyLinkListItem.appendChild(buyLinkItemLink);
+		buyLinks.innerHTML = `${Object.values(buyLinks)[i]}`;
+		buyLinkItemLink.setAttribute('href', `${buyLinks.innerHTML}`);
+	
+	};
+
+
 	// const comicsInside1Alt = Comics[num].img.inside1Alt;
 	//document.getElementsByClassName('inside-thumbnails')[0].src = `${comicsInside1}`;
 	//document.getElementsByClassName('inside-thumbnails')[0].setAttribute("alt",`${comicsInside1Alt}`);
@@ -207,8 +232,7 @@ function chooseComics(num) {
 };
 
 
-console.log(Object.values(Comics[0].img.insidePanels));
-
+console.log(Object.values(Comics[0].buyShops));
 
 
 //const windowUrl = window.location.href;
