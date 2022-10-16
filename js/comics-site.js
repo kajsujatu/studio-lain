@@ -122,22 +122,18 @@ function chooseComics(num) {
 	const buyShops = Comics[num].buyShops;
 
 	for (let i=0; i<Object.values(buyShops).length; i++) {
-		const buyLink = document.createElement('li');
-		buyLink.classList.add('buy-link');
-		buyLinksButton.appendChild(buyLink);
-		buyShops.textContent = `${Object.values(buyShops)[i]}`;
+		const buyListItem = document.createElement('li');
+		buyListItem.classList.add('buy-link');
+		buyLinksButton.appendChild(buyListItem);
+
+		const buyListItemLink = document.createElement('a');
+		buyListItem.appendChild(buyListItemLink);
+
+		buyListItemLink.setAttribute('target', '_blank');
+		buyListItemLink.setAttribute('href', `${Object.values(buyLinks)[i]}`);
+		buyListItemLink.textContent = `${Object.values(buyShops)[i]}`;
 	};
 
-
-
-	for (let i=0; i<Object.values(buyLinks).length; i++) {
-		const buyLinkListItem = document.getElementsByClassName('buy-link')[i];
-		const buyLinkItemLink = document.createElement('a');
-		buyLinkListItem.appendChild(buyLinkItemLink);
-		buyLinks.innerHTML = `${Object.values(buyLinks)[i]}`;
-		buyLinkItemLink.setAttribute('href', `${buyLinks.innerHTML}`);
-	
-	};
 
 
 	// const comicsInside1Alt = Comics[num].img.inside1Alt;
@@ -231,10 +227,6 @@ function chooseComics(num) {
 	return;
 };
 
-
-console.log(Object.values(Comics[0].buyShops));
-
-
 //const windowUrl = window.location.href;
 
 //switch windowUrl {
@@ -265,7 +257,7 @@ console.log(Object.values(Comics[0].buyShops));
 
 
 
-chooseComics(0);
+chooseComics(2);
 
 //O - Metronom
 //1 - WiekEvy
@@ -285,7 +277,15 @@ chooseComics(0);
 //	console.log('blabla');
 //};
 
+//buy button
+const buyButton = document.getElementById('buy');
+const buyLinksList = document.getElementById('buy-links');
 
+
+buyButton.addEventListener('click', function() {
+	if (buyLinksList.style.display == "none") buyLinksList.style.display = "block";
+	else buyLinksList.style.display = "none";
+});
 
 
 // gallery

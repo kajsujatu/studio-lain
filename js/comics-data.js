@@ -7,7 +7,7 @@ export const Comics = [
 			writer: "Éric Corbeyran",
 			art: "Grun",
 			translator: "Anna Winiarska",
-			proofreader: "Bartłomiej Wiśniewski,</p><p> Słowobraz",
+			proofreader: "Bartłomiej Wiśniewski, <br>Słowobraz",
 			description: "<p><b>Komiks polecany przez samego <i>Enki Bilala</i>, autora m.in. kultowej <i>Trylogii Nikopola</i>.</b> Mistrz europejskiego komiksu napisał w przedmowie - <i>Wchodzimy do szarej strefy, która, tak jak być powinno, jest naszym lustrzanym odbiciem i w której widać zmagającego się z rzeczywistością człowieka. To świat zarazem bliski i odległy, znajomy i niepokojący, doświadczony przez kolejne kryzysy, lecz zasadniczo stojący w miejscu. Tak było wczoraj, tak będzie jutro, bez dwóch zdań.</i> </p><p> Niedaleka przyszłość. Totalitaryzm został przebrany w szaty demokracji bezpośredniej. Każdy system ma jednak luki, a za puszczeniem rewolucyjnego domina w ruch często stoi zwykły przypadek. Młoda kobieta o imieniu Lynn szuka informacji o swoim mężu. Nie wrócił z kosmicznej misji na jednej ze stacji orbitalnych. Dążenie do odkrycia, co naprawdę się wydarzyło, sprawi, że uruchomione zostaną siły, które zachwieją nie tylko jej światem. Czy jednostka ma szanse w starciu z bezwzględnym systemem? Czy rewolucja zawsze zżera swój własny ogon? Czy prawda faktycznie wyzwala?</p>",
 			img: 
 				{
@@ -50,7 +50,7 @@ export const Comics = [
 			availability: true,
 			buyShops:
 				{
-				buyShop1: "gidlia.pl",
+				buyShop1: "gildia.pl",
 				buyShop2: "robmydobrze.pl"
 				},
 			buyLinks:
@@ -110,6 +110,14 @@ export const Comics = [
 			filter: "antologie-integrale",
 			new: false,		
 			availability: true,
+			buyShops:
+				{
+				buyShop1: "gildia.pl",
+				},
+			buyLinks:
+				{
+				buyLink1: "https://www.gildia.pl/komiksy/429339-wiek-evy-xxe-ciel-com",
+				}, 			
 			url: "../komiks/comics-site.html"			
 		},		
 
@@ -161,6 +169,16 @@ export const Comics = [
 			filter: "antologie-integrale",
 			new: true,		
 			availability: true,
+			buyShops:
+				{
+				buyShop1: "gildia.pl",
+				buyShop2: "robmydobrze.pl"
+				},
+			buyLinks:
+				{
+				buyLink1: "https://www.gildia.pl/komiksy/521091-duam",
+				buyLink2: "https://robmydobrze.pl/produkt/duam"
+				}, 			
 			url: "../komiks/duam.html"			
 		},
 
