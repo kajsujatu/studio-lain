@@ -2,13 +2,9 @@
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<title>Studio lain</title>
-	
+	<title>Studio lain</title>	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
 	<link rel="stylesheet" href="css/style.css">
-
-
 	<script src="js/nav.js" async></script>
 	<script src="js/main-site.js" type="module" async></script>
 </head>
@@ -57,17 +53,20 @@
 		</div>
 		
 		<div id="filters">
-			<form action="#">
-     			<label for="filters">Filtruj wg:</label>
-      				<select name="filters" id="filters-input" size="1">
-						<option value="wszystkie">Wszystkie</option>
-						<option value="nowosci">Nowości</option>
+			
+     			<label for="filters" id="my-input">Filtruj wg:
+				
+				</label>
+
+      				<select name="filters" id="filters-input" multiple size="10">
+						<option value="wszystkie" data-filter=".cover">Wszystkie</option>
+						<option value="nowosci" data-filter=".new">Nowości</option>
 						<option value="dostepne">Dostępne</option>
 						<option value="wyprzedane">Wyprzedane</option>
 						<option value="antologie-integrale" data-filter=".antologie-integrale">Antologie/Integrale</option>
-						<option value="alan-moore">Alan Moore</option>
+				<!--	<option value="alan-moore">Alan Moore</option> -->
 						<option value="enrique-fernandez">Enrique Fernandez</option>
-						<option value="lukasz-kowalczuk">Łukasz Kowalczuk</option>
+				<!--	<option value="lukasz-kowalczuk">Łukasz Kowalczuk</option>
 						<option value="seria-abc-warriors">seria ABC Warriors</option>
 						<option value="seria-absalom">seria Absalom</option>
 						<option value="seria-sedzia-dredd">seria Sędzia Dredd</option>
@@ -78,9 +77,11 @@
 						<option value="seria-solo">seria SOLO</option>						
 						<option value="seria-stickelback">seria Stickleback</option>						
 						<option value="seria-straznicy-masery">seria Strażnicy Masery</option>
-						<option value="seria-yiu">seria Yiu</option>
+						<option value="seria-yiu">seria Yiu</option> -->
 					</select>
-			</form>
+					<button name="order" id="order">Order Now</button>
+					<p id="output">ddd</p>
+			
 		</div> 	
 	</div>
 		
@@ -91,7 +92,7 @@
 	
 	
 <footer>
-	Copyright © 2022 Studio Lain
+	Wersja demo strony
 </footer>	
 </body>
 </html>

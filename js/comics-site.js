@@ -101,8 +101,6 @@ function chooseComics(num) {
 		};
 	});
 
-
-
 	// Inside Panels
 	const imagesInside = document.getElementById('img-inside');
 	const comicsInsideImages = Comics[num].img.insidePanels;
@@ -114,8 +112,6 @@ function chooseComics(num) {
 		comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
 	};
 
-	
-	
 	// Links to Buy
 	const buyLinksButton = document.getElementById('buy-links');
 	const buyLinks = Comics[num].buyLinks;
@@ -257,7 +253,7 @@ function chooseComics(num) {
 
 
 
-chooseComics(2);
+chooseComics(0);
 
 //O - Metronom
 //1 - WiekEvy
@@ -295,6 +291,9 @@ const imgInsideBig = document.getElementById('img-inside-big');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
+
+console.log(Comics[0].img.insidePanels.inside1);
+
 for (let img of imgs) {
 
 	// enlarge image
@@ -303,11 +302,15 @@ for (let img of imgs) {
     	fullPageContainer.style.backgroundImage = 'url(' + img.src + ')';
 		let currentImage = this;
 
+		
+		console.log(currentImage.src);
+		
+
 		// left arrow
 		leftArrow.addEventListener('click', prevImage);
 		function prevImage() {
 			currentImage = currentImage.previousElementSibling;
-			if (currentImage != null) {
+			if (currentImage.src = Comics[0].img.insidePanels.inside1) {
 			fullPageContainer.style.backgroundImage = 'url(' + currentImage.src + ')';
 			} else { 
 				leftArrow.removeEventListener('click', prevImage);

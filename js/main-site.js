@@ -57,8 +57,44 @@ for (let i=0; i<Comics.length; i++) {
 		const filtersInput = document.getElementById('filters-input');	
 		//const mainCoverFilter = document.querySelectorAll('[data-filter]');
 
-		filtersInput.addEventListener('change', function() {
-				if (mainCover.classList.contains(`${filtersInput.value}`) != true) {
+
+
+		function result() {
+			const output = document.getElementById('output');
+			output.value = "";
+
+			for (let i=0; i<filtersInput.options.length; i++) {
+
+				if (filtersInput.options[i].selected === true) {
+					output.value += filtersInput.options[i].value + " ";
+					document.getElementById('output').innerHTML = output.value;
+				}
+			}
+			
+
+		};
+
+		filtersInput.addEventListener('click', function() {
+
+		});
+		
+	//	const mainCoversHTML = document.getElementsByClassName('cover');
+
+	//	for (let k=0; k<mainCoversHTML.length; k++) {
+
+	//		console.log(mainCoversHTML[k].classList.value);
+
+	//		if (mainCoversHTML[k].classList.value != "new") {
+	//			this.style.display = "none";
+	//		};
+	//
+	//		};
+	//
+	
+	
+
+		filtersInput.addEventListener('click', function() {
+				if (mainCover[i].classList.value.contains(`${filtersInput.children[0].innerText}`) != true) {
 					mainCover.style.display = "none";
 				}
 				else if (filtersInput.value != "nowosci") {
@@ -67,3 +103,19 @@ for (let i=0; i<Comics.length; i++) {
 		});
 
 };
+
+
+
+const input = document.getElementById('my-input');
+const listFilters = document.getElementById('filters-input');
+
+
+input.addEventListener('click', function() {
+	listFilters.style.display = "block";
+});
+
+
+//mobiscroll.select('#filters-input', {
+//    inputElement: document.getElementById('my-input'),
+//    touchUi: false
+//});
