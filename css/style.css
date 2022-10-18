@@ -381,10 +381,6 @@ select:focus {
 
 #filters-input {
 	width: 385px;
-	height: auto;
-	display: none;
-	position: absolute;
-	z-index: 100;
 }
 
 /* **************** MAIN CONTAINER **************** */

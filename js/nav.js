@@ -34,18 +34,20 @@ moon.addEventListener('click', function() {
 		container.children[i].style.boxShadow = "4px 4px 8px rgb(62 177 183 / 40%)";
 		container.children[i].style.transition = "box-shadow .5s ease-in-out";
 	};
-
 	};
+
 	if (customize != null) {
 	customize.style.color = "#d7d7d7";
 	};
 
 	//for Comics site
+	if (containerPage != null || details != null || breadcrumbsElement != null) {
 	containerPage.style.backgroundColor = "var(--main-color)";
 	containerPage.style.transition = "background-color .5s ease-in-out";
 	containerPage.style.color = "#d7d7d7";
 	details.style.backgroundColor = "#282828";
 	details.style.transition = "background-color .5s ease-in-out";
+
 	for (let i=0; i<2; i++) {
 		breadcrumbsElement[i].style.backgroundColor = "#282828";
 		breadcrumbsElement[i].style.transition = "background-color .5s ease-in-out";
@@ -53,7 +55,7 @@ moon.addEventListener('click', function() {
 	};
 	breadcrumbsElementLinkBack.style.color = "#d7d7d7";
 	breadcrumbsElementLinkCatalog.style.color = "#d7d7d7";
-});
+};
 
 sun.addEventListener('click', function() {
 	document.body.style.backgroundColor = "var(--bright-color)";
