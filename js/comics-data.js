@@ -22,6 +22,12 @@ export const Comics = [
 					inside2: "../img/komiks/metronom/metronom_inside2.jpg",
 					inside3: "../img/komiks/metronom/metronom_inside3.jpg",
 					},
+				insidePanelsAlt:
+					{
+					inside1Alt: "przykładowa plansza komiksu Metronom' - 1",
+					inside2Alt: "przykładowa plansza komiksu Metronom' - 2",
+					inside3Alt: "przykładowa plansza komiksu Metronom' - 3",
+					},		
 				},	
 			details:
 				{
@@ -84,6 +90,13 @@ export const Comics = [
 					inside3: "../img/komiks/wiek-evy/wiek-evy_str3.jpg",
 					inside4: "../img/komiks/wiek-evy/wiek-evy_str4.jpg"
 					},
+				insidePanelsAlt:
+					{
+					inside1Alt: "przykładowa plansza komiksu Wiek Evy - XXe ciel.com - 1",
+					inside2Alt: "przykładowa plansza komiksu Wiek Evy - XXe ciel.com - 2",
+					inside3Alt: "przykładowa plansza komiksu Wiek Evy - XXe ciel.com - 3",
+					inside4Alt: "przykładowa plansza komiksu Wiek Evy - XXe ciel.com - 4",
+					},							
 				},	
 			details:
 				{
@@ -99,7 +112,7 @@ export const Comics = [
 				},
 			detailsOriginalEdition:
 				{
-				title: "Le Siècle d’Eva Biographiesd ’ un Ange du XX eciel",
+				title: "Le Siècle d’Eva Biographies d’un Ange du XXe ciel",
 				publisher: "Casterman (Delcourt/Les Humanoïdes Associés)",
 				date: "2013 (1997–2004)"
 				},
@@ -143,6 +156,12 @@ export const Comics = [
 					inside2: "../img/komiks/duam/duam_str2.jpeg",
 					inside3: "../img/komiks/duam/duam_str3.jpeg"
 					},
+				insidePanelsAlt:
+					{
+					inside1Alt: "przykładowa plansza komiksu Duam - 1",
+					inside2Alt: "przykładowa plansza komiksu Duam - 2",
+					inside3Alt: "przykładowa plansza komiksu Duam - 3",
+					},												
 				},
 			details:
 				{
@@ -190,22 +209,26 @@ export const Comics = [
 			art: "Emmanuel Civiello",
 			translator: "Anna Winiarska",
 			proofreader: "Łukasz Sosiński, Kasia Mała",
-			description:
-				{
-				bold: "Wspaniale zilustrowane dark fantasy dla dorosłych.",
-				normal: `Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na rynku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu.
-				Opowieść rozgrywa się w roku 1100 naszej ery. Główną bohaterką jest mała irlandzka dziewczynka imieniem Luaine. Jej rodzina zostaje napadnięta przez stwory z innego świata. Ojciec ginie, a matka i dziadek zostają porwani do innego wymiaru, gdzie rządzi mroczna bestia Balor. Szczęśliwym zbiegiem okoliczności dziewczynka zostaje przygarnięta przez Korriganów, plemię, będące skrzyżowaniem krasnoludów z czarownicami. Wraz z nimi Luaine podejmuje próbę odnalezienia swoich bliskich…`
-				},
+			description: "<p><b> Wspaniale zilustrowane dark fantasy dla dorosłych.</b> Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na rynku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu. </p><p> Opowieść rozgrywa się w roku 1100 naszej ery. Główną bohaterką jest mała irlandzka dziewczynka imieniem Luaine. Jej rodzina zostaje napadnięta przez stwory z innego świata. Ojciec ginie, a matka i dziadek zostają porwani do innego wymiaru, gdzie rządzi mroczna bestia Balor. Szczęśliwym zbiegiem okoliczności dziewczynka zostaje przygarnięta przez Korriganów, plemię, będące skrzyżowaniem krasnoludów z czarownicami. Wraz z nimi Luaine podejmuje próbę odnalezienia swoich bliskich…",
 			img: 
 				{
 				coverMainSite: "../img/komiks/korriganie/korriganie_okladka_regularna.jpg",
 				coverRegular: "../img/komiks/korriganie/korriganie_okladka_regularna.jpg",
 				coverRegularThumbnail: "../img/komiks/korriganie/korriganie_okladka_regularna.jpg",
 				coverAlternative1: "../img/komiks/korriganie/korriganie_okladka_alternatywna.jpg",
-				inside1: "../img/komiks/korriganie/korriganie_str1.jpg",
-				inside1Alt: "przykładowa plansza komiksu Korriganie",
-				inside2: "../img/komiks/korriganie/korriganie_str2.jpg",
-				inside3: "../img/komiks/korriganie/korriganie_str3.jpg",
+				insidePanels:
+					{				
+					inside1: "../img/komiks/korriganie/korriganie_str1.jpg",
+					inside2: "../img/komiks/korriganie/korriganie_str2.jpg",
+					inside3: "../img/komiks/korriganie/korriganie_str3.jpg",
+					},
+				insidePanelsAlt:
+					{
+					inside1Alt: "przykładowa plansza komiksu Korriganie - 1",
+					inside2Alt: "przykładowa plansza komiksu Korriganie - 2",
+					inside3Alt: "przykładowa plansza komiksu Korriganie - 3",
+					inside4Alt: "przykładowa plansza komiksu Korriganie - 4",
+					},								
 				},
 			details:
 				{
@@ -231,10 +254,214 @@ export const Comics = [
 				},
 			filter: "antologie-integrale",
 			new: false,		
-			availability: true,
+			availability: false,
+			buyShops:
+			{
+			buyShop1: "gildia.pl",
+			},
+		buyLinks:
+			{
+			buyLink1: "https://www.gildia.pl/komiksy/495491-korriganie",
+			}, 
 			url: "../komiks/korriganie.html"
 		},
 	
+	// Yiu Tom 2
+		{
+			id: 47, 
+			title: "Yiu Tom 2",
+			writer: " Téhy, L. M. Vee",
+			art: "Jérôme Renéaume, <br>Nicolas Guenet",
+			translator: "Jacek i Przemysław Barteccy",
+			proofreader: "Łukasz Sosiński",
+			description: "<p><b>Epicki cykl science fiction w swoim rozmachu porównywany z uniwersum Incala <i>Moebiusa</i>, Trylogią Nikopola <i>Enkiego Bilala</i> czy pracami <i>Juana Gimeneza</i>.</b> Dyskurs religijny miesza się tu z rozprawą na temat kondycji ludzkości, a wszystko to utrzymane w klimacie rodem z najlepszych cyberpunkowych powieści. Za scenariusz odpowiada <i>Téhy</i>, który jest nie tylko autorem kilku popularnych serii komiksowych, ale i reżyserem uznanych filmów krótkometrażowych. Podczas pracy nad tym tytułem korzystał z pomocy <i>J. M. Vee</i>, doktora inżynierii, mającego na swoim koncie przełomową pracę na temat widzenia komputerowego. Specjalnością Vee jest szukanie związków między technologią, historią i religią. Całość została fantastycznie i z rozmachem namalowana przez <i>Nicolasa Guéneta</i> i <i>Jérôme’a Renéaume’a</i>. To jeden z najbardziej widowiskowych komiksów na rynku europejskim.</p><p>Świat setki lat po zagładzie. Ludzkość pogrążona w religijnym amoku. W Nowym Jeruzalem, gdzie koegzystują przedstawiciele różnych wyznań, trudno osiągnąć pokój. Wielka forteca staje się centrum świętej wojny. Broniona na wszelkie możliwe sposoby zostaje zaatakowana przez najemników, którym implanty pozwalają na wyjątkową sprawność działania. Wśród nich jest Yiu, zabójczyni specjalnie przygotowana na misję bez powrotu. Nie wie, że jej działania staną się spełnieniem przepowiedni, która zbliży świat do Apokalipsy</p>.",
+			img: 
+				{
+				coverMainSite: "../img/komiks/yiu2/yiu2_okladka_regularna.jpg",
+				coverRegular: "../img/komiks/yiu2/yiu2_okladka_regularna.jpg",
+				coverRegularThumbnail: "../img/komiks/yiu2/yiu2_okladka_regularna.jpg",
+				coverAlternative1: "../img/komiks/yiu2/yiu2_okladka_alternatywna1.jpg",
+				insidePanels:
+					{				
+					inside1: "../img/komiks/yiu2/yiu2_str1.jpg",
+					inside2: "../img/komiks/yiu2/yiu2_str2.jpg",
+					inside3: "../img/komiks/yiu2/yiu2_str3.jpg",
+					},
+				insidePanelsAlt:
+					{
+					inside1Alt: "przykładowa plansza komiksu Yiu - 1",
+					inside2Alt: "przykładowa plansza komiksu Yiu - 2",
+					inside3Alt: "przykładowa plansza komiksu Yiu - 3",
+					},						
+				},
+			details:
+				{
+				format: "240x320 mm",
+				pages: 216,
+				print: "kolorowy",
+				paper: "kredowy",
+				typeOfBookCover: "twarda",
+				date: "grudzień 2020",
+				edition: "I",
+				ISBN: "978-83-958554-2-9",
+				price: "89,90 zł"
+				},
+			detailsOriginalEdition:
+				{
+				title: "Yiu",
+				publisher: "Soleil",
+				date: "1999-2009"
+				},
+			relatedComics: 
+				{
+				img1: "../img/komiks/yiu1/yiu1_okladka_regularna.jpg"		
+				},
+			filter: "yiu",
+			new: false,		
+			availability: true,
+			buyShops:
+				{
+				buyShop1: "gildia.pl",
+				},
+			buyLinks:
+				{
+				buyLink1: "https://www.gildia.pl/komiksy/447921-yiu-wydanie-zbiorcze-tom-2",
+				}, 						
+			url: "../komiks/yiu-tom2.html"
+		},
+
+	// Yiu Tom 1
+		{
+			id: 46, 
+			title: "Yiu Tom 1",
+			writer: " Téhy, L. M. Vee",
+			art: "Jérôme Renéaume, <br>Nicolas Guenet",
+			translator: "Jacek i Przemysław Barteccy",
+			proofreader: "Łukasz Sosiński",
+			description: "<p><b>Epicki cykl science fiction w swoim rozmachu porównywany z uniwersum Incala <i>Moebiusa</i>, Trylogią Nikopola <i>Enkiego Bilala</i> czy pracami <i>Juana Gimeneza</i>.</b> Dyskurs religijny miesza się tu z rozprawą na temat kondycji ludzkości, a wszystko to utrzymane w klimacie rodem z najlepszych cyberpunkowych powieści. Za scenariusz odpowiada <i>Téhy</i>, który jest nie tylko autorem kilku popularnych serii komiksowych, ale i reżyserem uznanych filmów krótkometrażowych. Podczas pracy nad tym tytułem korzystał z pomocy <i>J. M. Vee</i>, doktora inżynierii, mającego na swoim koncie przełomową pracę na temat widzenia komputerowego. Specjalnością Vee jest szukanie związków między technologią, historią i religią. Całość została fantastycznie i z rozmachem namalowana przez <i>Nicolasa Guéneta</i> i <i>Jérôme’a Renéaume’a</i>. To jeden z najbardziej widowiskowych komiksów na rynku europejskim.</p><p>Świat setki lat po zagładzie. Ludzkość pogrążona w religijnym amoku. W Nowym Jeruzalem, gdzie koegzystują przedstawiciele różnych wyznań, trudno osiągnąć pokój. Wielka forteca staje się centrum świętej wojny. Broniona na wszelkie możliwe sposoby zostaje zaatakowana przez najemników, którym implanty pozwalają na wyjątkową sprawność działania. Wśród nich jest Yiu, zabójczyni specjalnie przygotowana na misję bez powrotu. Nie wie, że jej działania staną się spełnieniem przepowiedni, która zbliży świat do Apokalipsy</p>.",
+			img: 
+				{
+				coverMainSite: "../img/komiks/yiu1/yiu1_okladka_regularna.jpg",
+				coverRegular: "../img/komiks/yiu1/kyiu1_okladka_regularna.jpg",
+				coverRegularThumbnail: "../img/komiks/yiu1/yiu1_okladka_regularna.jpg",
+				coverAlternative1: "../img/komiks/yiu1/yiu1_okladka_alternatywna1.jpg",
+				insidePanels:
+					{				
+					inside1: "../img/komiks/yiu1/yiu1_str1.jpg",
+					inside2: "../img/komiks/yiu1/yiu1_str2.jpg",
+					inside3: "../img/komiks/yiu1/yiu1_str3.jpg",
+					},
+				insidePanelsAlt:
+					{
+					inside1Alt: "przykładowa plansza komiksu Yiu - 1",
+					inside2Alt: "przykładowa plansza komiksu Yiu - 2",
+					inside3Alt: "przykładowa plansza komiksu Yiu - 3",
+					},						
+				},
+			details:
+				{
+				format: "240x320 mm",
+				pages: 284,
+				print: "kolorowy",
+				paper: "kredowy",
+				typeOfBookCover: "twarda",
+				date: "listopad 2020",
+				edition: "I",
+				ISBN: "978-83-958554-1-2",
+				price: "99,90 zł"
+				},
+			detailsOriginalEdition:
+				{
+				title: "Yiu",
+				publisher: "Soleil",
+				date: "1999-2009"
+				},
+			relatedComics: 
+				{
+					img1: "../img/komiks/yiu2/yiu2_okladka_regularna.jpg"				
+				},
+			filter: "yiu",
+			new: false,		
+			availability: false,
+			buyShops:
+			{
+
+			},
+		buyLinks:
+			{
+	
+			}, 
+			url: "../komiks/yiu-tom1.html"
+		},
+
+	// Opowieści z czasów Kobry
+		{
+			id: 44, 
+			title: "Opowieści z czasów Kobry",
+			writer: "Enrique Fernandez",
+			art: "Enrique Fernandez",
+			translator: "Jacek Bartecki",
+			proofreader: "Mała Kasia",
+			description: "<p><b>Przepięknie namalowana i świetnie napisana baśń tylko dla dorosłych osadzona w arabskich sceneriach.</b> Autorem jest <i>Enrique Fernandez</i>, jeden z mistrzów współczesnego, hiszpańskiego komiksu stworzył komiks, którym zachwyciła się międzynarodowa krytyka, jak i rzesze czytelników.</p><p>Wiecie, co ma moc obalania tyranów? Poezja. Dobry wiersz sprawi, że twoje serce zacznie szybciej bić, a t wój umysł rozgrzeją skrywane emocje. By jednak narodziło się takie dzieło, musi narodzić się jego autor. Przejść niezwykłą drogę od namiętności przez ból do piętna wojny. Sian i Irvi kochają się, ale świat w którym żyją, uczucia ma za nic. Tu liczy się złoto. Kiedy piękna Sian zostaje sprzedana księciu, zwinny niczym małpa Irvi postanawia ją uwolnić. Niestety bezskutecznie, bo wpada w sidła... własnej chuci. Nie mogąc znieść swojej słabości, winą za wszystko obarcza władców. Poprzysięga wypruć flaki wszystkim książętom świata...",
+			img: 
+				{
+				coverMainSite: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_okladka_regularna.jpg",
+				coverRegular: "../img/komiks/opowiesci-z-czasow-kobry/brygada_cover_regular-max.jpg",
+				coverRegularThumbnail: "../img/komiks/opowiesci-z-czasow-kobry/brygada_cover_regular-min.jpg",
+				coverAlternative1: "../img/komiks/opowiesci-z-czasow-kobry/brygada_cover_alternative1.jpg",
+				insidePanels:
+					{
+					inside1: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_str1.jpg",
+					inside2: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_str2.jpg",
+					inside3: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_str3.jpg",
+					inside4: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_str4.jpg"
+					},
+				insidePanelsAlt:
+					{
+					inside1Alt: "przykładowa plansza komiksu Opowieści z czasów Kobry - 1",
+					inside2Alt: "przykładowa plansza komiksu Opowieści z czasów Kobry - 2",
+					inside3Alt: "przykładowa plansza komiksu Opowieści z czasów Kobry - 3",
+					inside4Alt: "przykładowa plansza komiksu Opowieści z czasów Kobry - 4",
+					},	
+				},
+			details:
+				{
+				format: "A4",
+				pages: 104,
+				print: "kolorowy",
+				paper: "kredowy",
+				typeOfBookCover: "twarda",
+				date: "wrzesień 2019",
+				edition: "I",
+				ISBN: "978-83-953477-5-7",
+				price: "64,90 zł"
+				},
+			detailsOriginalEdition:
+				{
+				title: "Les contes de l'ère du Cobra",
+				publisher: "Glénat",
+				date: "2012"
+				},
+			relatedComics: 
+				{
+				img1: "../img/komiks/brygada/brygada_cover_regular-min.jpg"
+				},
+			filter: "enrique-fernandez",
+			new: false,		
+			availability: true,
+			buyShops:
+				{
+				buyShop1: "gildia.pl",
+				buyShop2: "robmydobrze.pl"
+				},
+			buyLinks:
+				{
+				buyLink1: "https://www.gildia.pl/komiksy/369888-brygada",
+				buyLink2: "https://robmydobrze.pl/produkt/brygada-enrique-fernandez/"
+				}, 						
+			url: "../komiks/brygada.html"
+		},
+
 	// Brygada
 		{
 			id: 43, 
@@ -243,22 +470,27 @@ export const Comics = [
 			art: "Enrique Fernandez",
 			translator: "Piotr Beliński",
 			proofreader: "Damian Pietrzak",
-			description:
-				{
-				bold: "Historia od Enrique Fernandeza, jednego ze współczesnych mistrzów komiksu hiszpańskiego. Autor uważany jest za jednego z najlepszych kolorystów na świecie i to widać na każdej stronie tej historii. Nie tylko historyjki obrazkowe są jego domeną, pracuje również przy tworzeniu animacji.",
-				normal: "Krasnolud, weteran walk, kapitan Ivro został zwerbowany by dowodzić brygadą skazańców. Jego oddział walczy w trwającej od lat wojnie przeciwko czarnym elfom. Podczas jednej z bitew tajemnicza mgła rzuca ich na terytorium dziwnej, pełnej chaosu krainy. Tam będą musieli stoczyć kolejną wojnę, tym razem by przetrwać jako grupa. Elfy, wiedźmy, czarownice, ludzie, demony, smoki to wszystko znajdziecie w tej niezwykłej opowieści z gatunku dark fantasy. Prawie 100 stron unikalnego stylowo, wysmakowanego artystycznie komiksu."
-				},
+			description: "<p><b>Historia od Enrique Fernandeza, jednego ze współczesnych mistrzów komiksu hiszpańskiego.</b> Autor uważany jest za jednego z najlepszych kolorystów na świecie i to widać na każdej stronie tej historii. Nie tylko historyjki obrazkowe są jego domeną, pracuje również przy tworzeniu animacji.</p><p>Krasnolud, weteran walk, kapitan Ivro został zwerbowany by dowodzić brygadą skazańców. Jego oddział walczy w trwającej od lat wojnie przeciwko czarnym elfom. Podczas jednej z bitew tajemnicza mgła rzuca ich na terytorium dziwnej, pełnej chaosu krainy. Tam będą musieli stoczyć kolejną wojnę, tym razem by przetrwać jako grupa. Elfy, wiedźmy, czarownice, ludzie, demony, smoki to wszystko znajdziecie w tej niezwykłej opowieści z gatunku dark fantasy. Prawie 100 stron unikalnego stylowo, wysmakowanego artystycznie komiksu.",
 			img: 
 				{
 				coverMainSite: "../img/komiks/brygada/brygada_cover_regular-min.jpg",
 				coverRegular: "../img/komiks/brygada/brygada_cover_regular-max.jpg",
 				coverRegularThumbnail: "../img/komiks/brygada/brygada_cover_regular-min.jpg",
 				coverAlternative1: "../img/komiks/brygada/brygada_cover_alternative1.jpg",
-				inside1: "../img/komiks/brygada/brygada_inside1.jpg",
-				inside1Alt: "przykładowa plansza komiksu Brygada",
-				inside2: "../img/komiks/brygada/brygada_inside2.jpg",
-				inside3: "../img/komiks/brygada/brygada_inside3.jpg",
-				inside4: "../img/komiks/brygada/brygada_inside4.jpg"
+				insidePanels:
+					{
+					inside1: "../img/komiks/brygada/brygada_inside1.jpg",
+					inside2: "../img/komiks/brygada/brygada_inside2.jpg",
+					inside3: "../img/komiks/brygada/brygada_inside3.jpg",
+					inside4: "../img/komiks/brygada/brygada_inside4.jpg"
+					},
+				insidePanelsAlt:
+					{
+					inside1Alt: "przykładowa plansza komiksu Brygada - 1",
+					inside2Alt: "przykładowa plansza komiksu Brygada - 2",
+					inside3Alt: "przykładowa plansza komiksu Brygada - 3",
+					inside4Alt: "przykładowa plansza komiksu Brygada - 4",
+					},									
 				},
 			details:
 				{
@@ -280,11 +512,21 @@ export const Comics = [
 				},
 			relatedComics: 
 				{
-				img1: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_cover_regular.jpg"
+				img1: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_okladka_regularna.jpg"
 				},
 			filter: "enrique-fernandez",
 			new: false,		
 			availability: true,
+			buyShops:
+				{
+				buyShop1: "gildia.pl",
+				buyShop2: "robmydobrze.pl"
+				},
+			buyLinks:
+				{
+				buyLink1: "https://www.gildia.pl/komiksy/369888-brygada",
+				buyLink2: "https://robmydobrze.pl/produkt/brygada-enrique-fernandez/"
+				}, 						
 			url: "../komiks/brygada.html"
 		},
 
@@ -296,22 +538,27 @@ export const Comics = [
 				art: "Jean-Claude Gal",
 				translator: "Anna Winiarska",
 				proofreader: "Damian Pietrzak",
-				description:
-					{
-					bold: "Arcydzieło komiksu europejskiego. Mistrz gatunku Jean-Claude Gal w najlepszej formie.",
-					normal: "Album na prawie 200 stronach zbiera historie – Katedra, Fanastyczna Armia i Cykl Arna. To prace, które na zawsze zmieniły oblicze komiksu. To absolutna klasyka, która w ogóle się nie zestarzała. Zachwyca dokładnie tak samo, jak w dniu swojej premiery. Dzięki obsesyjnie szczegółowej kresce, pełnych rozmachu kadrach możemy wybrać się w niezwykłą podróż do fantastycznych światów. Krain rodem z klasyków gatunku fantasy, pełnych niezwykłych budowli, pradawnych tajemnic i kultu zła czającego się w mroku. To także dzięki komiksom z tego albumu magazyn Heavy Metal stał się kultowy, a Jean-Claude Gal wymieniany jest obok takich mistrzów jak Moebius, Caza, Bilal czy Corben. Lektura obowiązkowa i uczta dla oczu! Zawiera: Katedra, Fanastyczna Armia, Zemsta Arna, Triumf Arna" 
-					},
+				description: "<p><b>Arcydzieło komiksu europejskiego. Mistrz gatunku <i>Jean-Claude Gal</i> w najlepszej formie.</b></p><p>Album na prawie 200 stronach zbiera historie – Katedra, Fanastyczna Armia i Cykl Arna. To prace, które na zawsze zmieniły oblicze komiksu. To absolutna klasyka, która w ogóle się nie zestarzała. Zachwyca dokładnie tak samo, jak w dniu swojej premiery. Dzięki obsesyjnie szczegółowej kresce, pełnych rozmachu kadrach możemy wybrać się w niezwykłą podróż do fantastycznych światów. Krain rodem z klasyków gatunku fantasy, pełnych niezwykłych budowli, pradawnych tajemnic i kultu zła czającego się w mroku. To także dzięki komiksom z tego albumu magazyn <i>Heavy Metal</i> stał się kultowy, a <i>Jean-Claude Gal</i> wymieniany jest obok takich mistrzów jak <i>Moebius</i>, <i>Caza</i>, <i>Bilal</i> czy <i>Corben</i>. Lektura obowiązkowa i uczta dla oczu! Zawiera: <ul><li>Katedra,</li><li>Fanastyczna Armia,</li><li>Zemsta Arna,</li><li>Triumf Arna</li>",
 				img: 
 					{
 					coverMainSite: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
 					coverRegular: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
 					coverRegularThumbnail: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
 					coverAlternative1: "../img/komiks//armie-zdobywcy/armie-zdobywcy-okladka-alternatywna.jpg",
-					inside1: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str1.jpg",
-					inside1Alt: "przykładowa plansza komiksu Armie Zdobywcy",
-					inside2: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str2.jpg",
-					inside3: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str3.jpg",
-					inside4: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str4.jpg"
+					insidePanels:
+						{
+						inside1: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str1.jpg",
+						inside2: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str2.jpg",
+						inside3: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str3.jpg",
+						inside4: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str4.jpg"
+						},
+					insidePanelsAlt:
+						{
+						inside1Alt: "przykładowa plansza komiksu Armie Zdobywcy - 1",
+						inside2Alt: "przykładowa plansza komiksu Armie Zdobywcy - 2",
+						inside3Alt: "przykładowa plansza komiksu Armie Zdobywcy - 3",
+						inside4Alt: "przykładowa plansza komiksu Armie Zdobywcy - 4",
+						},										
 					},
 				details:
 					{

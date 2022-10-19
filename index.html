@@ -5,7 +5,7 @@
 	<title>Studio lain</title>	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/nav.js" async></script>
+	<script src="js/nav.js" type="module" async></script>
 	<script src="js/main-site.js" type="module" async></script>
 </head>
 <body>
@@ -31,7 +31,7 @@
 
 	<div id="search">
 		<input id="search-input">
-		<img class="icon" src="img/icon-search.svg" alt="Wyszukaj">
+		<img class="icon" id="icon-search" src="img/icon-search.svg" alt="Wyszukaj">
 	</div>
 		<div id="moon"><img class="icon icon-moon" src="img/icon-moon.svg" alt="Tryb nocny"></div>
 		<div id="sun"><img class="icon icon-sun" src="img/icon-sun.svg" alt="Tryb dzienny"></div>
@@ -41,7 +41,7 @@
 <!-- Customize options: sort, filters -->
 	<div id="customize">
 		<div id="sort">
-     		<label for="sort">Sortuj wg:</label>
+     		<label for="sort">Sortuj:</label>
       		<select name="sort" id="sort-input" size="1">
 				<option value="najnowsze" id="newest">Najnowsze</option>
 				<option value="najstarsze">Najstarsze</option>
@@ -50,7 +50,7 @@
 		</div>
 		
 		<div id="filters">	
- 			<label for="filters">Filtruj wg:</label>
+ 			<label for="filters">Filtruj:</label>
   			<select name="filters" id="filters-input" size="1">
 				<option value="wszystkie">Wszystkie</option>
 				<option value="nowosci">Nowości</option>
@@ -69,11 +69,16 @@
 				<option value="seria-slaine">seria Sláine</option>
 				<option value="seria-solo">seria SOLO</option>						
 				<option value="seria-stickelback">seria Stickleback</option>						
-				<option value="seria-straznicy-masery">seria Strażnicy Masery</option>
-				<option value="seria-yiu">seria Yiu</option> -->
+				<option value="seria-straznicy-masery">seria Strażnicy Masery</option> -->
+				<option value="seria-yiu">seria Yiu</option> 
 			</select>		
 		<!-- <span id="filters-output"></span> -->
-		</div> 	
+		</div>
+		<div id="search-main-cover">
+			<label for="search-main-cover-input">Szukaj tytułu:</label>
+			<input id="search-main-cover-input">
+		</div>
+
 	</div>
 		
 <!-- Main container -->	

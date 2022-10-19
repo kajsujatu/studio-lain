@@ -3,10 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Studio lain</title>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<link rel="stylesheet" href="../css/style.css">
-
-	<script src="../js/nav.js" async></script>
+	<script src="../js/nav.js" type="module" async></script>
 	<script src="../js/comics-site.js" type="module" async></script>
 </head>
 <body>
@@ -77,7 +76,7 @@
 		</ul>
 		
 		<!-- Details -->
-		<h2 class="comics-data-headline">Dane techniczne:</h2>
+		<span class="comics-data-headline">Dane techniczne:</span>
 		<ul class="comics-data details">
 			<li>Format</li>
 			<li id="details-format"></li>
@@ -106,7 +105,7 @@
 		</div>	
 
 		<!-- Details Original Edition -->
-		<h2 class="comics-data-headline">Dane oryginalnego wydania:</h2>
+		<span class="comics-data-headline">Dane oryginalnego wydania:</span>
 		<ul class="comics-data details-original-edition">
 			<li>Tytuł</li>
 			<li id="details-original-edition-title"></li>
@@ -129,23 +128,10 @@
 
 	<!-- RELATED COMICS -->
 	<div id="related-comics-section">
-		<p>Powiązane tytuły:</p>
-			<img src="" id="related-comics">
+		<span class="comics-data-headline">Powiązane tytuły:</span>
+		<img src="" id="related-comics">
 	</div>
-
-
-
-
-
-
-
-
-	
-
 </div>
-
-
-
 
 
 	<div id="fullpage-container">

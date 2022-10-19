@@ -33,23 +33,30 @@ for (let i=0; i<Comics.length; i++) {
 		if (Comics[i].new != false) mainCover.classList.add("new");
 		// If Sold
 		if (Comics[i].availability == false) mainCover.classList.add("sold");
-		
+
+	// Adding titles uder covers
+	const titleUnderCover = document.createElement('div');
+	titleUnderCover.classList.add('title-under-cover');
+	mainCover.appendChild(titleUnderCover);
+	
+	titleUnderCover.innerText = `${Comics[i].title}`;
+
 	// Sorting options
-		sortInput.addEventListener('change', function() {	
-			switch (sortInput.value) {
-				case "najnowsze": // Sort by Newest (deafult)
-				mainCover.style.order = -(Comics[i].id);
-				break;
-				case "najstarsze": // Sort by Oldest
-				mainCover.style.order = Comics[i].id;
-				break;
-				case "alfabetycznie": // Sort Alphabetically
-				mainCover.style.order = Comics[i].title.charCodeAt(0);
-				break;
-			default: // Sort by Newest (deafult)
-				mainCover.style.order = -(Comics[i].id);
-			};
-		});
+	sortInput.addEventListener('change', function() {	
+		switch (sortInput.value) {
+			case "najnowsze": // Sort by Newest (deafult)
+			mainCover.style.order = -(Comics[i].id);
+			break;
+			case "najstarsze": // Sort by Oldest
+			mainCover.style.order = Comics[i].id;
+			break;
+			case "alfabetycznie": // Sort Alphabetically
+			mainCover.style.order = Comics[i].title.charCodeAt(0);
+			break;
+		default: // Sort by Newest (deafult)
+			mainCover.style.order = -(Comics[i].id);
+		};
+	});
 			
 	// Filtering options
 		const coversByClass = document.getElementsByClassName('cover')[i];
@@ -80,14 +87,39 @@ for (let i=0; i<Comics.length; i++) {
 					case "enrique-fernandez":
 						if (coversByClass.classList.value.includes('enrique-fernandez')) coversByClass.style.display = "block";
 						else coversByClass.style.display = "none";
-						break;	
+						break;
+					case "seria-yiu":
+						if (coversByClass.classList.value.includes('yiu')) coversByClass.style.display = "block";
+						else coversByClass.style.display = "none";
+						break;		
 				default:
 					coversByClass.style.display = "block";
 				}
 			}
+		});
+
+		const searchCovers = document.getElementById('search-main-cover-input');
+		
+		searchCovers.addEventListener('input', function() {
+			const coversByClassAltAttribute = coversByClass.getAttribute('alt').toLowerCase();
+
+			if (coversByClassAltAttribute.includes(searchCovers.value.toLowerCase())) coversByClass.style.display = "block";
+			else coversByClass.style.display = "none";
+	
 		});	
-				
-};
+
+	};
+
+
+
+
+
+	//if (searchCovers.value.include
+
+
+
+
+
 
 //	const elementToOpenFilters = document.getElementById('element-to-open-filters');
 //
@@ -190,4 +222,3 @@ for (let i=0; i<Comics.length; i++) {
 //mobiscroll.select('#filters-input', {
 //    inputElement: document.getElementById('my-input'),
 //    touchUi: false
-//});

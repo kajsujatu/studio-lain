@@ -104,18 +104,25 @@ function chooseComics(num) {
 	// Inside Panels
 	const imagesInside = document.getElementById('img-inside');
 	const comicsInsideImages = Comics[num].img.insidePanels;
+	const comicsInsideImagesAlt = Comics[num].img.insidePanelsAlt;
 
 	for (let i=0; i<Object.values(comicsInsideImages).length; i++) {
 		const comicsInside = document.createElement('img');
 		comicsInside.classList.add('inside-thumbnails');
+		comicsInside.setAttribute('alt', `${Object.values(comicsInsideImagesAlt)[i]}`); // Set Alt to images
 		imagesInside.appendChild(comicsInside);
 		comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
 	};
 
 	// Links to Buy
+	const buyButton = document.getElementById('buy');
 	const buyLinksButton = document.getElementById('buy-links');
 	const buyLinks = Comics[num].buyLinks;
 	const buyShops = Comics[num].buyShops;
+
+	if (Comics[num].availability == false) {
+		buyButton.style.display = "none";
+	} else if (Comics[num].availability == true) {
 
 	for (let i=0; i<Object.values(buyShops).length; i++) {
 		const buyListItem = document.createElement('li');
@@ -129,6 +136,9 @@ function chooseComics(num) {
 		buyListItemLink.setAttribute('href', `${Object.values(buyLinks)[i]}`);
 		buyListItemLink.textContent = `${Object.values(buyShops)[i]}`;
 	};
+	};
+
+
 
 
 
@@ -216,7 +226,7 @@ function chooseComics(num) {
 	// Related Comics
 	const comicsRelatedComics = Comics[num].relatedComics.img1;
 	if (comicsRelatedComics != null) {
-	document.getElementById('related-comics-section').style.display = "block";
+	document.getElementById('related-comics-section').style.display = "grid";
 	document.getElementById('related-comics').src = `${comicsRelatedComics}`;
 	};
 			
@@ -253,14 +263,17 @@ function chooseComics(num) {
 
 
 
-chooseComics(0);
+chooseComics(4);
 
 //O - Metronom
 //1 - WiekEvy
 //2 - Duam
 //3 - Korriganie
-//4 - Brygada
-//5 - Armie zdobywcy
+//4 - Yiu 2
+//5 - Yiu 1
+//6 - opowiesci kobry
+//7 - brygada
+//8 - Armie zdobywcy
 
 //	//};
 

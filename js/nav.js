@@ -1,3 +1,8 @@
+// Import Database of comics
+import {
+	Comics
+} from './comics-data.js';
+
 // Navbar menu
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
@@ -11,6 +16,7 @@ const moon = document.getElementById('moon');
 const sun = document.getElementById('sun');
 const container = document.getElementById('container');
 const customize = document.getElementById('customize');
+
 
 const containerPage = document.getElementById('container-page'); 
 const details = document.querySelector('.details');
@@ -26,22 +32,18 @@ moon.addEventListener('click', function() {
 	moon.style.display = "none";
 
 	//for Main site
-	if (container != null) {
+	if (container != null || customize != null) {
 	container.style.backgroundColor = "var(--main-color)";
 	container.style.transition = "background-color .5s ease-in-out";
-
 	for (let i=0; i<container.children.length; i++) {
 		container.children[i].style.boxShadow = "4px 4px 8px rgb(62 177 183 / 40%)";
 		container.children[i].style.transition = "box-shadow .5s ease-in-out";
-	};
-	};
-
-	if (customize != null) {
+		};
 	customize.style.color = "#d7d7d7";
 	};
 
 	//for Comics site
-	if (containerPage != null || details != null || breadcrumbsElement != null) {
+	if (containerPage || details || breadcrumbsElement || breadcrumbsElementLinkBack || breadcrumbsElementLinkCatalog != null) {
 	containerPage.style.backgroundColor = "var(--main-color)";
 	containerPage.style.transition = "background-color .5s ease-in-out";
 	containerPage.style.color = "#d7d7d7";
@@ -55,7 +57,8 @@ moon.addEventListener('click', function() {
 	};
 	breadcrumbsElementLinkBack.style.color = "#d7d7d7";
 	breadcrumbsElementLinkCatalog.style.color = "#d7d7d7";
-};
+	};
+});
 
 sun.addEventListener('click', function() {
 	document.body.style.backgroundColor = "var(--bright-color)";
@@ -96,9 +99,38 @@ sun.addEventListener('click', function() {
 // Search button
 const search = document.getElementById('search');
 const searchInput = document.getElementById('search-input');
+const iconSearch = document.getElementById('icon-search');
 
+for (let i=0; i<100; i++) {
 search.addEventListener('click', function() {
 	searchInput.style.display = "inherit";
 	//searchInput.style.transform = "scaleX(2)";
 	//searchInput.style.backgroundColor: "#DCDCDC";
+});
+};
+
+searchInput.addEventListener('type', function() {
+	console.log(searchInput.value);
+});
+
+iconSearch.addEventListener('click', function() {
+	
+	for (let i=0; i<Comics.length; i++) {
+	
+	let dataSearch = `${Comics[i].title}` + `|` + `${Comics[i].writer}` + `|` + `${Comics[i].description}`;
+
+	dataSearch = dataSearch.toLowerCase();
+
+	let stringToSearch = searchInput.value.toLowerCase();
+
+	if (dataSearch.includes(stringToSearch)) {
+
+		let dataLink = `${Comics[i].url}`;
+
+
+		console.log("Jetem tu:" + dataLink);
+		} else console.log("Brak wyników");
+
+	};
+
 });
