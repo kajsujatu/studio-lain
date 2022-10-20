@@ -8,7 +8,8 @@ import {
 // Back link
 const backLinkTop = document.getElementById('back-link-top');
 backLinkTop.addEventListener('click', function() {
-	history.back();
+	console.log('blabla');
+	history.go(-1);
 });
 
 
@@ -263,7 +264,7 @@ function chooseComics(num) {
 
 
 
-chooseComics(4);
+chooseComics(2);
 
 //O - Metronom
 //1 - WiekEvy
