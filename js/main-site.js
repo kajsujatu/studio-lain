@@ -24,6 +24,19 @@ for (let i=0; i<Comics.length; i++) {
 		// Link
 		mainCover.addEventListener("click", function(){
 			window.location = Comics[i].url;
+		//	window.location = "../komiks/comics-site.html";
+
+	//		chooseComics(3);
+		//	const activateComics = localStorage.getItem("activate");
+		//	let activate = "";
+
+		//	const activateComics = localStorage.getItem("activate");
+		//	localStorage.setItem("activate", JSON.stringify(activateComics));
+
+
+	//		new Object(activateComics)
+	//		activateComics 
+
 		});
 		// Alt
 		mainCover.setAttribute("alt",`${Comics[i].title}`);
@@ -98,14 +111,12 @@ for (let i=0; i<Comics.length; i++) {
 			}
 		});
 
+		// Search for comics
 		const searchCovers = document.getElementById('search-main-cover-input');
-		
 		searchCovers.addEventListener('input', function() {
 			const coversByClassAltAttribute = coversByClass.getAttribute('alt').toLowerCase();
-
 			if (coversByClassAltAttribute.includes(searchCovers.value.toLowerCase())) coversByClass.style.display = "block";
 			else coversByClass.style.display = "none";
-	
 		});	
 
 	};

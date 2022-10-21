@@ -266,6 +266,10 @@ function chooseComics(num) {
 
 chooseComics(2);
 
+
+
+
+
 //O - Metronom
 //1 - WiekEvy
 //2 - Duam
@@ -301,58 +305,47 @@ buyButton.addEventListener('click', function() {
 // gallery
 const imgs = document.getElementsByClassName('inside-thumbnails');
 const fullPageContainer = document.getElementById('fullpage-container');
-const imgInsideBig = document.getElementById('img-inside-big');
+const closeGalleryArea = document.getElementById('close-gallery-area');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
-
-console.log(Comics[0].img.insidePanels.inside1);
-
 for (let img of imgs) {
-
 	// enlarge image
 	img.addEventListener('click', function() {
-		fullPageContainer.style.display = 'block';
+		fullPageContainer.style.display = 'flex';
     	fullPageContainer.style.backgroundImage = 'url(' + img.src + ')';
 		let currentImage = this;
-
-		
-		console.log(currentImage.src);
-		
+		if (currentImage.previousElementSibling == null) leftArrow.style.display = "none";
+		if (currentImage.nextElementSibling == null) rightArrow.style.display = "none";
 
 		// left arrow
 		leftArrow.addEventListener('click', prevImage);
 		function prevImage() {
 			currentImage = currentImage.previousElementSibling;
-			if (currentImage.src = Comics[0].img.insidePanels.inside1) {
 			fullPageContainer.style.backgroundImage = 'url(' + currentImage.src + ')';
-			} else { 
-				leftArrow.removeEventListener('click', prevImage);
-				leftArrow.style.display = "none";
-			};
+			
+			if (currentImage.previousElementSibling == null) leftArrow.style.display = "none";
+			rightArrow.style.display = "flex";			
 		};
 
 		// right arrow
 		rightArrow.addEventListener('click', nextImage);
 		function nextImage() {
-			currentImage = currentImage.nextElementSibling;
-			if (currentImage != null) {
-			fullPageContainer.style.backgroundImage = 'url(' + currentImage.src + ')';
-			} else if
-				(currentImage = imgs[imgs.length-1]) {
-					console.log('ostatnie');
-				//rightArrow.style.backgroundColor = "red";
-				}
-				else { 
-				rightArrow.removeEventListener('click', nextImage);
-				rightArrow.style.display = "none";
-			};
-		};
-  	});
 
+			currentImage = currentImage.nextElementSibling;
+			fullPageContainer.style.backgroundImage = 'url(' + currentImage.src + ')';
+
+			if (currentImage.nextElementSibling == null) rightArrow.style.display = "none";
+			leftArrow.style.display = "flex";
+		};
+		// Prevent scrolling background
+		document.body.style.overflow = "hidden";
+  	});
+	
 	// close full-page
-  	imgInsideBig.addEventListener('click', function() {
+	closeGalleryArea.addEventListener('click', function() {
 		fullPageContainer.style.display = 'none';
+		document.body.style.overflow = "scroll";
 	});
 };
 

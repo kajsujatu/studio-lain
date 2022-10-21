@@ -48,7 +48,8 @@ body.dark-mode #container {
 }
 
 body.dark-mode #container > * {
-	box-shadow: 4px 4px 8px rgb(62 177 183 / 40%);
+	filter: brightness(.9);
+/*	box-shadow: 4px 4px 8px rgb(62 177 183 / 40%); */
 }
 
 body.dark-mode #container-page {
@@ -644,6 +645,8 @@ footer {
 
 #fullpage-container {
 	display: none;
+	justify-content: center;
+	align-items: center;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -656,20 +659,22 @@ footer {
 	cursor: pointer;
   }
 
-#img-inside-big {
-	width: 80%;
+  html:has(:fullpage-container) {
+	overflow: hidden;
+  }
+
+#close-gallery-area {
+	width: 100%;
 	height: 100%;
 	position: absolute;
-	left: 10%;	
+	z-index: -1;
   }
 
  .arrows {
-	top: 30%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	height: 40%;
-	width: 10%;
+	height: 230px;
+	width: 60px;
 	position: absolute;
 	background-color: #303030;
 	cursor: pointer;
