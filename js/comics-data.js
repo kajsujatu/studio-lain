@@ -54,6 +54,7 @@ export const Comics = [
 		filter: "antologie-integrale",
 		new: false,		
 		availability: true,
+		lastItems: true,
 		buyShops:
 			{
 			buyShop1: "gildia.pl",

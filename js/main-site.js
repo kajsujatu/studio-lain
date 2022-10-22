@@ -46,6 +46,8 @@ for (let i=0; i<Comics.length; i++) {
 		if (Comics[i].new != false) mainCover.classList.add("new");
 		// If Sold
 		if (Comics[i].availability == false) mainCover.classList.add("sold");
+		// Last items
+		if (Comics[i].lastItems == true) mainCover.classList.add("last-items");
 
 	// Adding titles uder covers
 	const titleUnderCover = document.createElement('div');
@@ -63,8 +65,11 @@ for (let i=0; i<Comics.length; i++) {
 			case "najstarsze": // Sort by Oldest
 			mainCover.style.order = Comics[i].id;
 			break;
-			case "alfabetycznie": // Sort Alphabetically
+			case "alfabetycznie-a-z": // Sort Alphabetically A-Z
 			mainCover.style.order = Comics[i].title.charCodeAt(0);
+			break;
+			case "alfabetycznie-z-a": // Sort Alphabetically Z-A
+			mainCover.style.order = -(Comics[i].title.charCodeAt(0));
 			break;
 		default: // Sort by Newest (deafult)
 			mainCover.style.order = -(Comics[i].id);
@@ -88,6 +93,10 @@ for (let i=0; i<Comics.length; i++) {
 					case "dostepne": // Filter by available comics
 						if (coversByClass.classList.value.includes('sold')) coversByClass.style.display = "none";
 						else coversByClass.style.display = "block";
+						break;
+					case "ostatnie-sztuki": // Filter by last items
+						if (coversByClass.classList.value.includes('last-items')) coversByClass.style.display = "block";
+						else coversByClass.style.display = "none";
 						break;
 					case "wyprzedane": // Filter by sold comics
 						if (coversByClass.classList.value.includes('sold')) coversByClass.style.display = "block";
