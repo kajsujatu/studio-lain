@@ -265,7 +265,7 @@ export const Comics = [
 	},
 	
 	{ // Yiu Tom 2
-		id: 46, 
+		id: 45, 
 		title: "Yiu Tom 2",
 		writer: " Téhy, L. M. Vee",
 		art: "Jérôme Renéaume, <br>Nicolas Guenet",
@@ -328,7 +328,7 @@ export const Comics = [
 	},
 
 	{ // Yiu Tom 1
-		id: 45, 
+		id: 44, 
 		title: "Yiu Tom 1",
 		writer: " Téhy, L. M. Vee",
 		art: "Jérôme Renéaume, <br>Nicolas Guenet",
@@ -390,7 +390,7 @@ export const Comics = [
 	},
 
 	{ // Opowieści z czasów Kobry
-		id: 44, 
+		id: 43, 
 		title: "Opowieści z czasów Kobry",
 		writer: "Enrique Fernandez",
 		art: "Enrique Fernandez",
@@ -524,7 +524,7 @@ export const Comics = [
 	},
 
 	{ // Armie zdobywcy
-		id: 43, 
+		id: 41, 
 		title: "Armie Zdobywcy",
 		writer: "Jean-Pierre Dionnet, Picaret",
 		art: "Jean-Claude Gal",
