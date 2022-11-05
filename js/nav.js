@@ -24,8 +24,21 @@ toggleModeButton.addEventListener('click', function() {
 });
 
 // Search button
-const search = document.getElementById('search');
+const search = document.getElementById('icon-search');
+const searchLayout = document.getElementById('search-layout');
+const searchLayoutClose = document.getElementById('search-layout-close');
 const searchInput = document.getElementById('search-input');
+
+search.addEventListener('click', function() {
+	searchLayout.style.display = "flex";
+});
+
+searchLayoutClose.addEventListener('click', function() {
+	searchLayout.style.display = "none";
+});
+
+
+
 
 searchInput.addEventListener('input', function() {
 	console.log(searchInput.value);

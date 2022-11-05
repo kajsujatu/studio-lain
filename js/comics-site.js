@@ -264,7 +264,7 @@ function chooseComics(num) {
 
 
 
-chooseComics(2);
+chooseComics(1);
 
 
 
