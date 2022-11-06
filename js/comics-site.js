@@ -3,15 +3,12 @@ import {
 	Comics
 } from './comics-data.js';
 
-
-
 // Back link
 const backLinkTop = document.getElementById('back-link-top');
 backLinkTop.addEventListener('click', function() {
 	console.log('blabla');
 	history.go(-1);
 });
-
 
 // Choose number of Comics and fill divs with data
 function chooseComics(num) {
@@ -139,39 +136,6 @@ function chooseComics(num) {
 	};
 	};
 
-
-
-
-
-	// const comicsInside1Alt = Comics[num].img.inside1Alt;
-	//document.getElementsByClassName('inside-thumbnails')[0].src = `${comicsInside1}`;
-	//document.getElementsByClassName('inside-thumbnails')[0].setAttribute("alt",`${comicsInside1Alt}`);
-
-	// Inside 2
-//	const comicsInside2 = document.createElement('img');
-//	comicsInside2.classList.add('inside-thumbnails');
-//	imagesInside.appendChild(comicsInside2);
-//
-//	comicsInside2.src = Comics[num].img.inside2;
-
-
-	
-
-
-	//document.getElementsByClassName('inside-thumbnails')[1].src = `${comicsInside2}`;
-	
-	// Inside 3
-	//	const comicsInside3 = Comics[num].img.inside3;
-	//document.getElementsByClassName('inside-thumbnails')[2].src = `${comicsInside3}`;
-
-	// Inside 4
-	 // const comicsInside4 = Comics[num].img.inside4;
-
-	// if (comicsInside4 != null) {
-	//	document.getElementById('inside4-thumbnail').style.display = "block";
-	// document.getElementsByClassName('inside-thumbnails')[3].src = `${comicsInside4}`;
-	//}
-
 	// Description
 	const comicsDescription = Comics[num].description;
 	document.getElementById('description').innerHTML = comicsDescription;
@@ -225,12 +189,23 @@ function chooseComics(num) {
 	document.getElementById('details-original-edition-date').innerHTML = comicsDetailOriginalsEditionDate;
 
 	// Related Comics
-	const comicsRelatedComics = Comics[num].relatedComics.img1;
+	const comicsRelatedComics = Comics[num].relatedComics;
+	const comicsRelatedComicsLink = Comics[num].relatedComicsLink;
+	const relatedComicsDiv = document.getElementById('related-comics-section');
+
 	if (comicsRelatedComics != null) {
-	document.getElementById('related-comics-section').style.display = "grid";
-	document.getElementById('related-comics').src = `${comicsRelatedComics}`;
+	for (let i=0; i<Object.values(comicsRelatedComics).length; i++) {
+		relatedComicsDiv.style.display = "grid";
+		const relatedComicsLink = document.createElement('a');
+		relatedComicsDiv.appendChild(relatedComicsLink);
+		const relatedComicsThumbnail = document.createElement('img');
+		relatedComicsLink.appendChild(relatedComicsThumbnail);
+		relatedComicsLink.setAttribute('href', `${Object.values(comicsRelatedComicsLink)[i]}`);
+		relatedComicsThumbnail.classList.add('related-comics')
+		relatedComicsThumbnail.src = `${Object.values(comicsRelatedComics)[i]}`;
 	};
-			
+	};
+
 	return;
 };
 
@@ -264,7 +239,7 @@ function chooseComics(num) {
 
 
 
-chooseComics(1);
+chooseComics(9);
 
 
 
@@ -279,6 +254,9 @@ chooseComics(1);
 //6 - opowiesci kobry
 //7 - brygada
 //8 - Armie zdobywcy
+//9 - Solo 1
+//10 - Solo 2
+//11 - Solo 3
 
 //	//};
 

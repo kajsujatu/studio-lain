@@ -110,6 +110,10 @@ for (let i=0; i<Comics.length; i++) {
 						if (coversByClass.classList.value.includes('enrique-fernandez')) coversByClass.style.display = "block";
 						else coversByClass.style.display = "none";
 						break;
+					case "seria-solo":
+						if (coversByClass.classList.value.includes('seria-solo')) coversByClass.style.display = "block";
+						else coversByClass.style.display = "none";
+						break;	
 					case "seria-yiu":
 						if (coversByClass.classList.value.includes('yiu')) coversByClass.style.display = "block";
 						else coversByClass.style.display = "none";

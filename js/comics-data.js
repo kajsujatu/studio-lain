@@ -135,7 +135,7 @@ export const Comics = [
 	},		
 
 	{ // Duam 
-		id: 49,
+		id: 50,
 		title: "Duam",
 		writer: "Felix Vega",
 		art: "Felix Vega",
@@ -257,7 +257,7 @@ export const Comics = [
 		{
 		buyShop1: "gildia.pl",
 		},
-	buyLinks:
+		buyLinks:
 		{
 		buyLink1: "https://www.gildia.pl/komiksy/495491-korriganie",
 		}, 
@@ -313,6 +313,10 @@ export const Comics = [
 			{
 			img1: "../img/komiks/yiu1/yiu1_okladka_regularna.jpg"		
 			},
+		relatedComicsLink: 
+			{
+			link1: "../komiks/yiu-tom1.html",
+			},			
 		filter: "yiu",
 		new: false,		
 		availability: true,
@@ -338,20 +342,20 @@ export const Comics = [
 		img: 
 			{
 			coverMainSite: "../img/komiks/yiu1/yiu1_okladka_regularna.jpg",
-			coverRegular: "../img/komiks/yiu1/kyiu1_okladka_regularna.jpg",
+			coverRegular: "../img/komiks/yiu1/yiu1_okladka_regularna.jpg",
 			coverRegularThumbnail: "../img/komiks/yiu1/yiu1_okladka_regularna.jpg",
 			coverAlternative1: "../img/komiks/yiu1/yiu1_okladka_alternatywna1.jpg",
 			insidePanels:
 				{				
 				inside1: "../img/komiks/yiu1/yiu1_str1.jpg",
 				inside2: "../img/komiks/yiu1/yiu1_str2.jpg",
-				inside3: "../img/komiks/yiu1/yiu1_str3.jpg",
+				inside3: "../img/komiks/yiu1/yiu1_str3.jpg"
 				},
 			insidePanelsAlt:
 				{
 				inside1Alt: "przykładowa plansza komiksu Yiu - 1",
 				inside2Alt: "przykładowa plansza komiksu Yiu - 2",
-				inside3Alt: "przykładowa plansza komiksu Yiu - 3",
+				inside3Alt: "przykładowa plansza komiksu Yiu - 3"
 				},						
 			},
 		details:
@@ -376,13 +380,17 @@ export const Comics = [
 			{
 				img1: "../img/komiks/yiu2/yiu2_okladka_regularna.jpg"				
 			},
+		relatedComicsLink: 
+			{
+			link1: "../komiks/yiu-tom2.html"
+			},				
 		filter: "yiu",
 		new: false,		
 		availability: false,
 		buyShops:
 		{
 		},
-	buyLinks:
+		buyLinks:
 		{
 
 		}, 
@@ -457,7 +465,7 @@ export const Comics = [
 	},
 	
 	{ // Brygada
-		id: 42, 
+		id: 36, 
 		title: "Brygada",
 		writer: "Enrique Fernandez",
 		art: "Enrique Fernandez",
@@ -524,9 +532,9 @@ export const Comics = [
 	},
 
 	{ // Armie zdobywcy
-		id: 41, 
+		id: 38, 
 		title: "Armie Zdobywcy",
-		writer: "Jean-Pierre Dionnet, Picaret",
+		writer: "Jean-Pierre Dionnet, <br>Picaret",
 		art: "Jean-Claude Gal",
 		translator: "Anna Winiarska",
 		proofreader: "Damian Pietrzak",
@@ -536,7 +544,7 @@ export const Comics = [
 			coverMainSite: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
 			coverRegular: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
 			coverRegularThumbnail: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-regularna.jpg",
-			coverAlternative1: "../img/komiks//armie-zdobywcy/armie-zdobywcy-okladka-alternatywna.jpg",
+			coverAlternative1: "../img/komiks/armie-zdobywcy/armie-zdobywcy-okladka-alternatywna.jpg",
 			insidePanels:
 				{
 				inside1: "../img/komiks/armie-zdobywcy/armie-zdobywcy-str1.jpg",
@@ -578,5 +586,218 @@ export const Comics = [
 		new: false,		
 		availability: false,
 		url: "../komiks/armie-zdobywcy.html"
+	},
+
+	{ // Solo 1
+		id: 35, 
+		title: "Solo: Świat Kanibali",
+		writer: "Oscar Martín",
+		art: "Oscar Martín",
+		translator: "Marta Waluk",
+		proofreader: "Damian Pietrzak",
+		description: "<p><b>Brutalny i krwawy komiks mistrza hiszpańskiego komiksu. Świat po apokalipsie. Mutacje, anarchia, mordy i powszechny kanibalizm.</b> Jaki jest sens życia w takim miejscu? Niezwykła, iście filozoficzna, rozprawa o kondycji człowieczeństwa. Człowieczeństwa, którego więcej ma zmutowany szczur niż pełzający wciąż po planecie człowiek.</p>",
+		img: 
+			{
+			coverMainSite: "../img/komiks/solo-1/solo_1_okladka_regularna.jpg",
+			coverRegular: "../img/komiks/solo-1/solo_1_okladka_regularna.jpg",
+			coverRegularThumbnail: "../img/komiks/solo-1/solo_1_okladka_regularna.jpg",
+			coverAlternative1: "../img/komiks/solo-1/solo_1_okladka_alternatywna.jpg",
+			insidePanels:
+				{
+				inside1: "../img/komiks/solo-1/solo-1-str1.jpg",
+				inside2: "../img/komiks/solo-1/solo-1-str2.jpg",
+				inside3: "../img/komiks/solo-1/solo-1-str3.jpg",
+				inside4: "../img/komiks/solo-1/solo-1-str4.jpg"
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: "przykładowa plansza komiksu Solo: Świat Kanibali - 1",
+				inside2Alt: "przykładowa plansza komiksu Solo: Świat Kanibali - 2",
+				inside3Alt: "przykładowa plansza komiksu Solo: Świat Kanibali - 3",
+				inside4Alt: "przykładowa plansza komiksu Solo: Świat Kanibali - 4",
+				},										
+			},
+		details:
+			{
+			format: "A4",
+			pages: 144,
+			print: "kolorowy",
+			paper: "kredowy",
+			typeOfBookCover: "twarda",
+			date: "sierpień 2018",
+			edition: "I",
+			ISBN: "978-83-950587-4-5",
+			price: "74,90 zł"
+			},
+		detailsOriginalEdition:
+			{
+			title: "Solo. Mundo caníbal",
+			publisher: "",
+			date: "2017"
+			},
+		relatedComics: 
+			{
+				img1: "../img/komiks/solo-1/solo_1_okladka_regularna.jpg",
+				img2: "../img/komiks/solo-3/solo_3_okladka_regularna.jpg"
+			},
+		relatedComicsLink: 
+			{
+			link1: "../komiks/solo-ocaleni-z-chaosu.html",
+			link2: "../komiks/solo-legatus.html"
+			},			
+		filter: "seria-solo",
+		new: false,		
+		availability: false,
+		url: "../komiks/solo-swiat-kanibali.html"
+	},
+
+	{ // Solo 2
+		id: 37, 
+		title: "Solo: Ocaleni z chaosu",
+		writer: "Oscar Martín",
+		art: "Oscar Martín",
+		translator: "Marta Waluk",
+		proofreader: "Damian Pietrzak, <br>Mała Kasia",
+		description: "<p><b>Prequel wielkiego komiksowego przeboju Solo: Świat kanibali.</b> Tym razem Oscar Martín zabiera czytelnika w podróż do przeszłości zmutowanego szczura. Poznajemy jego rodzinę, powód rozpoczęcia samotnej wędrówki oraz wielką miłość. Jednocześnie autor bardzo mocno rozbudowuje postapokaliptyczny świat, po którym tuła się Solo. Dowiadujemy się więcej o resztkach ludzkiej cywilizacji, poznajemy nowe społeczności, a także masę zmutowanych potworów i dziwadeł. Wszystko to pięknie narysowane w charakterystycznym dla Martína kreskówkowym, ale i brutalnym, krwawym stylu. To także, a może przede wszystkim, ujmująca opowieść o rodzinie, o jej wyjątkowym znaczeniu w życiu każdego z nas. Solo, zmutowany szczur filozof i wojownik, powraca w epickiej historii <i>Ocaleni z chaosu</i>, zebranej w całości w tym albumie.</p><p>Oscar Martín znany jest najbardziej z tworzenia komiksów na potrzeby uniwersum Disneya. Za swoją kreację <i>Toma i Jerry'ego</i> zebrał masę nagród. Chciał jednak stworzyć komiks dla dorosłego czytelnika. Tak powstał Solo, którego sukces przerósł najśmielsze oczekiwania autora i który stał się komiksem kultowym w jego rodzimej Hiszpanii. Z powodzeniem podbija też rynek francuski i polski.</p>",
+		img: 
+			{
+			coverMainSite: "../img/komiks/solo-2/solo_2_okladka_regularna.jpg",
+			coverRegular: "../img/komiks/solo-2/solo_2_okladka_regularna.jpg",
+			coverRegularThumbnail: "../img/komiks/solo-2/solo_2_okladka_regularna.jpg",
+			coverAlternative1: "../img/komiks/solo-2/solo_2_okladka_alternatywna.jpg",
+			insidePanels:
+				{
+				inside1: "../img/komiks/solo-2/solo-2-str1.jpg",
+				inside2: "../img/komiks/solo-2/solo-2-str2.jpg",
+				inside3: "../img/komiks/solo-2/solo-2-str3.jpg",
+				inside4: "../img/komiks/solo-2/solo-2-str4.jpg",
+				inside5: "../img/komiks/solo-2/solo-2-str5.jpg"
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: "przykładowa plansza komiksu Solo: Ocaleni z chaosu - 1",
+				inside2Alt: "przykładowa plansza komiksu Solo: Ocaleni z chaosu - 2",
+				inside3Alt: "przykładowa plansza komiksu Solo: Ocaleni z chaosu - 3",
+				inside4Alt: "przykładowa plansza komiksu Solo: Ocaleni z chaosu - 4",
+				inside5Alt: "przykładowa plansza komiksu Solo: Ocaleni z chaosu - 5"
+				},										
+			},
+		details:
+			{
+			format: "A4",
+			pages: 216,
+			print: "kolorowy",
+			paper: "kredowy",
+			typeOfBookCover: "twarda",
+			date: "listopad 2018",
+			edition: "I",
+			ISBN: "978-83-950587-7-6",
+			price: "89,90 zł"
+			},
+		detailsOriginalEdition:
+			{
+			title: "Solo. Los Supervivientes del Caos",
+			publisher: "",
+			date: "2017"
+			},
+		relatedComics: 
+			{
+			img1: "../img/komiks/solo-1/solo_1_okladka_regularna.jpg",
+			img2: "../img/komiks/solo-3/solo_3_okladka_regularna.jpg"
+			},
+		relatedComicsLink: 
+			{
+			link1: "../komiks/solo-swiat-kanibali.html",
+			link2: "../komiks/solo-legatus.html"
+			},		
+		filter: "seria-solo",
+		new: false,		
+		availability: true,
+		buyShops:
+		{
+		buyShop1: "robmydobrze.pl",
+		},
+		buyLinks:
+		{
+		buyLink1: "https://robmydobrze.pl/produkt/solo-2-ocaleni-z-chaosu/",
+		}, 
+		url: "../komiks/solo-ocaleni-z-chaosu.html"
+	},
+
+	{ // Solo 3
+		id: 49, 
+		title: "Solo: Legatus",
+		writer: "Oscar Martín",
+		art: "Oscar Martín",
+		translator: "",
+		proofreader: "",
+		description: "<p>Oscar Martín autor <i>Solo: Legatus</i> znany jest najbardziej z tworzenia komiksów na potrzeby uniwersum Disneya. Za swoją kreację <i>Toma i Jerrego</i> zebrał masę nagród. Chciał jednak stworzyć komiks dla dorosłego czytelnika. Tak powstało uniwersum Solo. Brutalne i krwawe, bo to świat po apokalipsie. Mutacje, anarchia, mordy i powszechny kanibalizm. <i>Solo: Legatus</i> to nowa opowieść w tym uniwersum.</p><p><b>UMARŁ SOLO - NIECH ŻYJE SOLO!</b></p><p>Legendy nie umierają. Muszą trwać, by dawać nadzieję. Zwłaszcza w takim okrutnym, postapokaliptycznym świecie. Waleczny szczur zginął, ale na szczęście zostawił po sobie spuściznę. Walka mutantów z terrorem okrutnych ludzi będzie więc trwać. Na jej czele stanie jednak nie szczur, a pies.</p>",
+		img: 
+			{
+			coverMainSite: "../img/komiks/solo-3/solo_3_okladka_regularna.jpg",
+			coverRegular: "../img/komiks/solo-3/solo_3_okladka_regularna.jpg",
+			coverRegularThumbnail: "../img/komiks/solo-3/solo_3_okladka_regularna.jpg",
+			coverAlternative1: "../img/komiks/solo-3/solo_3_okladka_alternatywna1.jpg",
+			coverAlternative2: "../img/komiks/solo-3/solo_3_okladka_alternatywna2.jpg",
+			insidePanels:
+				{
+				inside1: "../img/komiks/solo-3/solo_3-str1.jpg",
+				inside2: "../img/komiks/solo-3/solo_3-str2.jpg",
+				inside3: "../img/komiks/solo-3/solo_3-str3.jpg"
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: "przykładowa plansza komiksu Solo: Legatus - 1",
+				inside2Alt: "przykładowa plansza komiksu Solo: Legatus - 2",
+				inside3Alt: "przykładowa plansza komiksu Solo: Legatus - 3"
+				},										
+			},
+		details:
+			{
+			format: "A4",
+			pages: 80,
+			print: "kolorowy",
+			paper: "kredowy",
+			typeOfBookCover: "twarda",
+			date: "kwiecień 2022",
+			edition: "I",
+			ISBN: "",
+			price: "69,90 zł"
+			},
+		detailsOriginalEdition:
+			{
+			title: "",
+			publisher: "",
+			date: ""
+			},
+		relatedComics: 
+			{
+			img1: "../img/komiks/solo-1/solo_1_okladka_regularna.jpg",
+			img2: "../img/komiks/solo-2/solo_2_okladka_regularna.jpg"
+			},
+		relatedComicsLink: 
+			{
+			link1: "../komiks/solo-swiat-kanibali.html",
+			link2: "../komiks/solo-ocaleni-z-chaosu.html"
+			},	
+		filter: "seria-solo",
+		new: false,		
+		availability: true,
+		buyShops:
+			{
+			buyShop1: "gildia.pl",
+			buyShop2: "gildia.pl (okładka A)",
+			buyShop3: "gildia.pl (okładka B)",
+			buyShop4: "robmydobrze.pl"
+			},
+		buyLinks:
+			{
+			buyLink1: "https://www.gildia.pl/komiksy/517948-solo-legatus",
+			buyLink2: "https://www.gildia.pl/komiksy/517949-solo-legatus-okladka-limitowana-a",
+			buyLink3: "https://www.gildia.pl/komiksy/517950-solo-legatus-okladka-limitowana-b",
+			buyLink4: "https://robmydobrze.pl/produkt/solo-legatus-oscar-martin/"
+			}, 						
+		url: "../komiks/solo-legatus.html"
 	}
+
 ];

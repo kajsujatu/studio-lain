@@ -59,6 +59,10 @@ body.dark-mode a {
 	color: var(--gray-color);
 }
 
+body.dark-mode .buy-link a {
+	color: var(--white-color);
+}
+
 body.dark-mode #container {
 	background-color: var(--main-color);
 }
@@ -69,7 +73,8 @@ body.dark-mode .cover {
 }
 
 body.dark-mode #container-page {
-	border: 17px solid #1b1b1b;
+	border: 17px solid var(--main-color);
+	background-color: var(--main-color);
 }
 
 body.dark-mode .details,
@@ -170,24 +175,17 @@ header {
 #search-layout {
 	position: fixed;
 	display: none;
+	align-content: flex-start;
 	justify-content: center;
 	align-items: center;
 	gap: 1.2rem;
 	inset: 0;
-	height: 20rem;
+	height: 100%;
 	width: 100%;
 	background-color: var(--main-color);
-	opacity: .9;
 	z-index: 99;
+	flex-wrap: wrap;
 	animation: ease-down .25s ease-out backwards;
-}
-
-#search-input {
-	height: 2rem;
-	width: max(200px, 40%);
-	justify-content: end;
-	align-self: center;
-	border: 0;
 }
 
 @keyframes ease-down {
@@ -195,14 +193,40 @@ header {
 		height: 0;
 	}
 	to {
-		height: 20rem;
+		height: 100%;
 	}
+}
+
+#search-input {
+	height: 2rem;
+	margin-top: 10rem;
+	width: max(200px, 40%);
+	justify-content: end;
+	align-self: center;
+	border: 0;
+}
+
+#icon-search-content,
+#search-layout-close {
+	margin-top: 10rem;
+}
+
+#search-output {
+	width: max(800px, 80%);
+	text-align: center;
+	color: var(--gray-color);
+	font-weight: 200;
+}
+
+#search-output a {
+	color: var(--bright-color);
+	font-weight: 600;
 }
 
 #toggle-mode {
 	content: url(../img/icon-moon.svg);
 	height: 40px;
-	width: 45px;
+	width: 40px;
 	padding-left: 15px;
 	cursor: pointer;
 }
@@ -232,13 +256,12 @@ header {
 	filter: brightness(1.5);
 }
 
-.icon-moon,
-.icon-sun {
-	margin-top: 5px;
-}
-
 #icon-search {
 	margin-right: 1rem;
+}
+
+#facebook .icon {
+	margin-top: .1rem;
 }
 
 /* ****** CUSTOMIZE PANEL ******* */
@@ -526,12 +549,13 @@ footer {
 #inside-samples {
 	font-size: 1.3rem;
 	font-weight: 700;
-	margin: 15px auto 10px auto;
+	margin: 10px auto 20px auto;
 }
 
 #inside-samples::before {
 	content: url(../img/icon-zoom-in.svg);
-	margin-left: 6px;
+	position: absolute;
+	margin-left: -2.3rem;
 	display: block;
 	width: 28px;
 }
@@ -592,7 +616,7 @@ footer {
 h1.title {
 	text-align: center;
 	font-size: 1.9rem;
-	line-height: .6rem;
+	line-height: 2.6rem;
 	margin-block-start: .8rem;
 	margin-block-end: .4rem;
 }
@@ -695,6 +719,7 @@ h1.title {
 	font-size: 1.1rem;
 	font-weight: 500;
 	color: #808080;
+	margin-block-start: .5rem;
 	margin-block-end: -10px;
 }
 
@@ -703,8 +728,8 @@ h1.title {
 }
 
 #buy {
-	width: 163px;
-	height: 48px;
+	width: 11.3rem;
+	height: 3.7rem;
 	background-color: #19A538;
 	border-radius: 10px;
 	border: 0;
@@ -725,7 +750,7 @@ h1.title {
 #buy-links {
 	display: none;
 	margin-top: -10px;
-	width: 163px;
+	width: 11.3rem;
 	height: auto;
 	list-style: none;
 	padding-inline-start: 0;
@@ -742,8 +767,8 @@ h1.title {
 	content: "";
 	margin-top: -10px;
 	background-color: #19A538; 
-	width: 163px;
-	height: 10px;
+	width: 11.3rem;
+	height: .6rem;
 	position: relative;
 }
 
@@ -769,22 +794,30 @@ h1.title {
 #related-comics-section {
 	order: 5;
 	gap: 20px;
-	margin-top: 30px;
+	margin-top: 5rem;
 	width: auto;
 	display: none;
+	grid-auto-flow: column;
 	font-size: .9rem;
 	font-weight: 700;
 	color: #808080;
 }
 
-#related-comics-section > img {
-	cursor: pointer;
+#related-comics-section::before {
+	content: "Powiązane tytuły:";
+	position: absolute;
+	margin-top: -2rem;
+	line-height: 0;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #808080;
 }
 
-#related-comics {
+.related-comics {
 	width: 148px;
 	height: 198px;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+	cursor: pointer;
 }
 
 .inside-thumbnails {
@@ -797,7 +830,43 @@ h1.title {
 
 /* **************** SMALL DEVICES **************** */
 
+
 @media (max-width: 34.5rem) { /* 552px */
+
+	.cover {
+		width: 290px;
+		height: 390px;
+	}
+
+	#cover-big,
+	.inside-thumbnails {
+		width: 100%;
+		height: auto;
+	}
+
+	#breadcrumbs {
+		grid-template-columns: none;
+		grid-template-rows: auto auto;
+		justify-content: center;
+		margin-top: .5rem;
+		gap: .5rem;
+	}
+
+	#container-page {
+		margin-top: 56px;
+	}
+
+	#related-comics-section {
+		grid-auto-flow: row;
+	}
+
+	#related-comics-section::before {
+		width: 10rem;
+	}
+
+}
+
+@media (max-width: 40rem) { /* 640px */
 
 	#customize {
 		margin-block-start: 1rem;
@@ -824,7 +893,7 @@ h1.title {
 	}
 }
 
-@media (max-width: 55rem) {
+@media (max-width: 55rem) { /* 880px */
 
 	.navbar {
 		grid-template-columns: auto auto;
@@ -846,6 +915,16 @@ h1.title {
 		padding-block-end: 1rem;
 		background-color: var(--main-color);
 		z-index: 99;
+		animation: ease-down-2 .15s ease-out;
+	}
+
+	@keyframes ease-down-2 {
+		from {
+			height: 0;
+		}
+		to {
+			height: 14rem;
+		}
 	}
 
 	.navbar-links li {
