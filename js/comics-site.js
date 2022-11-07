@@ -239,11 +239,7 @@ function chooseComics(num) {
 
 
 
-chooseComics(9);
-
-
-
-
+chooseComics(1);
 
 //O - Metronom
 //1 - WiekEvy
@@ -323,7 +319,9 @@ for (let img of imgs) {
 	// close full-page
 	closeGalleryArea.addEventListener('click', function() {
 		fullPageContainer.style.display = 'none';
-		document.body.style.overflow = "scroll";
+		document.body.style.overflowY = "scroll";
+		rightArrow.style.display = "flex";
+		leftArrow.style.display = "flex";	
 	});
 };
 

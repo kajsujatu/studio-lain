@@ -67,7 +67,9 @@ body.dark-mode #container {
 	background-color: var(--main-color);
 }
 
-body.dark-mode .cover {
+body.dark-mode .cover,
+body.dark-mode #container-covers > img,
+body.dark-mode .related-comics {
 	box-shadow: none;
 	filter: brightness(.9);
 }
@@ -173,19 +175,19 @@ header {
 }
 
 #search-layout {
-	position: fixed;
+	position: absolute;
 	display: none;
 	align-content: flex-start;
 	justify-content: center;
 	align-items: center;
 	gap: 1.2rem;
 	inset: 0;
-	height: 100%;
 	width: 100%;
 	background-color: var(--main-color);
 	z-index: 99;
 	flex-wrap: wrap;
 	animation: ease-down .25s ease-out backwards;
+	overflow-y: scroll;
 }
 
 @keyframes ease-down {
@@ -197,22 +199,31 @@ header {
 	}
 }
 
+#search-options {
+	display: flex;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.2rem;
+	margin-top: 5rem;
+	width: 90%;
+}
+
 #search-input {
 	height: 2rem;
-	margin-top: 10rem;
-	width: max(200px, 40%);
+	width: min(400px, 80%);
 	justify-content: end;
 	align-self: center;
 	border: 0;
 }
 
-#icon-search-content,
-#search-layout-close {
-	margin-top: 10rem;
+.search-phrase {
+	color: var(--bright-color-100);
 }
 
 #search-output {
-	width: max(800px, 80%);
+	width: min(800px, 90%);
 	text-align: center;
 	color: var(--gray-color);
 	font-weight: 200;
@@ -223,18 +234,21 @@ header {
 	font-weight: 600;
 }
 
+.result-element {
+	border-bottom: solid 1px var(--gray-color);
+}
+
 #toggle-mode {
 	content: url(../img/icon-moon.svg);
-	height: 40px;
-	width: 40px;
-	padding-left: 15px;
+	width: 24px;
+	margin-left: 20px;
 	cursor: pointer;
 }
 
 #additions::before {
 	content: "";
 	position: relative;
-	left: 4rem;
+	left: 3.7rem;
 	height: 40px;
 	width: 1.2rem;
 	border-left: 1px solid #797979;
@@ -247,8 +261,7 @@ header {
 }
 
 .icon {
-	width: 28px;
-	height: 28px;
+	width: 24px;
 	cursor: pointer;
 }
 
@@ -256,12 +269,21 @@ header {
 	filter: brightness(1.5);
 }
 
+#icon-zoom-in {
+	margin-top: -.5rem;
+}
+
+#icon-zoom-in:hover {
+	filter: none;
+	cursor: none;
+}
+
 #icon-search {
 	margin-right: 1rem;
 }
 
 #facebook .icon {
-	margin-top: .1rem;
+	margin-top: .25rem;
 }
 
 /* ****** CUSTOMIZE PANEL ******* */
@@ -404,19 +426,19 @@ header {
 .new::after,
 .sold::after,
 .last-items::after {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: 600;
 	color: var(	--bright-color);
 	display: block;
 	position: relative;
-	left: -.6rem;
+	left: -.62rem;
 	border-radius: 0 10px 10px 0;
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
 }
 
 .new::after {
 	content: "NOWOŚĆ";
-	width: 8.2rem;
+	width: 7.8rem;
 	top: 0;
 	background-color: #2D7A85;
 	padding: 10px 15px 7px 15px;	
@@ -424,7 +446,7 @@ header {
 
 .sold::after {
 	content: "WYPRZEDANE";
-	width: 11rem;
+	width: 10.2rem;
 	top: 65%;
 	background-color: #303030;
 	padding: 10px 15px 10px 15px;	
@@ -432,7 +454,7 @@ header {
 
 .last-items::after { 
 	content: "OSTATNIE SZTUKI";
-	width: 13rem;
+	width: 12.3rem;
 	top: 65%;
 	background-color: #9b3838;
 	padding: 10px 15px 10px 15px;
@@ -473,7 +495,7 @@ footer {
 	margin-top: 60px;
 	text-align: center;
 	line-height: 50px;
-	color: var(--white-color);
+	color: var(--gray-color);
 	background-color: var(--main-color);
 	align-self: end;
 }
@@ -546,19 +568,25 @@ footer {
 	place-self: center;
 }
 
+#inside-panels-headline {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
 #inside-samples {
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin: 10px auto 20px auto;
 }
 
-#inside-samples::before {
+/* #inside-samples::before {
 	content: url(../img/icon-zoom-in.svg);
 	position: absolute;
 	margin-left: -2.3rem;
 	display: block;
 	width: 28px;
-}
+} */
 
 #img-inside {
 	display: flex;
@@ -839,6 +867,7 @@ h1.title {
 	}
 
 	#cover-big,
+	#container-covers,
 	.inside-thumbnails {
 		width: 100%;
 		height: auto;
@@ -864,6 +893,10 @@ h1.title {
 		width: 10rem;
 	}
 
+	.sold::before,
+	.last-items::before {
+		top: 17.9rem;
+	}
 }
 
 @media (max-width: 40rem) { /* 640px */

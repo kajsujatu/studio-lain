@@ -23,9 +23,10 @@ toggleModeButton.addEventListener('click', function() {
  	localStorage.setItem("mode", mode);
 });
 
-// Search button
+// Search panel
 const search = document.getElementById('icon-search');
 const iconSearch = document.getElementById('icon-search-content');
+const iconReturn = document.getElementById('icon-return');
 const searchLayout = document.getElementById('search-layout');
 const searchLayoutClose = document.getElementById('search-layout-close');
 const searchInput = document.getElementById('search-input');
@@ -33,48 +34,67 @@ const searchOutput = document.getElementById('search-output');
 
 search.addEventListener('click', function() {
 	searchLayout.style.display = "flex";
+	document.body.style.overflow = "hidden";
 });
 
 searchLayoutClose.addEventListener('click', function() {
 	searchLayout.style.display = "none";
+	searchOutput.innerHTML = "";
+	document.body.style.overflowY = "scroll";
 });
 
 searchInput.addEventListener('input', function() {
-	// console.log(searchInput.value);
-	// searchOutput.innerText = searchInput.value;
-	
+	searchOutput.innerHTML = "";
 });
 
 // Search content
-iconSearch.addEventListener('click', function() {
+function searchContent() {	
+	if (searchInput.value == "" || searchInput.value == " ") {
+		let emptyResultDiv = document.createElement('div');
+		searchOutput.appendChild(emptyResultDiv);
+		emptyResultDiv.classList.add('result-element');
+		emptyResultDiv.innerHTML = `<p>Wpisz w pole frazę, którą chcesz wyszukać.</p>`;
+	} else {
+	let resultDiv = document.createElement('div');
+	searchOutput.appendChild(resultDiv);
+	resultDiv.classList.add('result-element');
+	resultDiv.innerHTML = `<p>Wyniki wyszukiwania dla frazy "<span class="search-phrase">${searchInput.value}</span>":</p>`;
+	
 	for (let i=0; i<Comics.length; i++) {
 	let dataSearch = `${Comics[i].title} | ${Comics[i].writer} | ${Comics[i].art} | ${Comics[i].translator} | ${Comics[i].proofreader} | ${Comics[i].description} | ${Comics[i].details} | ${Comics[i].detailsOriginalEdition}`;
 	dataSearch = dataSearch.toLowerCase();
 	let stringToSearch = searchInput.value.toLowerCase();
 
 	if (dataSearch.includes(stringToSearch)) {
-		console.log(Comics[i].url);
-
+	//	console.log(Comics[i].url);
 		let resultDiv = document.createElement('div');
 		searchOutput.appendChild(resultDiv);
-		let result = `<p>Sprawdź: <a href="${Comics[i].url}">${Comics[i].title}</a>`;
-		resultDiv.innerHTML = result;
+		resultDiv.classList.add('result-element');
+		resultDiv.innerHTML = `<p>Sprawdź: <a href="${Comics[i].url}">${Comics[i].title}</a>`;
 		}
-		
-		// else {
-		//	searchOutput.innerHTML = `Brak wyników`;
-		//	}
-
-	//	for (let k=0; k<Comics[i].url.length; k++) {
-	//	let dataLink = `${Comics[i].url}`;
-	//	searchOutput.innerHTML = `<p>Wyniki wyszukiwania:</p><p><a href="${dataLink}">${dataLink}</a>`;
-	//};
-		
-	//	else {
-	//		let resultDiv = document.createElement('div');
-	//		searchOutput.appendChild(resultDiv);
-	//		resultDiv.innerHTML = "Brak wyników";
-	//	};
 	};
+	
+	};
+		
+};
 
+iconSearch.addEventListener('click', searchContent);
+
+document.addEventListener('keypress', (e)=>{
+	if(keyCode === 13) {
+		searchContent();
+	  }
 });
+
+iconReturn.addEventListener('click', function() {
+	searchInput.value = "";
+	searchOutput.innerHTML = "";
+});
+
+
+//else {
+//	let noResultDiv = document.createElement('div');
+//	searchOutput.appendChild(noResultDiv);
+//	noResultDiv.classList.add('result-element');
+//	noResultDiv.innerHTML = `<p>Brak wyników.</p>`;
+//}

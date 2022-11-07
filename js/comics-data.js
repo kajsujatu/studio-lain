@@ -11,16 +11,16 @@ export const Comics = [
 		description: "<p><b>Komiks polecany przez samego <i>Enki Bilala</i>, autora m.in. kultowej <i>Trylogii Nikopola</i>.</b> Mistrz europejskiego komiksu napisał w przedmowie - <i>Wchodzimy do szarej strefy, która, tak jak być powinno, jest naszym lustrzanym odbiciem i w której widać zmagającego się z rzeczywistością człowieka. To świat zarazem bliski i odległy, znajomy i niepokojący, doświadczony przez kolejne kryzysy, lecz zasadniczo stojący w miejscu. Tak było wczoraj, tak będzie jutro, bez dwóch zdań.</i> </p><p> Niedaleka przyszłość. Totalitaryzm został przebrany w szaty demokracji bezpośredniej. Każdy system ma jednak luki, a za puszczeniem rewolucyjnego domina w ruch często stoi zwykły przypadek. Młoda kobieta o imieniu Lynn szuka informacji o swoim mężu. Nie wrócił z kosmicznej misji na jednej ze stacji orbitalnych. Dążenie do odkrycia, co naprawdę się wydarzyło, sprawi, że uruchomione zostaną siły, które zachwieją nie tylko jej światem. Czy jednostka ma szanse w starciu z bezwzględnym systemem? Czy rewolucja zawsze zżera swój własny ogon? Czy prawda faktycznie wyzwala?</p>",
 		img: 
 			{
-			coverMainSite: "../img/komiks/metronom/metronom_cover_main-site.jpg",
-			coverRegular: "../img/komiks/metronom/metronom_cover_regular-max.jpg",
-			coverRegularThumbnail: "../img/komiks/metronom/metronom_cover_regular-max.jpg",
-			coverAlternative1: "../img/komiks/metronom/metronom_cover_alternative1.jpg",
-			coverAlternative2: "../img/komiks/metronom/metronom_cover_alternative2.jpg",
+			coverMainSite: "../img/komiks/metronom/metronom_okladka_regularna.jpg",
+			coverRegular: "../img/komiks/metronom/metronom_okladka_regularna.jpg",
+			coverRegularThumbnail: "../img/komiks/metronom/metronom_okladka_regularna-miniatura.jpg",
+			coverAlternative1: "../img/komiks/metronom/metronom_okladka_alternatywna1.jpg",
+			coverAlternative2: "../img/komiks/metronom/metronom_okladka_alternatywna2.jpg",
 			insidePanels:
 				{
-				inside1: "../img/komiks/metronom/metronom_inside1.jpg",
-				inside2: "../img/komiks/metronom/metronom_inside2.jpg",
-				inside3: "../img/komiks/metronom/metronom_inside3.jpg",
+				inside1: "../img/komiks/metronom/metronom_str1.jpg",
+				inside2: "../img/komiks/metronom/metronom_str2.jpg",
+				inside3: "../img/komiks/metronom/metronom_str3.jpg",
 				},
 			insidePanelsAlt:
 				{
@@ -80,7 +80,7 @@ export const Comics = [
 			{
 			coverMainSite: "../img/komiks/wiek-evy/wiek-evy_okladka_regularna.jpg",
 			coverRegular: "../img/komiks/wiek-evy/wiek-evy_okladka_regularna.jpg",
-			coverRegularThumbnail: "../img/komiks/wiek-evy/wiek-evy_okladka_regularna.jpg",
+			coverRegularThumbnail: "../img/komiks/wiek-evy/wiek-evy_okladka_regularna-miniatura.jpg",
 			coverAlternative1: "../img/komiks/wiek-evy/wiek-evy_okladka_alternatywna1.jpg",
 			coverAlternative2: "../img/komiks/wiek-evy/wiek-evy_okladka_alternatywna2.jpg",
 			insidePanels:
@@ -207,7 +207,7 @@ export const Comics = [
 		art: "Emmanuel Civiello",
 		translator: "Anna Winiarska",
 		proofreader: "Łukasz Sosiński, Kasia Mała",
-		description: "<p><b> Wspaniale zilustrowane dark fantasy dla dorosłych.</b> Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na rynku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu. </p><p> Opowieść rozgrywa się w roku 1100 naszej ery. Główną bohaterką jest mała irlandzka dziewczynka imieniem Luaine. Jej rodzina zostaje napadnięta przez stwory z innego świata. Ojciec ginie, a matka i dziadek zostają porwani do innego wymiaru, gdzie rządzi mroczna bestia Balor. Szczęśliwym zbiegiem okoliczności dziewczynka zostaje przygarnięta przez Korriganów, plemię, będące skrzyżowaniem krasnoludów z czarownicami. Wraz z nimi Luaine podejmuje próbę odnalezienia swoich bliskich…",
+		description: "<p><b> Wspaniale zilustrowane dark fantasy dla dorosłych. </b> Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na rynku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu. </p><p> Opowieść rozgrywa się w roku 1100 naszej ery. Główną bohaterką jest mała irlandzka dziewczynka imieniem Luaine. Jej rodzina zostaje napadnięta przez stwory z innego świata. Ojciec ginie, a matka i dziadek zostają porwani do innego wymiaru, gdzie rządzi mroczna bestia Balor. Szczęśliwym zbiegiem okoliczności dziewczynka zostaje przygarnięta przez Korriganów, plemię, będące skrzyżowaniem krasnoludów z czarownicami. Wraz z nimi Luaine podejmuje próbę odnalezienia swoich bliskich…",
 		img: 
 			{
 			coverMainSite: "../img/komiks/korriganie/korriganie_okladka_regularna.jpg",
@@ -408,9 +408,9 @@ export const Comics = [
 		img: 
 			{
 			coverMainSite: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_okladka_regularna.jpg",
-			coverRegular: "../img/komiks/opowiesci-z-czasow-kobry/brygada_cover_regular-max.jpg",
-			coverRegularThumbnail: "../img/komiks/opowiesci-z-czasow-kobry/brygada_cover_regular-min.jpg",
-			coverAlternative1: "../img/komiks/opowiesci-z-czasow-kobry/brygada_cover_alternative1.jpg",
+			coverRegular: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_okladka_regularna.jpg",
+			coverRegularThumbnail: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_okladka_regularna.jpg",
+			coverAlternative1: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_okladka_alternatywna1.jpg",
 			insidePanels:
 				{
 				inside1: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_str1.jpg",
@@ -448,6 +448,10 @@ export const Comics = [
 			{
 			img1: "../img/komiks/brygada/brygada_cover_regular-min.jpg"
 			},
+		relatedComicsLink: 
+			{
+			link1: "../komiks/brygada.html",
+			},				
 		filter: "enrique-fernandez",
 		new: false,		
 		availability: true,
@@ -461,7 +465,7 @@ export const Comics = [
 			buyLink1: "https://www.gildia.pl/komiksy/369888-brygada",
 			buyLink2: "https://robmydobrze.pl/produkt/brygada-enrique-fernandez/"
 			}, 						
-		url: "../komiks/brygada.html"
+		url: "../komiks/opowiesci-z-czasow-kobry.html"
 	},
 	
 	{ // Brygada
@@ -474,16 +478,16 @@ export const Comics = [
 		description: "<p><b>Historia od Enrique Fernandeza, jednego ze współczesnych mistrzów komiksu hiszpańskiego.</b> Autor uważany jest za jednego z najlepszych kolorystów na świecie i to widać na każdej stronie tej historii. Nie tylko historyjki obrazkowe są jego domeną, pracuje również przy tworzeniu animacji.</p><p>Krasnolud, weteran walk, kapitan Ivro został zwerbowany by dowodzić brygadą skazańców. Jego oddział walczy w trwającej od lat wojnie przeciwko czarnym elfom. Podczas jednej z bitew tajemnicza mgła rzuca ich na terytorium dziwnej, pełnej chaosu krainy. Tam będą musieli stoczyć kolejną wojnę, tym razem by przetrwać jako grupa. Elfy, wiedźmy, czarownice, ludzie, demony, smoki to wszystko znajdziecie w tej niezwykłej opowieści z gatunku dark fantasy. Prawie 100 stron unikalnego stylowo, wysmakowanego artystycznie komiksu.",
 		img: 
 			{
-			coverMainSite: "../img/komiks/brygada/brygada_cover_regular-min.jpg",
-			coverRegular: "../img/komiks/brygada/brygada_cover_regular-max.jpg",
-			coverRegularThumbnail: "../img/komiks/brygada/brygada_cover_regular-min.jpg",
-			coverAlternative1: "../img/komiks/brygada/brygada_cover_alternative1.jpg",
+			coverMainSite: "../img/komiks/brygada/brygada_okladka_regularna.jpg",
+			coverRegular: "../img/komiks/brygada/brygada_okladka_regularna.jpg",
+			coverRegularThumbnail: "../img/komiks/brygada/brygada_okladka_regularna.jpg",
+			coverAlternative1: "../img/komiks/brygada/brygada_okladka_alternatywna1.jpg",
 			insidePanels:
 				{
-				inside1: "../img/komiks/brygada/brygada_inside1.jpg",
-				inside2: "../img/komiks/brygada/brygada_inside2.jpg",
-				inside3: "../img/komiks/brygada/brygada_inside3.jpg",
-				inside4: "../img/komiks/brygada/brygada_inside4.jpg"
+				inside1: "../img/komiks/brygada/brygada-str1.jpg",
+				inside2: "../img/komiks/brygada/brygada-str2.jpg",
+				inside3: "../img/komiks/brygada/brygada-str3.jpg",
+				inside4: "../img/komiks/brygada/brygada-str4.jpg"
 				},
 			insidePanelsAlt:
 				{
@@ -515,6 +519,10 @@ export const Comics = [
 			{
 			img1: "../img/komiks/opowiesci-z-czasow-kobry/opowiesci-z-czasow-kobry_okladka_regularna.jpg"
 			},
+		relatedComicsLink: 
+			{
+			link1: "../komiks/opowiesci-z-czasow-kobry.html",
+			},				
 		filter: "enrique-fernandez",
 		new: false,		
 		availability: true,
