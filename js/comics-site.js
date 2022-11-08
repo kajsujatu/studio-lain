@@ -6,12 +6,11 @@ import {
 // Back link
 const backLinkTop = document.getElementById('back-link-top');
 backLinkTop.addEventListener('click', function() {
-	console.log('blabla');
 	history.go(-1);
 });
 
 // Choose number of Comics and fill divs with data
-function chooseComics(num) {
+export function chooseComics(num) {
 	
 	// Title (breadcrumbs)
 	const comicsTitleBreadcrumbs = Comics[num].title;
@@ -203,44 +202,12 @@ function chooseComics(num) {
 		relatedComicsLink.setAttribute('href', `${Object.values(comicsRelatedComicsLink)[i]}`);
 		relatedComicsThumbnail.classList.add('related-comics')
 		relatedComicsThumbnail.src = `${Object.values(comicsRelatedComics)[i]}`;
-	};
-	};
+	};};
 
 	return;
 };
 
-//const windowUrl = window.location.href;
-
-//switch windowUrl {
-//	case Comics[0].url:
-//		chooseComics(0);
-//		break;
-//		default:
-//			console.log('blabla');
-//}
-
-//function siteCom(i) {
-
-
-	//	!!!!!!!!!!!!!!!!
-//for (let i=0; i<Comics.length-2; i++) {
-//
-//if (window.location.pathname = Comics[i].url) {	
-//	chooseComics(i);
-//
-//	window.stop()
-//
-//	console.log(pathNum);
-//	console.log(window.location.pathname);
-//	console.log(Comics[i].url);
-//	};
-//
-//};
-
-
-
-chooseComics(1);
-
+//chooseComics(0);
 //O - Metronom
 //1 - WiekEvy
 //2 - Duam
@@ -254,17 +221,6 @@ chooseComics(1);
 //10 - Solo 2
 //11 - Solo 3
 
-//	//};
-
-
-//const comicsMetronom = Comics[0].url;
-
-//if (window.location.href = comicsMetronom) {
-//	chooseComics(0);
-//}	else {
-//	console.log('blabla');
-//};
-
 //buy button
 const buyButton = document.getElementById('buy');
 const buyLinksList = document.getElementById('buy-links');
@@ -274,7 +230,6 @@ buyButton.addEventListener('click', function() {
 	if (buyLinksList.style.display == "none") buyLinksList.style.display = "block";
 	else buyLinksList.style.display = "none";
 });
-
 
 // gallery
 const imgs = document.getElementsByClassName('inside-thumbnails');
@@ -324,23 +279,3 @@ for (let img of imgs) {
 		leftArrow.style.display = "flex";	
 	});
 };
-
-
-
-
-
-
-
-
-//
-//rightArrow.addEventListener('click', function() {
-//	//fullPageContainer.style.display = 'block';
-//	fullPageContainer.style.backgroundImage = 'url(' + nextElementSibling.src + ')';
-//});
-
-//leftArrow.addEventListener('click', function() {
-//	fullPage.style.backgroundImage = 'url(' + imgs[2].previousElementSibling.src + ')';
-//	fullPage.style.display = 'block';
-//});
-
-

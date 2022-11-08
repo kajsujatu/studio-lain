@@ -65,7 +65,7 @@ export const Comics = [
 			buyLink1: "https://www.gildia.pl/komiksy/436616-metronom",
 			buyLink2: "https://robmydobrze.pl/produkt/metronom-eric-corbeyran-i-grun"
 			}, 
-		url: "../komiks/comics-site.html"			
+		url: "../komiks/metronom.html"			
 	},
 
 	{ // Wiek Evy - XXe ciel.com
@@ -131,7 +131,7 @@ export const Comics = [
 			{
 			buyLink1: "https://www.gildia.pl/komiksy/429339-wiek-evy-xxe-ciel-com",
 			}, 			
-		url: "../komiks/comics-site.html"			
+		url: "../komiks/wiek-evy.html"			
 	},		
 
 	{ // Duam 
@@ -446,7 +446,7 @@ export const Comics = [
 			},
 		relatedComics: 
 			{
-			img1: "../img/komiks/brygada/brygada_cover_regular-min.jpg"
+			img1: "../img/komiks/brygada/brygada_okladka_regularna.jpg"
 			},
 		relatedComicsLink: 
 			{
@@ -645,7 +645,7 @@ export const Comics = [
 			},
 		relatedComics: 
 			{
-				img1: "../img/komiks/solo-1/solo_1_okladka_regularna.jpg",
+				img1: "../img/komiks/solo-2/solo_2_okladka_regularna.jpg",
 				img2: "../img/komiks/solo-3/solo_3_okladka_regularna.jpg"
 			},
 		relatedComicsLink: 
