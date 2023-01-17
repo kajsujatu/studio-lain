@@ -331,6 +331,7 @@ header {
 #sort-input,
 #filters-input {
 	padding-left: .6rem;
+	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-image:
@@ -594,7 +595,6 @@ footer {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 10px;
-	cursor: pointer;
 }
 
 #fullpage-container {
@@ -851,6 +851,7 @@ h1.title {
 
 .inside-thumbnails {
 	height: 290px;
+	cursor: pointer;
 }
 
 .current-page {

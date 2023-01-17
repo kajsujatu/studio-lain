@@ -43,27 +43,27 @@ export function chooseComics(num) {
 	// Cover
 	const comicsCoverRegularThumbnail = Comics[num].img.coverRegular;
 	document.getElementById('cover-regular-thumbnail').src = `${comicsCoverRegularThumbnail}`;
-	document.getElementById('cover-regular-thumbnail').style.display = "inline";
-	document.getElementById('cover-regular-thumbnail').style.opacity = "50%";
+	document.getElementById('cover-regular-thumbnail').style.display = 'inline';
+	document.getElementById('cover-regular-thumbnail').style.opacity = '50%';
 
 	// Cover Alternative 1
 	const comicsCoverAlt1 = Comics[num].img.coverAlternative1;
 	document.getElementById('cover-alternative1-thumbnail').src = `${comicsCoverAlt1}`;
-	document.getElementById('cover-alternative1-thumbnail').style.display = "inline";
+	document.getElementById('cover-alternative1-thumbnail').style.display = 'inline';
 	if (comicsCoverAlt1 != null) {
-		document.getElementById('cover-alternative1-thumbnail').style.display = "inline";
+		document.getElementById('cover-alternative1-thumbnail').style.display = 'inline';
 	} else {
-			document.getElementById('cover-alternative1-thumbnail').style.display = "none";
-	};
+			document.getElementById('cover-alternative1-thumbnail').style.display = 'none';
+	}
 
 	// Cover Alternative 2
 	const comicsCoverAlt2 = Comics[num].img.coverAlternative2;
 	document.getElementById('cover-alternative2-thumbnail').src = `${comicsCoverAlt2}`;
 	if (comicsCoverAlt2 != null) {
-	document.getElementById('cover-alternative2-thumbnail').style.display = "inline";
+	document.getElementById('cover-alternative2-thumbnail').style.display = 'inline';
 	} else {
-		document.getElementById('cover-alternative2-thumbnail').style.display = "none";
-	};
+		document.getElementById('cover-alternative2-thumbnail').style.display = 'none';
+	}
 
 	// Functions for changing thumbnails
 	const coverRegularThumbnail = document.getElementById('cover-regular-thumbnail');
@@ -74,28 +74,28 @@ export function chooseComics(num) {
 	coverRegularThumbnail.addEventListener('click', function() {	
 		if (coverBig.src != Comics[num].img.coverRegular) {
 			coverBig.src = Comics[num].img.coverRegular;
-			coverRegularThumbnail.style.opacity = "50%";
-			coverAlternative1Thumbnail.style.opacity = "100%";
-			coverAlternative2Thumbnail.style.opacity = "100%";
-		};
+			coverRegularThumbnail.style.opacity = '50%';
+			coverAlternative1Thumbnail.style.opacity = '100%';
+			coverAlternative2Thumbnail.style.opacity = '100%';
+		}
 	});
 	
 	coverAlternative1Thumbnail.addEventListener('click', function() {	
 		if (coverBig.src != Comics[num].img.coverAlternative1) {
 			coverBig.src = Comics[num].img.coverAlternative1;
-			coverAlternative1Thumbnail.style.opacity = "50%";
-			coverRegularThumbnail.style.opacity = "100%";
-			coverAlternative2Thumbnail.style.opacity = "100%";
-		};
+			coverAlternative1Thumbnail.style.opacity = '50%';
+			coverRegularThumbnail.style.opacity = '100%';
+			coverAlternative2Thumbnail.style.opacity = '100%';
+		}
 	});
 
 	coverAlternative2Thumbnail.addEventListener('click', function() {	
 		if (coverBig.src != Comics[num].img.coverAlternative2) {
 			coverBig.src = Comics[num].img.coverAlternative2;
-			coverAlternative2Thumbnail.style.opacity = "50%";
-			coverRegularThumbnail.style.opacity = "100%";
-			coverAlternative1Thumbnail.style.opacity = "100%";
-		};
+			coverAlternative2Thumbnail.style.opacity = '50%';
+			coverRegularThumbnail.style.opacity = '100%';
+			coverAlternative1Thumbnail.style.opacity = '100%';
+		}
 	});
 
 	// Inside Panels
@@ -109,7 +109,7 @@ export function chooseComics(num) {
 		comicsInside.setAttribute('alt', `${Object.values(comicsInsideImagesAlt)[i]}`); // Set Alt to images
 		imagesInside.appendChild(comicsInside);
 		comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
-	};
+	}
 
 	// Links to Buy
 	const buyButton = document.getElementById('buy');
@@ -118,7 +118,7 @@ export function chooseComics(num) {
 	const buyShops = Comics[num].buyShops;
 
 	if (Comics[num].availability == false) {
-		buyButton.style.display = "none";
+		buyButton.style.display = 'none';
 	} else if (Comics[num].availability == true) {
 
 	for (let i=0; i<Object.values(buyShops).length; i++) {
@@ -132,8 +132,8 @@ export function chooseComics(num) {
 		buyListItemLink.setAttribute('target', '_blank');
 		buyListItemLink.setAttribute('href', `${Object.values(buyLinks)[i]}`);
 		buyListItemLink.textContent = `${Object.values(buyShops)[i]}`;
-	};
-	};
+	}
+	}
 
 	// Description
 	const comicsDescription = Comics[num].description;
@@ -194,20 +194,20 @@ export function chooseComics(num) {
 
 	if (comicsRelatedComics != null) {
 	for (let i=0; i<Object.values(comicsRelatedComics).length; i++) {
-		relatedComicsDiv.style.display = "grid";
+		relatedComicsDiv.style.display = 'grid';
 		const relatedComicsLink = document.createElement('a');
 		relatedComicsDiv.appendChild(relatedComicsLink);
 		const relatedComicsThumbnail = document.createElement('img');
 		relatedComicsLink.appendChild(relatedComicsThumbnail);
 		relatedComicsLink.setAttribute('href', `${Object.values(comicsRelatedComicsLink)[i]}`);
-		relatedComicsThumbnail.classList.add('related-comics')
+		relatedComicsThumbnail.classList.add('related-comics');
 		relatedComicsThumbnail.src = `${Object.values(comicsRelatedComics)[i]}`;
-	};};
+	}}
 
 	return;
-};
+}
 
-//chooseComics(0);
+// chooseComics(2);
 //O - Metronom
 //1 - WiekEvy
 //2 - Duam
@@ -225,57 +225,7 @@ export function chooseComics(num) {
 const buyButton = document.getElementById('buy');
 const buyLinksList = document.getElementById('buy-links');
 
-
 buyButton.addEventListener('click', function() {
-	if (buyLinksList.style.display == "none") buyLinksList.style.display = "block";
-	else buyLinksList.style.display = "none";
+	if (buyLinksList.style.display == 'none') buyLinksList.style.display = 'block';
+	else buyLinksList.style.display = 'none';
 });
-
-// gallery
-const imgs = document.getElementsByClassName('inside-thumbnails');
-const fullPageContainer = document.getElementById('fullpage-container');
-const closeGalleryArea = document.getElementById('close-gallery-area');
-const leftArrow = document.getElementById('left-arrow');
-const rightArrow = document.getElementById('right-arrow');
-
-for (let img of imgs) {
-	// enlarge image
-	img.addEventListener('click', function() {
-		fullPageContainer.style.display = 'flex';
-    	fullPageContainer.style.backgroundImage = 'url(' + img.src + ')';
-		let currentImage = this;
-		if (currentImage.previousElementSibling == null) leftArrow.style.display = "none";
-		if (currentImage.nextElementSibling == null) rightArrow.style.display = "none";
-
-		// left arrow
-		leftArrow.addEventListener('click', prevImage);
-		function prevImage() {
-			currentImage = currentImage.previousElementSibling;
-			fullPageContainer.style.backgroundImage = 'url(' + currentImage.src + ')';
-			
-			if (currentImage.previousElementSibling == null) leftArrow.style.display = "none";
-			rightArrow.style.display = "flex";			
-		};
-
-		// right arrow
-		rightArrow.addEventListener('click', nextImage);
-		function nextImage() {
-
-			currentImage = currentImage.nextElementSibling;
-			fullPageContainer.style.backgroundImage = 'url(' + currentImage.src + ')';
-
-			if (currentImage.nextElementSibling == null) rightArrow.style.display = "none";
-			leftArrow.style.display = "flex";
-		};
-		// Prevent scrolling background
-		document.body.style.overflow = "hidden";
-  	});
-	
-	// close full-page
-	closeGalleryArea.addEventListener('click', function() {
-		fullPageContainer.style.display = 'none';
-		document.body.style.overflowY = "scroll";
-		rightArrow.style.display = "flex";
-		leftArrow.style.display = "flex";	
-	});
-};

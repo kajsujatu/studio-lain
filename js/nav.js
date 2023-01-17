@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 // Import Database of comics
 import {
 	Comics
@@ -8,19 +9,20 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
 toggleButton.addEventListener('click', () => {
+	// eslint-disable-next-line semi
 	navbarLinks.classList.toggle('active')
 });
 
 // Dark and light mode
 const toggleModeButton = document.getElementById('toggle-mode');
-const currentMode = localStorage.getItem("mode");
-if (currentMode == "dark") document.body.classList.add("dark-mode");
+const currentMode = localStorage.getItem('mode');
+if (currentMode == 'dark') document.body.classList.add('dark-mode');
 
 toggleModeButton.addEventListener('click', function() {
 	document.body.classList.toggle('dark-mode');  
-	let mode = "light";
- 	if (document.body.classList.contains("dark-mode")) mode = "dark";
- 	localStorage.setItem("mode", mode);
+	let mode = 'light';
+ 	if (document.body.classList.contains('dark-mode')) mode = 'dark';
+ 	localStorage.setItem('mode', mode);
 });
 
 // Search panel
@@ -33,23 +35,23 @@ const searchInput = document.getElementById('search-input');
 const searchOutput = document.getElementById('search-output');
 
 search.addEventListener('click', function() {
-	searchLayout.style.display = "flex";
-	document.body.style.overflow = "hidden";
+	searchLayout.style.display = 'flex';
+	document.body.style.overflow = 'hidden';
 });
 
 searchLayoutClose.addEventListener('click', function() {
-	searchLayout.style.display = "none";
-	searchOutput.innerHTML = "";
-	document.body.style.overflowY = "scroll";
+	searchLayout.style.display = 'none';
+	searchOutput.innerHTML = '';
+	document.body.style.overflowY = 'scroll';
 });
 
 searchInput.addEventListener('input', function() {
-	searchOutput.innerHTML = "";
+	searchOutput.innerHTML = '';
 });
 
 // Search content
 function searchContent() {	
-	if (searchInput.value == "" || searchInput.value == " ") {
+	if (searchInput.value == '' || searchInput.value == ' ') {
 		let emptyResultDiv = document.createElement('div');
 		searchOutput.appendChild(emptyResultDiv);
 		emptyResultDiv.classList.add('result-element');
@@ -72,29 +74,15 @@ function searchContent() {
 		resultDiv.classList.add('result-element');
 		resultDiv.innerHTML = `<p>Sprawdź: <a href="${Comics[i].url}">${Comics[i].title}</a>`;
 		}
-	};
+	}
 	
-	};
+	}
 		
-};
+}
 
 iconSearch.addEventListener('click', searchContent);
 
-document.addEventListener('keypress', (e)=>{
-	if(keyCode === 13) {
-		searchContent();
-	  }
-});
-
 iconReturn.addEventListener('click', function() {
-	searchInput.value = "";
-	searchOutput.innerHTML = "";
+	searchInput.value = '';
+	searchOutput.innerHTML = '';
 });
-
-
-//else {
-//	let noResultDiv = document.createElement('div');
-//	searchOutput.appendChild(noResultDiv);
-//	noResultDiv.classList.add('result-element');
-//	noResultDiv.innerHTML = `<p>Brak wyników.</p>`;
-//}
