@@ -22,7 +22,7 @@ export function chooseComics(num) {
 	
 	// Writer
 	const comicsWriter = Comics[num].writer;
-	document.getElementById('writer').innerHTML = comicsWriter;		
+	document.getElementById('writer').innerHTML = comicsWriter;
 
 	// Art
 	const comicsArt = Comics[num].art;
@@ -36,6 +36,12 @@ export function chooseComics(num) {
 	const comicsProofreader = Comics[num].proofreader;
 	document.getElementById('proofreader').innerHTML = comicsProofreader;
 
+	// Text Linguistics
+	const comicsTextLinguistics = Comics[num].textLinguistics;
+	if (comicsTextLinguistics != null) {
+		document.getElementById('text-linguistics').innerHTML = comicsTextLinguistics;
+	}
+	
 	// Cover
 	const comicsCover = Comics[num].img.coverRegular;
 	document.getElementById('cover-big').src = `${comicsCover}`;

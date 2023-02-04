@@ -1,4 +1,5 @@
 node_modules/
-.eslintrc
+.eslintrc.js
 package-lock.json
 package.json
+_robocze/

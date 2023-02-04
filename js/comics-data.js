@@ -1,72 +1,196 @@
 // Array of all Comics
 export const Comics = [
 	
-	{ // Metronom
-		id: 47, 
-		title: 'Metronom\'',
-		writer: 'Éric Corbeyran',
-		art: 'Grun',
-		translator: 'Anna Winiarska',
-		proofreader: 'Bartłomiej Wiśniewski, <br>Słowobraz',
-		description: '<p><b>Komiks polecany przez samego <i>Enki Bilala</i>, autora m.in. kultowej <i>Trylogii Nikopola</i>.</b> Mistrz europejskiego komiksu napisał w przedmowie - <i>Wchodzimy do szarej strefy, która, tak jak być powinno, jest naszym lustrzanym odbiciem i w której widać zmagającego się z rzeczywistością człowieka. To świat zarazem bliski i odległy, znajomy i niepokojący, doświadczony przez kolejne kryzysy, lecz zasadniczo stojący w miejscu. Tak było wczoraj, tak będzie jutro, bez dwóch zdań.</i> </p><p> Niedaleka przyszłość. Totalitaryzm został przebrany w szaty demokracji bezpośredniej. Każdy system ma jednak luki, a za puszczeniem rewolucyjnego domina w ruch często stoi zwykły przypadek. Młoda kobieta o imieniu Lynn szuka informacji o swoim mężu. Nie wrócił z kosmicznej misji na jednej ze stacji orbitalnych. Dążenie do odkrycia, co naprawdę się wydarzyło, sprawi, że uruchomione zostaną siły, które zachwieją nie tylko jej światem. Czy jednostka ma szanse w starciu z bezwzględnym systemem? Czy rewolucja zawsze zżera swój własny ogon? Czy prawda faktycznie wyzwala?</p>',
+	{ // ABC Warriors - Czarna dziura
+		id: 1, 
+		title: 'ABC Warriors - Czarna dziura',
+		writer: 'Pat Mills',
+		art: 'Simon Bisley, <br>SMS',
+		translator: 'Jacek Więckowski',
+		proofreader: 'Damian Pietrzak',
+		description: '<p><i>Bisley</i> z najlepszego okresu twórczości. Takiego go pokochaliśmy za <i>Lobo</i> czy <i>Sąd nad Gotham</i>. Niezwykłe czarno-białe rysunki tego twórcy, zaskakujące głębią i rozmachem. Do tego scenariusz jednego z wielkich mistrzów komiksu, <i>Pata Millsa</i>. Zwariowana, nieprzewidywalna historia o grupie robotów wojskowych, które mają też mechaniczne serca.</p>',
 		img: 
 			{
-			coverMainSite: '../img/komiks/metronom/metronom_okladka_regularna.jpg',
-			coverRegular: '../img/komiks/metronom/metronom_okladka_regularna.jpg',
-			coverRegularThumbnail: '../img/komiks/metronom/metronom_okladka_regularna-miniatura.jpg',
-			coverAlternative1: '../img/komiks/metronom/metronom_okladka_alternatywna1.jpg',
-			coverAlternative2: '../img/komiks/metronom/metronom_okladka_alternatywna2.jpg',
+			coverMainSite: '../img/komiks/abc-warriors-1-czarna-dziura/abc-warriors-1-czarna-dziura_okladka-regularna.jpg',
+			coverRegular: '../img/komiks/abc-warriors-1-czarna-dziura/abc-warriors-1-czarna-dziura_okladka-regularna.jpg',
+			coverRegularThumbnail: '../img/komiks/abc-warriors-1-czarna-dziura/abc-warriors-1-czarna-dziura_okladka-regularna.jpg',
 			insidePanels:
 				{
-				inside1: '../img/komiks/metronom/metronom_str1.jpg',
-				inside2: '../img/komiks/metronom/metronom_str2.jpg',
-				inside3: '../img/komiks/metronom/metronom_str3.jpg',
+				inside1: '../img/komiks/abc-warriors-1-czarna-dziura/abc-warriors-1-czarna-dziura_str-1.jpg',
+				inside2: '../img/komiks/abc-warriors-1-czarna-dziura/abc-warriors-1-czarna-dziura_str-2.jpg',
+				inside3: '../img/komiks/abc-warriors-1-czarna-dziura/abc-warriors-1-czarna-dziura_str-3.jpg',
 				},
 			insidePanelsAlt:
 				{
-				inside1Alt: 'przykładowa plansza komiksu Metronom\' - 1',
-				inside2Alt: 'przykładowa plansza komiksu Metronom\' - 2',
-				inside3Alt: 'przykładowa plansza komiksu Metronom\' - 3',
-				},		
+				inside1Alt: 'przykładowa plansza komiksu ABC Warriors - Czarna dziura - 1',
+				inside2Alt: 'przykładowa plansza komiksu ABC Warriors - Czarna dziura - 2',
+				inside3Alt: 'przykładowa plansza komiksu ABC Warriors - Czarna dziura - 3',
+				},							
 			},	
 		details:
 			{
-			format: '210x295 mm',
-			pages: 280,
-			print: 'kolorowy',
+			format: '210x297 mm',
+			pages: 140,
+			print: 'czarno-biały',
 			paper: 'kredowy',
 			typeOfBookCover: 'twarda',
-			date: 'sierpień 2020',
+			date: 'wrzesień 2014',
 			edition: 'I',
-			ISBN: '978-83-958554-0-5',
-			price: '99,90 zł'
+			ISBN: '978-83-940222-0-4',
+			price: '54,50 zł'
 			},
 		detailsOriginalEdition:
 			{
-			title: 'Metronom\'',
-			publisher: 'Glenat',
-			date: '2010-2015'
+			title: 'ABC Warriors: Black Hole',
+			publisher: 'ABC Warriors: Black Hole',
+			date: '2011 (1988)'
 			},
 		relatedComics: 
 			{
 			
 			},				
-		filter: 'antologie-integrale',
+		filter: 'seria-abc-warriors',
 		new: false,		
-		availability: true,
-		lastItems: true,
-		buyShops:
-			{
-			buyShop1: 'gildia.pl',
-			buyShop2: 'robmydobrze.pl'
-			},
-		buyLinks:
-			{
-			buyLink1: 'https://www.gildia.pl/komiksy/436616-metronom',
-			buyLink2: 'https://robmydobrze.pl/produkt/metronom-eric-corbeyran-i-grun'
-			}, 
-		url: '../komiks/metronom.html'			
+		availability: false,
+		url: '../komiks/wiek-evy.html'			
 	},
+
+	{ // Absalom: Duchy Londynu
+		id: 2, 
+		title: 'Absalom: Duchy Londynu',
+		writer: 'Gordon Rennie',
+		art: 'Tiernen Trevallion',
+		translator: 'Damian Pietrzak',
+		proofreader: 'Małgorzata Matachowska, <br>Jacek Więckowski',
+		description: '<p>Tytuł, który w Anglii spotkał się z bardzo dobrym przyjęciem. Porównywany przez krytyków do <i>Hellboya</i> i <i>Ligi Niezwykłych Dżentelmenów</i>. Unikalny klimat – swoista mieszanka biblijnej mitologii, miejskich legend i pulpowej grozy.</p> <p>Współczesny Londyn. Inspektor Harry Absalom dowodzi specjalną jednostką zajmującą się przestrzeganiem zawartego w XVI wieku porozumienia pomiędzy koroną brytyjską, a Piekłem. Jeśli jakakolwiek piekielna istota zacznie rozrabiać – zostanie wytropiona i unieszkodliwiona. Absalom idealnie nadaje się do tej roboty, niestety sam musi się zmierzyć z faktem, iż umiera na raka...</p> Zawiera: <ul><li>Szlachectwo zobowiązuje</li><li>Zwolnienie lekarskie</li><li>Duchy Londynu</li>',
+		img: 
+			{
+			coverMainSite: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_okladka-regularna.jpg',
+			coverRegular: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_okladka-regularna.jpg',
+			coverRegularThumbnail: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_okladka-regularna.jpg',
+			insidePanels:
+				{
+				inside1: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_str-1.jpg',
+				inside2: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_str-2.jpg',
+				inside3: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_str-3.jpg',
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Absalom: Duchy Londynu - 1',
+				inside2Alt: 'przykładowa plansza komiksu Absalom: Duchy Londynu - 2',
+				inside3Alt: 'przykładowa plansza komiksu Absalom: Duchy Londynu - 3',
+				},
+			},	
+		details:
+			{
+			format: '210x297 mm',
+			pages: 96,
+			print: 'czarno-biały',
+			paper: '-',
+			typeOfBookCover: 'miękka',
+			date: 'grudzień 2014',
+			edition: 'I',
+			ISBN: '978-83-940222-1-1',
+			price: '44,50 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: 'Absalom: Ghosts of London',
+			publisher: '2000 AD (Rebellion)',
+			date: '2012 (2011-2012)'
+			},
+		relatedComics: 
+			{
+			
+			},
+		filter: 'seria-absalom',
+		new: false,		
+		availability: false,
+		url: '../komiks/wiek-evy.html'
+	},
+
+	{ // Ballada o Halo Jones
+		id: 3, 
+		title: 'Ballada o Halo Jones',
+		writer: 'Alan Moore',
+		art: 'Ian Gibson',
+		translator: 'Jacek Więckowski, <br>Damian Pietrzak',
+		proofreader: 'Damian Pietrzak, <br>Małgorzata Matachowska',
+		description: '<p>Niezwykła, antywojenna space opera od mistrza komiksu - <i>Alana Moore\'a</i>! Kultowe dzieło napisane przez twórcę <i>Strażników</i> i narysowane przez <i>Iana Gibsona</i>, autora m.in. komiksów z cykli <i>Star Wars</i>.</p> <p>Spośród wszystkich legend ta jest wyjątkowa. Wiecie dlaczego? Bo jest prawdziwa. Przez stulecia wokół Halo Jones nazbierało się mnóstwo plotek i przekłamań. Mówią one, że była zbrodniarzem wojennym, który przyczynił się do wymordowania milionów ludzi. Miała spotkać Lux Roth Chopa, Luiza Kanibala czy Sally Quasa. Podczas trwania Imperium Tylko-Samców twierdzono nawet, że była mężczyzną. Kim naprawdę była Halo Jones? By się dowiedzieć musimy się cofnąć do 50. wieku według starego kalendarza...</p> Zawiera: <ul><li>Ballad of Halo Jones: Księga Pierwsza</li><li>Ballad of Halo Jones: Księga Druga (Prolog)</li><li>	Ballad of Halo Jones: Księga Druga</li><li>Ballad of Halo Jones: Księga Trzecia (Prolog)</li><li>Ballad of Halo Jones: Księga Trzecia</li></ul>',
+		img: 
+			{
+			coverMainSite: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_okladka-regularna.jpg',
+			coverRegular: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_okladka-regularna.jpg',
+			coverRegularThumbnail: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_okladka-regularna.jpg',
+			insidePanels:
+				{
+				inside1: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_str-1.jpg',
+				inside2: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_str-2.jpg',
+				inside3: '../img/komiks/absalom-1-duchy-londynu/absalom-1-duchy-londynu_str-3.jpg',
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Absalom: Duchy Londynu - 1',
+				inside2Alt: 'przykładowa plansza komiksu Absalom: Duchy Londynu - 2',
+				inside3Alt: 'przykładowa plansza komiksu Absalom: Duchy Londynu - 3',
+				},
+			},	
+		details:
+			{
+			format: '210x297 mm',
+			pages: 202,
+			print: 'czarno-biały',
+			paper: '-',
+			typeOfBookCover: 'twarda',
+			date: 'maj 2015',
+			edition: 'I',
+			ISBN: '978-83-940222-2-8',
+			price: '69,90 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: 'The Ballad of Halo Jones',
+			publisher: '2000 AD (Rebellion)',
+			date: '2013 (1984-1986)'
+			},
+		relatedComics: 
+			{
+			
+			},
+		filter: 'alan-moore',
+		new: false,		
+		availability: false,
+		url: '../komiks/comics-site.html'
+	},		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	{ // Wiek Evy - XXe ciel.com
 		id: 46, 
@@ -134,136 +258,8 @@ export const Comics = [
 		url: '../komiks/wiek-evy.html'			
 	},		
 
-	{ // Duam 
-		id: 50,
-		title: 'Duam',
-		writer: 'Felix Vega',
-		art: 'Felix Vega',
-		translator: '-',
-		proofreader: '-',
-		description: '<b>Ludzie i bogowie toczyli wojnę o panowanie nad światem. Okrutną i zaciętą. Bezkompromisową i krwawą.</b> Kiedy ludzie odnaleźli kryształy, które spadły z nieba, szala przechyliła się na ich stronę. Wtedy zawarto rozejm. Bogowie obiecali, że będą zjadać dusze tylko tych, którzy umarli, a ludzie mieli się im nie przeciwstawiać. Rozejm właśnie został złamany...</p><p> Duam jest potężną szamanką. Jako dziecko nie potrafiła pogodzić się ze śmiercią bliskich jej istot. Zdobyła więc jeden z kamieni światła, by przywracać do życia tych, którzy odeszli. Zapłaciła jednak za to wysoką cenę, sama jeszcze nie wie, jak wielką. </p><p>Razem z gwiazdą hiszpańskiego komiksu <i>Féliksem Vegą</i> wyrusz w niezwykłą podróż po okrutnym, ale i pięknym świecie, gdzie ludzie znów stają naprzeciwko bogów. Historia inspirowana jest wierzeniami Indian Mapuche, a okraszona została przepięknymi ilustracjami godnymi największych mistrzów komiksu.',
-		img: 
-			{
-			coverMainSite: '../img/komiks/duam/duam_okladka_regularna.jpeg',
-			coverRegular: '../img/komiks/duam/duam_okladka_regularna.jpeg',
-			coverRegularThumbnail: '../img/komiks/duam/duam_okladka_regularna.jpg',
-			coverAlternative1: '../img/komiks/duam/duam_okladka_alternatywna1.jpg',
-			coverAlternative2: '../img/komiks/duam/duam_okladka_alternatywna2.jpg',
-			insidePanels:
-				{
-				inside1: '../img/komiks/duam/duam_str1.jpeg',
-				inside2: '../img/komiks/duam/duam_str2.jpeg',
-				inside3: '../img/komiks/duam/duam_str3.jpeg'
-				},
-			insidePanelsAlt:
-				{
-				inside1Alt: 'przykładowa plansza komiksu Duam - 1',
-				inside2Alt: 'przykładowa plansza komiksu Duam - 2',
-				inside3Alt: 'przykładowa plansza komiksu Duam - 3',
-				},												
-			},
-		details:
-			{
-			format: '210x297 mm',
-			pages: 120,
-			print: 'kolorowy',
-			paper: 'kredowy',
-			typeOfBookCover: 'twarda',
-			date: '10 maj 2022',
-			edition: 'I',
-			ISBN: '978-83-958554-9-8',
-			price: '79,90 zł'
-			},
-		detailsOriginalEdition:
-			{
-			title: '-',
-			publisher: '-',
-			date: '-'
-			},
-		relatedComics: 
-			{
-			
-			},
-		filter: 'antologie-integrale',
-		new: true,		
-		availability: true,
-		buyShops:
-			{
-			buyShop1: 'gildia.pl',
-			buyShop2: 'robmydobrze.pl'
-			},
-		buyLinks:
-			{
-			buyLink1: 'https://www.gildia.pl/komiksy/521091-duam',
-			buyLink2: 'https://robmydobrze.pl/produkt/duam'
-			}, 			
-		url: '../komiks/duam.html'			
-	},
 
-	{ // Korriganie
-		id: 48, 
-		title: 'Korriganie',
-		writer: 'Thomas Mosdi',
-		art: 'Emmanuel Civiello',
-		translator: 'Anna Winiarska',
-		proofreader: 'Łukasz Sosiński, Kasia Mała',
-		description: '<p><b> Wspaniale zilustrowane dark fantasy dla dorosłych. </b> Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na rynku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu. </p><p> Opowieść rozgrywa się w roku 1100 naszej ery. Główną bohaterką jest mała irlandzka dziewczynka imieniem Luaine. Jej rodzina zostaje napadnięta przez stwory z innego świata. Ojciec ginie, a matka i dziadek zostają porwani do innego wymiaru, gdzie rządzi mroczna bestia Balor. Szczęśliwym zbiegiem okoliczności dziewczynka zostaje przygarnięta przez Korriganów, plemię, będące skrzyżowaniem krasnoludów z czarownicami. Wraz z nimi Luaine podejmuje próbę odnalezienia swoich bliskich…',
-		img: 
-			{
-			coverMainSite: '../img/komiks/korriganie/korriganie_okladka_regularna.jpg',
-			coverRegular: '../img/komiks/korriganie/korriganie_okladka_regularna.jpg',
-			coverRegularThumbnail: '../img/komiks/korriganie/korriganie_okladka_regularna.jpg',
-			coverAlternative1: '../img/komiks/korriganie/korriganie_okladka_alternatywna.jpg',
-			insidePanels:
-				{				
-				inside1: '../img/komiks/korriganie/korriganie_str1.jpg',
-				inside2: '../img/komiks/korriganie/korriganie_str2.jpg',
-				inside3: '../img/komiks/korriganie/korriganie_str3.jpg',
-				},
-			insidePanelsAlt:
-				{
-				inside1Alt: 'przykładowa plansza komiksu Korriganie - 1',
-				inside2Alt: 'przykładowa plansza komiksu Korriganie - 2',
-				inside3Alt: 'przykładowa plansza komiksu Korriganie - 3',
-				inside4Alt: 'przykładowa plansza komiksu Korriganie - 4',
-				},								
-			},
-		details:
-			{
-			format: '210x295 mm',
-			pages: 220,
-			print: 'kolorowy',
-			paper: 'kredowy',
-			typeOfBookCover: 'twarda',
-			date: 'wrzesień 2021',
-			edition: 'I',
-			ISBN: '978-83-958554-6-7',
-			price: '89,90 zł'
-			},
-		detailsOriginalEdition:
-			{
-			title: 'Korrigans',
-			publisher: 'Delcourt',
-			date: '2012 (2000-2007)'
-			},
-		relatedComics: 
-			{
-			
-			},
-		filter: 'antologie-integrale',
-		new: false,		
-		availability: false,
-		buyShops:
-		{
-		buyShop1: 'gildia.pl',
-		},
-		buyLinks:
-		{
-		buyLink1: 'https://www.gildia.pl/komiksy/495491-korriganie',
-		}, 
-		url: '../komiks/korriganie.html'
-	},
-	
+																																																																
 	{ // Yiu Tom 2
 		id: 45, 
 		title: 'Yiu Tom 2',
@@ -428,7 +424,7 @@ export const Comics = [
 			},
 		details:
 			{
-			format: 'A4',
+			format: '210x297 mm',
 			pages: 104,
 			print: 'kolorowy',
 			paper: 'kredowy',
@@ -499,7 +495,7 @@ export const Comics = [
 			},
 		details:
 			{
-			format: 'A4',
+			format: '210x297 mm',
 			pages: 96,
 			print: 'kolorowy',
 			paper: 'kredowy',
@@ -627,7 +623,7 @@ export const Comics = [
 			},
 		details:
 			{
-			format: 'A4',
+			format: '210x297 mm',
 			pages: 144,
 			print: 'kolorowy',
 			paper: 'kredowy',
@@ -692,7 +688,7 @@ export const Comics = [
 			},
 		details:
 			{
-			format: 'A4',
+			format: '210x297 mm',
 			pages: 216,
 			print: 'kolorowy',
 			paper: 'kredowy',
@@ -732,6 +728,279 @@ export const Comics = [
 		url: '../komiks/solo-ocaleni-z-chaosu.html'
 	},
 
+	{ // Metronom
+		id: 40, 
+		title: 'Metronom\'',
+		writer: 'Éric Corbeyran',
+		art: 'Grun',
+		translator: 'Anna Winiarska',
+		proofreader: 'Bartłomiej Wiśniewski, <br>Słowobraz',
+		description: '<p><b>Komiks polecany przez samego <i>Enki Bilala</i>, autora m.in. kultowej <i>Trylogii Nikopola</i>.</b> Mistrz europejskiego komiksu napisał w przedmowie - <i>Wchodzimy do szarej strefy, która, tak jak być powinno, jest naszym lustrzanym odbiciem i w której widać zmagającego się z rzeczywistością człowieka. To świat zarazem bliski i odległy, znajomy i niepokojący, doświadczony przez kolejne kryzysy, lecz zasadniczo stojący w miejscu. Tak było wczoraj, tak będzie jutro, bez dwóch zdań.</i> </p><p> Niedaleka przyszłość. Totalitaryzm został przebrany w szaty demokracji bezpośredniej. Każdy system ma jednak luki, a za puszczeniem rewolucyjnego domina w ruch często stoi zwykły przypadek. Młoda kobieta o imieniu Lynn szuka informacji o swoim mężu. Nie wrócił z kosmicznej misji na jednej ze stacji orbitalnych. Dążenie do odkrycia, co naprawdę się wydarzyło, sprawi, że uruchomione zostaną siły, które zachwieją nie tylko jej światem. Czy jednostka ma szanse w starciu z bezwzględnym systemem? Czy rewolucja zawsze zżera swój własny ogon? Czy prawda faktycznie wyzwala?</p>',
+		img: 
+			{
+			coverMainSite: '../img/komiks/metronom/metronom_okladka_regularna.jpg',
+			coverRegular: '../img/komiks/metronom/metronom_okladka_regularna.jpg',
+			coverRegularThumbnail: '../img/komiks/metronom/metronom_okladka_regularna-miniatura.jpg',
+			coverAlternative1: '../img/komiks/metronom/metronom_okladka_alternatywna1.jpg',
+			coverAlternative2: '../img/komiks/metronom/metronom_okladka_alternatywna2.jpg',
+			insidePanels:
+				{
+				inside1: '../img/komiks/metronom/metronom_str1.jpg',
+				inside2: '../img/komiks/metronom/metronom_str2.jpg',
+				inside3: '../img/komiks/metronom/metronom_str3.jpg',
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Metronom\' - 1',
+				inside2Alt: 'przykładowa plansza komiksu Metronom\' - 2',
+				inside3Alt: 'przykładowa plansza komiksu Metronom\' - 3',
+				},		
+			},	
+		details:
+			{
+			format: '210x295 mm',
+			pages: 280,
+			print: 'kolorowy',
+			paper: 'kredowy',
+			typeOfBookCover: 'twarda',
+			date: 'sierpień 2020',
+			edition: 'I',
+			ISBN: '978-83-958554-0-5',
+			price: '99,90 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: 'Metronom\'',
+			publisher: 'Glenat',
+			date: '2010-2015'
+			},
+		relatedComics: 
+			{
+			
+			},				
+		filter: 'antologie-integrale',
+		new: false,		
+		availability: true,
+		lastItems: true,
+		buyShops:
+			{
+			buyShop1: 'gildia.pl',
+			buyShop2: 'robmydobrze.pl'
+			},
+		buyLinks:
+			{
+			buyLink1: 'https://www.gildia.pl/komiksy/436616-metronom',
+			buyLink2: 'https://robmydobrze.pl/produkt/metronom-eric-corbeyran-i-grun'
+			}, 
+		url: '../komiks/metronom.html'			
+	},
+
+	{ // Slaine - Kroniki Brutanii wyd. zbiorcze tom 2
+		id: 46, 
+		title: 'Slaine: Kroniki Brutanii Tom 2',
+		writer: 'Pat Mills',
+		art: 'Simon Davis',
+		translator: 'Damian Pietrzak',
+		proofreader: 'Łukasz Sosiński',
+		description: '<p><b>Powrót Celtyckiego Wojownika!</b></p> <p><i>Kroniki Brutanii</i> to podróż, w którą mogą ruszyć także czytelnicy nie znający postaci Slaine czy jego uniwersum. <i>Pat Mills</i>, twórca tego kultowego bohatera, zdecydował się na swoisty restart serii. To zupełnie nowe spojrzenie na tego herosa, zdecydowanie dojrzalsze i wymagające. To już nie tylko rzeźnik z toporem, któremu niestraszny żaden demon. To także człowiek, który nie uporał się z upiorami dzieciństwa. Nową wizję z malarskim rozmachem zrealizował <i>Simon Davis</i>, znany polskiemu czytelnikowi z serii <i>Sinister Dexter</i>. Cykl <i>Kroniki Brutanii</i> jest pod względem oprawy graficznej stawiany obok albumu <i>Rogaty Bóg</i>. Album zawiera nie tylko komiks, ale i materiały dodatkowe pokazujące kulisy pracy artysty.</p> <p>Celtycki wojownik Slaine, który zjednoczył plemiona Ziemskiej Bogini Danu i stał się pierwszym Najwyższym Królem Irlandii, podróżuje po starożytnym Albionie. Jak zwykle szybko pakuje się w poważne kłopoty. Mroczne siły podnoszą tu bowiem swój łeb. Lordowie Drune chcą zmienić ludzkość w zmutowanych niewolników. Slaine wyrusza więc na wyspę Monadh. Ma gdzieś świat, chce tylko ocalić nowo poznaną kobietę o imieniu Sinead...</p>Zawiera: <li>The Brutania Chronicles: Psychopomp</li><li>The Brutania Chronicles: Red Branch</li><li>The Brutania Chronicles: Archon</li>',
+		img: 
+			{
+			coverMainSite: '../img/komiks/slaine/slaine_kroniki-brutanii-tom-2_okladka-podstawowa.jpg',
+			coverRegular: '../img/komiks/slaine/slaine_kroniki-brutanii-tom-2_okladka-podstawowa.jpg',
+			coverRegularThumbnail: '../img/komiks/slaine/slaine_kroniki-brutanii-tom-2_okladka-podstawowa.jpg',
+			coverAlternative1: '../img/komiks/slaine/slaine_kroniki-brutanii-tom-2_okladka-limitowana-a',
+			coverAlternative2: '../img/komiks/slaine/slaine_kroniki-brutanii-tom-2_okladka-limitowana-b',
+			insidePanels:
+				{				
+				inside1: '../img/komiks/slaine/slaine_kroniki-brutanii-tom-2_str-1.jpg',
+				inside2: '../img/komiks/slaine/slaine_kroniki-brutanii-tom-2_str-2.jpg',
+				inside3: '../img/komiks/slaine/slaine_kroniki-brutanii-tom-2_str-3.jpg',
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Slaine: Kroniki Brutanii Tom 2',
+				inside2Alt: 'przykładowa plansza komiksu Slaine: Kroniki Brutanii Tom 2',
+				inside3Alt: 'przykładowa plansza komiksu Slaine: Kroniki Brutanii Tom 2',
+				inside4Alt: 'przykładowa plansza komiksu Slaine: Kroniki Brutanii Tom 2',
+				},								
+			},
+		details:
+			{
+			format: '210x297 mm',
+			pages: 192,
+			print: 'kolorowy',
+			paper: 'kredowy',
+			typeOfBookCover: 'twarda',
+			date: '29 marzec 2021',
+			edition: 'I',
+			ISBN: '978-83-958554-5-0',
+			price: '89,90 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: 'Sláine: The Brutania Chronicles',
+			publisher: '2000 AD (Rebellion)',
+			date: '2016-2017'
+			},
+		relatedComics: 
+			{
+			
+			},
+		filter: 'seria-slaine',
+		new: false,		
+		availability: true,
+		buyShops:
+		{
+		buyShop1: 'gildia.pl (B)',
+		},
+		buyLinks:
+		{
+		buyLink1: 'https://www.gildia.pl/komiksy/481430-slaine-kroniki-brutanii-wyd-zbiorcze-tom-2-okladka-limitowana-b',
+		}, 
+		url: '../komiks/korriganie.html'
+	},
+
+
+	{ // Korriganie
+		id: 47, 
+		title: 'Korriganie',
+		writer: 'Thomas Mosdi',
+		art: 'Emmanuel Civiello',
+		translator: 'Anna Winiarska',
+		proofreader: 'Łukasz Sosiński, Kasia Mała',
+		description: '<p><b> Wspaniale zilustrowane dark fantasy dla dorosłych. </b> Piękny malarski styl Emmanuela Civiello tworzy świat rodem z najmroczniejszych baśni i legend. To jego debiut na polskim rynku. Autorem scenariusza jest natomiast Thomas Mosdi mający na koncie kilkadziesiąt historii do komiksów na rynku frankońskim. Wspólnie z Civiello jest wielkim fanem fantasy i mitologii celtyckiej. Obydwaj autorzy to obecnie ikony europejskiego komiksu. </p><p> Opowieść rozgrywa się w roku 1100 naszej ery. Główną bohaterką jest mała irlandzka dziewczynka imieniem Luaine. Jej rodzina zostaje napadnięta przez stwory z innego świata. Ojciec ginie, a matka i dziadek zostają porwani do innego wymiaru, gdzie rządzi mroczna bestia Balor. Szczęśliwym zbiegiem okoliczności dziewczynka zostaje przygarnięta przez Korriganów, plemię, będące skrzyżowaniem krasnoludów z czarownicami. Wraz z nimi Luaine podejmuje próbę odnalezienia swoich bliskich…',
+		img: 
+			{
+			coverMainSite: '../img/komiks/korriganie/korriganie_okladka_regularna.jpg',
+			coverRegular: '../img/komiks/korriganie/korriganie_okladka_regularna.jpg',
+			coverRegularThumbnail: '../img/komiks/korriganie/korriganie_okladka_regularna.jpg',
+			coverAlternative1: '../img/komiks/korriganie/korriganie_okladka_alternatywna.jpg',
+			insidePanels:
+				{				
+				inside1: '../img/komiks/korriganie/korriganie_str1.jpg',
+				inside2: '../img/komiks/korriganie/korriganie_str2.jpg',
+				inside3: '../img/komiks/korriganie/korriganie_str3.jpg',
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Korriganie - 1',
+				inside2Alt: 'przykładowa plansza komiksu Korriganie - 2',
+				inside3Alt: 'przykładowa plansza komiksu Korriganie - 3',
+				inside4Alt: 'przykładowa plansza komiksu Korriganie - 4',
+				},								
+			},
+		details:
+			{
+			format: '210x295 mm',
+			pages: 220,
+			print: 'kolorowy',
+			paper: 'kredowy',
+			typeOfBookCover: 'twarda',
+			date: 'wrzesień 2021',
+			edition: 'I',
+			ISBN: '978-83-958554-6-7',
+			price: '89,90 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: 'Korrigans',
+			publisher: 'Delcourt',
+			date: '2012 (2000-2007)'
+			},
+		relatedComics: 
+			{
+			
+			},
+		filter: 'antologie-integrale',
+		new: false,		
+		availability: false,
+		buyShops:
+		{
+		buyShop1: 'gildia.pl',
+		},
+		buyLinks:
+		{
+		buyLink1: 'https://www.gildia.pl/komiksy/495491-korriganie',
+		}, 
+		url: '../komiks/korriganie.html'
+	},
+
+	{ // Saria
+		id: 48, 
+		title: 'Saria',
+		writer: 'Jean Dufaux',
+		art: 'Paolo Serpieri,<br> Riccardo Federici',
+		translator: '',
+		proofreader: '',
+		description: '<p>Ten komiks powstawał 14 lat! Powodem była jego niezwykła oprawa graficzna. Historia ożyła tu dzięki pędzlom dwóch włoskich ilustratorów Paolo Serpieriego i Riccardo Federiciego. Twórca Drunny narysował pierwszy tom, następne to dzieła Federiciego i to jego prace najbardziej zapierają dech w piersiach. Przepiękny i niezwykle pracochłonny malarski styl oszałamia rozmachem i szczegółowością. Historię o mariażu władzy z religią napisał natomiast znany polskiemu czytelnikowi Jean Dufaux (Skarga Utraconych Ziem, Drapieżcy czy Murena)</p><p>Po śmierci ojca, księcia Asanti, Saria otrzymała trzy klucze. Jeden do Raju, drugi do Piekła, a trzeci do Otchłani. Uciekając przed falangami fasci, rozpoczyna nowe życie - jako Luna, bohaterka ludu Wenecji. Aby wypełnić swoje przeznaczenie, Saria będzie musiała odważyć się na przemierzenie samego piekła… To baśń tylko dla dorosłych, gdzie mistycyzm miesza się z szeroko rozumianą fantastyką, ale także z bardzo aktualnym dyskursem religijno-politycznym.</p><p>Polskie wydanie zbiorcze zawiera kompletną historię i materiały dodatkowe.</p>',
+		img: 
+			{
+			coverMainSite: '../img/komiks/saria/saria_okladka-podstawowa.jpg',
+			coverRegular: '../img/komiks/saria/saria_okladka-podstawowa.jpg',
+			coverRegularThumbnail: '../img/komiks/saria/saria_okladka-podstawowa.jpg',
+			coverAlternative1: '../img/komiks/saria/saria_okladka-limitowana-a.jpg',
+			coverAlternative2: '../img/komiks/saria/saria_okladka-limitowana-b.jpg',
+			insidePanels:
+				{
+				inside1: '../img/komiks/saria/saria_str-1.jpg',
+				inside2: '../img/komiks/saria/saria_str-2.jpg',
+				inside3: '../img/komiks/saria/saria_str-3.jpg'
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Saria - 1',
+				inside2Alt: 'przykładowa plansza komiksu Saria - 2',
+				inside3Alt: 'przykładowa plansza komiksu Saria - 3'
+				},										
+			},
+		details:
+			{
+			format: '233x312 mm',
+			pages: 192,
+			print: 'kolorowy',
+			paper: 'kredowy',
+			typeOfBookCover: 'twarda',
+			date: '19 listopad 2021',
+			edition: 'I',
+			ISBN: '978-83-958554-7-4',
+			price: ''
+			},
+		detailsOriginalEdition:
+			{
+			title: '',
+			publisher: '',
+			date: ''
+			},
+		relatedComics: 
+			{
+			img1: '../img/komiks/solo-1/solo_1_okladka_regularna.jpg',
+			img2: '../img/komiks/solo-2/solo_2_okladka_regularna.jpg'
+			},
+		relatedComicsLink: 
+			{
+			link1: '../komiks/solo-swiat-kanibali.html',
+			link2: '../komiks/solo-ocaleni-z-chaosu.html'
+			},	
+		filter: 'seria-solo',
+		new: false,		
+		availability: false,
+		buyShops:
+			{
+			buyShop1: 'gildia.pl',
+			buyShop2: 'gildia.pl (okładka A)',
+			buyShop3: 'gildia.pl (okładka B)',
+			buyShop4: 'robmydobrze.pl'
+			},
+		buyLinks:
+			{
+			buyLink1: 'https://www.gildia.pl/komiksy/517948-solo-legatus',
+			buyLink2: 'https://www.gildia.pl/komiksy/517949-solo-legatus-okladka-limitowana-a',
+			buyLink3: 'https://www.gildia.pl/komiksy/517950-solo-legatus-okladka-limitowana-b',
+			buyLink4: 'https://robmydobrze.pl/produkt/solo-legatus-oscar-martin/'
+			}, 						
+		url: '../komiks/solo-legatus.html'
+	},
+
 	{ // Solo 3
 		id: 49, 
 		title: 'Solo: Legatus',
@@ -762,7 +1031,7 @@ export const Comics = [
 			},
 		details:
 			{
-			format: 'A4',
+			format: '210x297 mm',
 			pages: 80,
 			print: 'kolorowy',
 			paper: 'kredowy',
@@ -806,6 +1075,284 @@ export const Comics = [
 			buyLink4: 'https://robmydobrze.pl/produkt/solo-legatus-oscar-martin/'
 			}, 						
 		url: '../komiks/solo-legatus.html'
-	}
+	},
+
+
+	{ // Duam 
+		id: 50,
+		title: 'Duam',
+		writer: 'Felix Vega',
+		art: 'Felix Vega',
+		translator: '-',
+		proofreader: '-',
+		description: '<b>Ludzie i bogowie toczyli wojnę o panowanie nad światem. Okrutną i zaciętą. Bezkompromisową i krwawą.</b> Kiedy ludzie odnaleźli kryształy, które spadły z nieba, szala przechyliła się na ich stronę. Wtedy zawarto rozejm. Bogowie obiecali, że będą zjadać dusze tylko tych, którzy umarli, a ludzie mieli się im nie przeciwstawiać. Rozejm właśnie został złamany...</p><p> Duam jest potężną szamanką. Jako dziecko nie potrafiła pogodzić się ze śmiercią bliskich jej istot. Zdobyła więc jeden z kamieni światła, by przywracać do życia tych, którzy odeszli. Zapłaciła jednak za to wysoką cenę, sama jeszcze nie wie, jak wielką. </p><p>Razem z gwiazdą hiszpańskiego komiksu <i>Féliksem Vegą</i> wyrusz w niezwykłą podróż po okrutnym, ale i pięknym świecie, gdzie ludzie znów stają naprzeciwko bogów. Historia inspirowana jest wierzeniami Indian Mapuche, a okraszona została przepięknymi ilustracjami godnymi największych mistrzów komiksu.',
+		img: 
+			{
+			coverMainSite: '../img/komiks/duam/duam_okladka_regularna.jpeg',
+			coverRegular: '../img/komiks/duam/duam_okladka_regularna.jpeg',
+			coverRegularThumbnail: '../img/komiks/duam/duam_okladka_regularna.jpg',
+			coverAlternative1: '../img/komiks/duam/duam_okladka_alternatywna1.jpg',
+			coverAlternative2: '../img/komiks/duam/duam_okladka_alternatywna2.jpg',
+			insidePanels:
+				{
+				inside1: '../img/komiks/duam/duam_str1.jpeg',
+				inside2: '../img/komiks/duam/duam_str2.jpeg',
+				inside3: '../img/komiks/duam/duam_str3.jpeg'
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Duam - 1',
+				inside2Alt: 'przykładowa plansza komiksu Duam - 2',
+				inside3Alt: 'przykładowa plansza komiksu Duam - 3',
+				},												
+			},
+		details:
+			{
+			format: '210x297 mm',
+			pages: 120,
+			print: 'kolorowy',
+			paper: 'kredowy',
+			typeOfBookCover: 'twarda',
+			date: '10 maj 2022',
+			edition: 'I',
+			ISBN: '978-83-958554-9-8',
+			price: '79,90 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: '-',
+			publisher: '-',
+			date: '-'
+			},
+		relatedComics: 
+			{
+			
+			},
+		filter: 'antologie-integrale',
+		new: false,		
+		availability: true,
+		lastItems: true,
+		buyShops:
+			{
+			buyShop1: 'gildia.pl',
+			buyShop2: 'robmydobrze.pl'
+			},
+		buyLinks:
+			{
+			buyLink1: 'https://www.gildia.pl/komiksy/521091-duam',
+			buyLink2: 'https://robmydobrze.pl/produkt/duam'
+			}, 			
+		url: '../komiks/duam.html'			
+	},
+
+
+	{ // Button Man
+		id: 51, 
+		title: 'Button Man - Cyngiel',
+		writer: 'John Wagner',
+		art: 'Arthur Ranson',
+		translator: 'Małgorzata Matachowska',
+		proofreader: 'Słowobraz',
+		description: '<p>Ta licząca ponad 300 stron cegła to najbardziej kultowy i ikoniczny brytyjski komiks. Opus magnum współpracy dwóch niezwykłych twórców. Ten mroczny thriller stworzyli <i>John Wagner</i> i <i>Arthur Ranson</i>. Obydwaj znani są polskiemu czytelnikowi. Pierwszy choćby z przygód <i>Sędziego Dredda</i>, <i>LOBO</i> czy historii z uniwersów <i>Obcego</i> oraz <i>Gwiezdnych Wojen</i>. Drugi natomiast z fantastycznych rysunków do historii z <b>Sędzią Anderson</b>. Jednak to właśnie w tym komiksie ich talent dosłownie eksplodował. Niczym kule w głowach ofiar głównego bohatera.</p><p><b>W tym komiksie nie ma dobrych facetów.</b></p><p> Harry Exton to profesjonalny zabójca. Kiedyś żołnierz, dziś cyngiel do wynajęcia. W poszukiwaniu pracy wraca do rodzimej Anglii. Wiedzie normalne życie dopóki nie dowiaduje się o współczesnych zawodach „gladiatorów”. To okrutna gra w której walczy się z przeciwnikiem na śmierć. Nie ma tu jednak żadnej areny, a polem walki jest cały świat. Wysokie nagrody dla zwycięzców, oferowane przez tajemniczych sponsorów, kuszą najlepszych i najgorszych. Harry też staje do gry. Gry wręcz dla niego stworzonej. Jednak czy stając się pionkiem na morderczej szachownicy można z niej bezkarnie zejść?</p>',
+		img: 
+			{
+			coverMainSite: '../img/komiks/button-man/button-man-okladka-regularna.jpg',
+			coverRegular: '../img/komiks/button-man/button-man-okladka-regularna.jpg',
+			coverRegularThumbnail: '../img/komiks/button-man/button-man-okladka-regularna.jpg',
+			coverAlternative1: '../img/komiks/button-man/button-man-okladka-alternatywna-a.jpg',
+			coverAlternative2: '../img/komiks/button-man/button-man-okladka-alternatywna-b.jpg',
+			insidePanels:
+				{
+				inside1: '../img/komiks/buttton-man/buttton-man_str1.jpg',
+				inside2: '../img/komiks/buttton-man/buttton-man_str2.jpg',
+				inside3: '../img/komiks/buttton-man/buttton-man_str3.jpg',
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Button Man - 1',
+				inside2Alt: 'przykładowa plansza komiksu Button Man - 2',
+				inside3Alt: 'przykładowa plansza komiksu Button Man - 3',
+				},		
+			},	
+		details:
+			{
+			format: '210x297 mm',
+			pages: 314,
+			print: 'kolorowy',
+			paper: 'kredowy',
+			typeOfBookCover: 'twarda',
+			date: '12 grudzień 2022',
+			edition: 'I',
+			ISBN: '978-83-966577-0-1',
+			price: '149,90 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: 'Button Man. Get Harry Ex',
+			publisher: 'Rebellion',
+			date: '2004-2009'
+			},
+		relatedComics: 
+			{
+			
+			},				
+		filter: 'antologie-integrale',
+		new: true,		
+		availability: false,
+		lastItems: false,
+		buyShops:
+			{
+			buyShop1: 'gildia.pl',
+			buyShop2: 'robmydobrze.pl'
+			},
+		buyLinks:
+			{
+			buyLink1: 'https://www.gildia.pl/komiksy/436616-metronom',
+			buyLink2: 'https://robmydobrze.pl/produkt/metronom-eric-corbeyran-i-grun'
+			}, 
+		url: '../komiks/comics-site.html'			
+	},
+
+
+
+
+	{ // Catamount
+		id: 52, 
+		title: 'Catamount',
+		writer: 'Benjamin Blasco-Martinez, <br>Gaët\'s <br>(na podstawie twórczości Alberta\&nbsp;Bonneau)',
+		art: 'Benjamin Blasco-Martinez',
+		color: 'Benjamin Blasco-Martinez, <br>Émilie Beaud',
+		translator: 'Zuzik',
+		textLinguistics: 'Mała Kasia', 
+		proofreader: 'Izabela Rutkowska',
+		edition: 'Piotr Margol',
+		description: '<p>Kolejna komiksowa cegła od Studia Lain. Tym razem ponad 260 stron podróży przez Amerykę ogarniętą konfliktem między Indianami, a białymi kolonizatorami. Wydanie zbiera cztery oryginalne albumy i stanowi zamknięta historię.</p><p><b>Catamount to jeden z najwyżej ocenianych komiksowych westernów ostatnich lat.</b> Stawiany obok takich ikonicznych serii jak <i>Bouncer</i> czy <i>Undertaker</i>.</p><p> Dziki Zachód. Ten prawdziwy. Pełen krwi, gwałtów, masakr, cierpienia, bólu, roztrzaskanych kulami czaszek i ciał rozszarpywanych przez sępy. W takim świecie jest jednak miejsce także na gest czystej dobroci. Rodzina Osborne’ów przygarnia noworodka. To jedyny ocalały z karawany zmasakrowanej przez Czejenów. Chłopczyk, ocalony przez kota, dostaje imię Catamount. Szkolony przez starego trapera staje się wybitnym jeźdźcem i strzelcem. Jego przeznaczenie jednak o nim nie zapomina. Spotyka na swojej drodze Black Possuma, czejeńskiego wodza, odpowiedzialnego za masakrę jego rodziców...</p><p>Catamount luźno bazuje na uniwersum stworzonym przez <i>Alberta Bonneau</i>, uważanego za jednego z najlepszych francuskich pisarzy powieści przygodowych. Seria <i>Blasco-Martineza</i> łamie stereotypy, na nowo definiuje komiksowy western, oferując niebanalną historię krwawej zemsty okraszoną pięknymi, widowiskowymi ilustracjami.</p>',
+		img: 
+			{
+			coverMainSite: '../img/komiks/catamount/catamount-okladka-regularna-small.jpg',
+			coverRegular: '../img/komiks/catamount/catamount-okladka-regularna.jpg',
+			coverRegularThumbnail: '../img/komiks/catamount/catamount-okladka-regularna-miniatura.jpg',
+			coverAlternative1: '../img/komiks/catamount/catamount-okladka-alternatywna-a.jpg',
+			coverAlternative2: '../img/komiks/catamount/catamount-okladka-alternatywna-b.jpg',
+			insidePanels:
+				{
+				inside1: '../img/komiks/catamount/catamount_str1.jpg',
+				inside2: '../img/komiks/catamount/catamount_str2.jpg',
+				inside3: '../img/komiks/catamount/catamount_str3.jpg',
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Catamount - 1',
+				inside2Alt: 'przykładowa plansza komiksu Catamount - 2',
+				inside3Alt: 'przykładowa plansza komiksu Catamount - 3',
+				},		
+			},	
+		details:
+			{
+			format: '210x297 mm',
+			pages: 268,
+			print: 'kolorowy',
+			paper: 'kredowy',
+			typeOfBookCover: 'twarda',
+			date: '3 luty 2023',
+			edition: 'I',
+			ISBN: '978-83-966577-1-8',
+			price: '130,00 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: 'Catamount 1-4',
+			publisher: 'Éditions Petit à Petit',
+			date: '2017-2021'
+			},
+		relatedComics: 
+			{
+			
+			},				
+		filter: 'antologie-integrale',
+		new: true,		
+		availability: true,
+		lastItems: true,
+		buyShops:
+			{
+			buyShop1: '',
+			buyShop2: ''
+			},
+		buyLinks:
+			{
+			buyLink1: '',
+			buyLink2: ''
+			}, 
+		url: '../komiks/comics-site.html'
+	},
+
+	{ // Sha
+		id: 53, 
+		title: 'Sha',
+		writer: 'Pat Mills',
+		art: 'Olivier Ledroit',
+		translator: '-',
+		proofreader: '-',
+		description: '<p><b>Kultowy komiks dwóch wyjątkowych autorów: <i>Pata Millsa</i> i <i>Oliviera Ledroit</i></b>. Pierwszy dał się poznać polskim czytelnikom dzięki takim tytułom jak <i>Slaine</i>, <i>ABC Warriors</i> czy też pozycje z uniwersum <i>Sędziego Dredda</i>. To ikona brytyjskiego komiksu. Natomiast <i>Ledroit</i> wciąż znajduje się w pierwszej dziesiątce najlepszych francuskich rysowników komiksowych. W Polsce ukazał się współtworzony przez niego tytuł <i>Wika</i>. Jednak to właśnie <i>Sha</i> oraz seria <i>Requiem Chevalier Vampire</i> (także do scenariusza <i>Millsa</i>) uważane są za najlepsze graficznie komiksy w jego dorobku.</p> <p><i>Sha</i> sprzedała się w Europie w setkach tysięcy egzemplarzy. Amerykański magazyn <i>Heavy Metal</i>, w którym była publikowana, wyprzedał się dosłownie na pniu. Teraz i polscy czytelnicy będą mogli zanurzyć się w ten szalony cyberpunkowy thriller.</p> <p>XXI wiek. Ameryka. New Eden. Gigantyczne miasto. Cybernetyczny raj. Cybernetyczne piekło. Symbol ludzkiego geniuszu. Symbol ludzkiego upadku. Detektyw Duffy prowadzi śledztwo w sprawie tajemniczych morderstw. Z każdą odkrytą kartą jej niepokój rośnie, bo zaczyna odczuwać niezwykłą więź ze sprawcą. Zresztą nie tylko ona. Blady strach pada na władców tego świata, którzy by rządzić, wykorzystują religię i cybernetyczne technologie. Ich czas zdaje się policzony…</p> <p>XVI wiek. Francja. Polowania na czarownice osiągnęły apogeum. Inkwizycja jest wszędzie. Lara, szesnastoletnia wiedźma, zostaje skazana na śmierć. Zanim umrze, przeklnie swoich oprawców i przysięgnie, że wróci, by ich ukarać.</p> <p><i>Sha</i> stanowi zamkniętą historię. Ukazuje się w powiększonym formacie, na grubszym papierze, by można było w pełni podziwiać malarski talent <i>Oliviera Ledroit</i>.</p>',
+		img: 
+			{
+			coverMainSite: '../img/komiks/sha/sha_okladka-podstawowa.jpg',
+			coverRegular: '../img/komiks/sha/sha_okladka-podstawowa.jpg',
+			coverRegularThumbnail: '../img/komiks/sha/sha_okladka-podstawowa.jpg',
+			coverAlternative1: '../img/komiks/sha/sha_okladka-limitowana-a.jpg',
+			coverAlternative2: '../img/komiks/sha/sha_okladka-limitowana-b.jpg',
+			insidePanels:
+				{
+				inside1: '../img/komiks/sha/sha_str-1.jpg',
+				inside2: '../img/komiks/sha/sha_str-2.jpg',
+				inside3: '../img/komiks/sha/sha_str-3.jpg',
+				},
+			insidePanelsAlt:
+				{
+				inside1Alt: 'przykładowa plansza komiksu Sha - 1',
+				inside2Alt: 'przykładowa plansza komiksu Sha - 2',
+				inside3Alt: 'przykładowa plansza komiksu Sha - 3',
+				},		
+			},	
+		details:
+			{
+			format: '240x320 mm',
+			pages: 152,
+			print: 'kolorowy',
+			paper: 'kredowy',
+			typeOfBookCover: 'twarda',
+			date: '3 marzec 2023',
+			edition: 'I',
+			ISBN: '',
+			price: '110,00 zł'
+			},
+		detailsOriginalEdition:
+			{
+			title: '',
+			publisher: '',
+			date: ''
+			},
+		relatedComics: 
+			{
+			
+			},				
+		filter: 'antologie-integrale',
+		new: true,		
+		availability: true,
+		lastItems: true,
+		buyShops:
+			{
+			buyShop1: '',
+			buyShop2: ''
+			},
+		buyLinks:
+			{
+			buyLink1: '',
+			buyLink2: ''
+			}, 
+		url: '../komiks/comics-site.html'			
+	},
+
+
 
 ];
