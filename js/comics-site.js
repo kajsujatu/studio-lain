@@ -105,15 +105,25 @@ export function chooseComics(num) {
 	});
 
 	// Inside Panels
-	const imagesInside = document.getElementById('img-inside');
+	//const imagesInside = document.querySelector('.gallery');
+	const insidePanels = document.getElementById('inside-panels');
 	const comicsInsideImages = Comics[num].img.insidePanels;
 	const comicsInsideImagesAlt = Comics[num].img.insidePanelsAlt;
 
+	const comicsGallery = document.createElement('div');
+	insidePanels.appendChild(comicsGallery);
+	comicsGallery.classList.add('gallery');
+
 	for (let i=0; i<Object.values(comicsInsideImages).length; i++) {
+		const comicsLinkInside = document.createElement('a');
 		const comicsInside = document.createElement('img');
 		comicsInside.classList.add('inside-thumbnails');
+		comicsLinkInside.setAttribute('href', `${Object.values(comicsInsideImages)[i]}`); // Set href to images
 		comicsInside.setAttribute('alt', `${Object.values(comicsInsideImagesAlt)[i]}`); // Set Alt to images
-		imagesInside.appendChild(comicsInside);
+		comicsInside.setAttribute('title', ''); // Set Title to images
+
+		comicsGallery.appendChild(comicsLinkInside);
+		comicsLinkInside.appendChild(comicsInside);
 		comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
 	}
 

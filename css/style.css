@@ -309,6 +309,15 @@ header {
 	line-height: 2.2rem;
 }
 
+
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 /* text elements to the left of input or select */
 #sort > :nth-child(odd),
 #filters > :nth-child(odd),
@@ -651,7 +660,7 @@ h1.title {
 }
 
 #cover-big {
-	width: 433px;
+	/* width: 433px; */
 	height: 578px;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
 }
