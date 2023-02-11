@@ -3,6 +3,9 @@ import {
 	Comics
 } from './comics-data.js';
 
+
+
+
 // Back link
 const backLinkTop = document.getElementById('back-link-top');
 backLinkTop.addEventListener('click', function() {
@@ -43,46 +46,48 @@ export function chooseComics(num) {
 	}
 	
 	// Cover
-	const comicsCover = Comics[num].img.coverRegular;
+	const comicsCover = Comics[num].img.coverBasic;
 	document.getElementById('cover-big').src = `${comicsCover}`;
+	document.getElementById('cover-big-link').href = `${Comics[num].img.coverBasicOriginal}`;
 
 	// Cover
-	const comicsCoverRegularThumbnail = Comics[num].img.coverRegular;
-	document.getElementById('cover-regular-thumbnail').src = `${comicsCoverRegularThumbnail}`;
+	const comicsCoverBasicThumbnail = Comics[num].img.coverBasicThumbnail;
+	document.getElementById('cover-regular-thumbnail').src = `${comicsCoverBasicThumbnail}`;
 	document.getElementById('cover-regular-thumbnail').style.display = 'inline';
 	document.getElementById('cover-regular-thumbnail').style.opacity = '50%';
 
 	// Cover Alternative 1
-	const comicsCoverAlt1 = Comics[num].img.coverAlternative1;
-	document.getElementById('cover-alternative1-thumbnail').src = `${comicsCoverAlt1}`;
+	const comicsCoverAlt1Thumbnail = Comics[num].img.coverAlternative1Thumbnail;
+	document.getElementById('cover-alternative1-thumbnail').src = `${comicsCoverAlt1Thumbnail}`;
 	document.getElementById('cover-alternative1-thumbnail').style.display = 'inline';
-	if (comicsCoverAlt1 != null) {
+	if (comicsCoverAlt1Thumbnail != null) {
 		document.getElementById('cover-alternative1-thumbnail').style.display = 'inline';
 	} else {
 			document.getElementById('cover-alternative1-thumbnail').style.display = 'none';
 	}
 
 	// Cover Alternative 2
-	const comicsCoverAlt2 = Comics[num].img.coverAlternative2;
-	document.getElementById('cover-alternative2-thumbnail').src = `${comicsCoverAlt2}`;
-	if (comicsCoverAlt2 != null) {
+	const comicsCoverAlt2Thumbnail = Comics[num].img.coverAlternative2Thumbnail;
+	document.getElementById('cover-alternative2-thumbnail').src = `${comicsCoverAlt2Thumbnail}`;
+	if (comicsCoverAlt2Thumbnail != null) {
 	document.getElementById('cover-alternative2-thumbnail').style.display = 'inline';
 	} else {
 		document.getElementById('cover-alternative2-thumbnail').style.display = 'none';
 	}
 
 	// Functions for changing thumbnails
-	const coverRegularThumbnail = document.getElementById('cover-regular-thumbnail');
+	const coverBasicThumbnail = document.getElementById('cover-regular-thumbnail');
 	const coverBig = document.getElementById('cover-big');
 	const coverAlternative1Thumbnail = document.getElementById('cover-alternative1-thumbnail');
 	const coverAlternative2Thumbnail = document.getElementById('cover-alternative2-thumbnail');
 	
-	coverRegularThumbnail.addEventListener('click', function() {	
-		if (coverBig.src != Comics[num].img.coverRegular) {
-			coverBig.src = Comics[num].img.coverRegular;
-			coverRegularThumbnail.style.opacity = '50%';
+	coverBasicThumbnail.addEventListener('click', function() {	
+		if (coverBig.src != Comics[num].img.coverBasic) {
+			coverBig.src = Comics[num].img.coverBasic;
+			coverBasicThumbnail.style.opacity = '50%';
 			coverAlternative1Thumbnail.style.opacity = '100%';
 			coverAlternative2Thumbnail.style.opacity = '100%';
+			document.getElementById('cover-big-link').href = `${Comics[num].img.coverBasicOriginal}`;
 		}
 	});
 	
@@ -90,8 +95,9 @@ export function chooseComics(num) {
 		if (coverBig.src != Comics[num].img.coverAlternative1) {
 			coverBig.src = Comics[num].img.coverAlternative1;
 			coverAlternative1Thumbnail.style.opacity = '50%';
-			coverRegularThumbnail.style.opacity = '100%';
+			coverBasicThumbnail.style.opacity = '100%';
 			coverAlternative2Thumbnail.style.opacity = '100%';
+			document.getElementById('cover-big-link').href = `${Comics[num].img.coverAlternative1Original}`;
 		}
 	});
 
@@ -99,8 +105,9 @@ export function chooseComics(num) {
 		if (coverBig.src != Comics[num].img.coverAlternative2) {
 			coverBig.src = Comics[num].img.coverAlternative2;
 			coverAlternative2Thumbnail.style.opacity = '50%';
-			coverRegularThumbnail.style.opacity = '100%';
+			coverBasicThumbnail.style.opacity = '100%';
 			coverAlternative1Thumbnail.style.opacity = '100%';
+			document.getElementById('cover-big-link').href = `${Comics[num].img.coverAlternative2Original}`;
 		}
 	});
 
@@ -108,6 +115,7 @@ export function chooseComics(num) {
 	//const imagesInside = document.querySelector('.gallery');
 	const insidePanels = document.getElementById('inside-panels');
 	const comicsInsideImages = Comics[num].img.insidePanels;
+	const comicsInsideImagesThumbnails = Comics[num].img.insidePanelsThumbnails;
 	const comicsInsideImagesAlt = Comics[num].img.insidePanelsAlt;
 
 	const comicsGallery = document.createElement('div');
@@ -121,11 +129,18 @@ export function chooseComics(num) {
 		comicsLinkInside.setAttribute('href', `${Object.values(comicsInsideImages)[i]}`); // Set href to images
 		comicsInside.setAttribute('alt', `${Object.values(comicsInsideImagesAlt)[i]}`); // Set Alt to images
 		comicsInside.setAttribute('title', ''); // Set Title to images
-
 		comicsGallery.appendChild(comicsLinkInside);
 		comicsLinkInside.appendChild(comicsInside);
-		comicsInside.src = `${Object.values(comicsInsideImages)[i]}`;
+		comicsInside.src = `${Object.values(comicsInsideImagesThumbnails)[i]}`;
 	}
+
+//const comicsLinkInsideImg = document.querySelectorAll('.gallery');
+//comicsLinkInsideImg.addEventListener('click', function() {
+//	new SimpleLightbox('.gallery a', {});
+//})();
+//
+
+
 
 	// Links to Buy
 	const buyButton = document.getElementById('buy');

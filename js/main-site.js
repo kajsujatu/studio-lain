@@ -15,9 +15,28 @@ for (let i=0; i<Comics.length; i++) {
 	mainCover.classList.add('cover');
 	mainContainer.appendChild(mainCover);
 
+	// Adding Picture to div.cover
+	const mainCoverPicture = document.createElement('picture');
+	mainCover.appendChild(mainCoverPicture);
+
+	const sourceOfPictureDesktop = document.createElement('source');
+	mainCoverPicture.appendChild(sourceOfPictureDesktop);
+	sourceOfPictureDesktop.setAttribute('srcset', `${Comics[i].img.coverMainSiteDesktop}`);
+	sourceOfPictureDesktop.setAttribute('media', `(min-width: 33.313rem)`);
+
+	const sourceOfPictureMobile = document.createElement('source');
+	mainCoverPicture.appendChild(sourceOfPictureMobile);
+	sourceOfPictureMobile.setAttribute('srcset', `${Comics[i].img.coverMainSiteMobile}`);
+	sourceOfPictureMobile.setAttribute('media', `(max-width: 33.313rem)`);
+
+	const mainCoverPictureImage = document.createElement('img');
+	mainCoverPicture.appendChild(mainCoverPictureImage);
+	mainCoverPictureImage.setAttribute('src', `${Comics[i].img.coverMainSiteMobile}`);
+	mainCoverPictureImage.setAttribute('alt', `${Comics[i].img.coverImgAlt}`);
+
 	// Adding attributes from Comics Array to Cover Class:
 		// Cover
-		mainCover.style.backgroundImage = `url(${Comics[i].img.coverMainSite}`;
+	//	mainCover.style.backgroundImage = `url(${Comics[i].img.coverMainSite}`;
 		// Order Newest by default
 		mainCover.style.order = -(Comics[i].id);
 		// Link

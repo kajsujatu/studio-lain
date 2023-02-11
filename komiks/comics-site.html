@@ -6,24 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<link rel="stylesheet" href="../css/style.css">
 	<script src="../js/nav.js" type="module" async></script>
-	<script src="../js/comics-site.js" type="module" async></script>
+
 	
 	<link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/simple-lightbox.css?v2.11.0" />
 	<script src="../js/nav.js" type="module" async></script>
 
-	
-<script type="module" async>
-	import {
-	chooseComics
-	} from '../js/comics-site.js';
-		chooseComics(17);
-	</script>
-	
-	
-	
-	
-	
+
 	
 </head>
 <body>
@@ -80,7 +69,7 @@ icon"></a></li>
 
 	<!-- Cover -->
     <div id="container-covers">
-		<img src="" alt="" id="cover-big">
+		<a href="" id="cover-big-link"><img src="" alt="" id="cover-big"></a>
 		<p id="choose-cover">Wybierz wariant okładki:</p>
 		<img src="" alt="" id="cover-regular-thumbnail">
 		<img src="" alt="" id="cover-alternative1-thumbnail">
@@ -156,14 +145,12 @@ icon"></a></li>
 	<div id="inside-panels">
 		<div id="inside-panels-headline"><img class="icon" id="icon-zoom-in" src="../img/icon-zoom-in.svg" alt="Powiększ"><span id="inside-samples">PRZYKŁADOWE PLANSZE</span></div>
 			
-	
-
 <!--
 	<div class="gallery">
 		<a href="/img/komiks/uniwersum-dredda/sedzia-anderson-oddzial-psi-powrot-do-szambali_str-1.jpg"><img class="inside-thumbnails" src="/img/komiks/uniwersum-dredda/sedzia-anderson-oddzial-psi-powrot-do-szambali_str-1.jpg" alt="" title=""></a>
 		<a href="/img/komiks/uniwersum-dredda/sedzia-anderson-oddzial-psi-powrot-do-szambali_str-2.jpg"><img class="inside-thumbnails" src="/img/komiks/uniwersum-dredda/sedzia-anderson-oddzial-psi-powrot-do-szambali_str-2.jpg" alt="" title="Beautiful Image"></a>
 	</div>
---> 
+ -->
 
 </div>
 
@@ -184,16 +171,33 @@ icon"></a></li>
 	Wersja demo strony
 </footer>	
 
+
+
+
+	
 <script src="../js/simple-lightbox.js?v2.11.0"></script>
+
+
+
+
+
+
+<script src="../js/comics-site.js" type="module"></script>
+
+<script type="module">
+	import {
+	chooseComics
+	} from '../js/comics-site.js';
+		chooseComics(22);
+	</script>
+
+
+
 <script>
     (function() {
         var $gallery = new SimpleLightbox('.gallery a', {});
     })();
 </script>
-
-
-
-
 
 
 
