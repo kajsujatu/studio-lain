@@ -52,25 +52,25 @@ export function chooseComics(num) {
 
 	// Cover
 	const comicsCoverBasicThumbnail = Comics[num].img.coverBasicThumbnail;
-	document.getElementById('cover-regular-thumbnail').src = `${comicsCoverBasicThumbnail}`;
-	document.getElementById('cover-regular-thumbnail').style.display = 'inline';
+	document.getElementById('cover-regular-thumbnail').style.backgroundImage = `url("${comicsCoverBasicThumbnail}")`;
+	document.getElementById('cover-regular-thumbnail').style.display = 'inline-block';
 	document.getElementById('cover-regular-thumbnail').style.opacity = '50%';
 
 	// Cover Alternative 1
 	const comicsCoverAlt1Thumbnail = Comics[num].img.coverAlternative1Thumbnail;
-	document.getElementById('cover-alternative1-thumbnail').src = `${comicsCoverAlt1Thumbnail}`;
-	document.getElementById('cover-alternative1-thumbnail').style.display = 'inline';
+	document.getElementById('cover-alternative1-thumbnail').style.backgroundImage = `url("${comicsCoverAlt1Thumbnail}`;
+	document.getElementById('cover-alternative1-thumbnail').style.display = 'inline-block';
 	if (comicsCoverAlt1Thumbnail != null) {
-		document.getElementById('cover-alternative1-thumbnail').style.display = 'inline';
+		document.getElementById('cover-alternative1-thumbnail').style.display = 'inline-block';
 	} else {
 			document.getElementById('cover-alternative1-thumbnail').style.display = 'none';
 	}
 
 	// Cover Alternative 2
 	const comicsCoverAlt2Thumbnail = Comics[num].img.coverAlternative2Thumbnail;
-	document.getElementById('cover-alternative2-thumbnail').src = `${comicsCoverAlt2Thumbnail}`;
+	document.getElementById('cover-alternative2-thumbnail').style.backgroundImage = `url("${comicsCoverAlt2Thumbnail}`;
 	if (comicsCoverAlt2Thumbnail != null) {
-	document.getElementById('cover-alternative2-thumbnail').style.display = 'inline';
+	document.getElementById('cover-alternative2-thumbnail').style.display = 'inline-block';
 	} else {
 		document.getElementById('cover-alternative2-thumbnail').style.display = 'none';
 	}
@@ -134,13 +134,9 @@ export function chooseComics(num) {
 		comicsInside.src = `${Object.values(comicsInsideImagesThumbnails)[i]}`;
 	}
 
-//const comicsLinkInsideImg = document.querySelectorAll('.gallery');
-//comicsLinkInsideImg.addEventListener('click', function() {
-//	new SimpleLightbox('.gallery a', {});
-//})();
-//
-
-
+	window.addEventListener('load', () => {
+		new SimpleLightbox('.gallery a', {})
+	});
 
 	// Links to Buy
 	const buyButton = document.getElementById('buy');

@@ -283,7 +283,7 @@ export const Comics = [
 		relatedComics: 
 			{
 				img1: '../img/komiks/solo-2/solo_2_okladka_regularna.jpg',
-				img2: '../img/komiks/solo-3/solo_3_okladka_regularna.jpg'
+				img2: '../img/komiks/solo-3-legatus/solo_3_okladka_regularna.jpg'
 			},
 		relatedComicsLink: 
 			{
@@ -425,7 +425,7 @@ export const Comics = [
 		relatedComics: 
 			{
 			img1: '../img/komiks/solo-1/solo_1_okladka_regularna.jpg',
-			img2: '../img/komiks/solo-3/solo_3_okladka_regularna.jpg'
+			img2: '../img/komiks/solo-3-legatus/solo_3_okladka_regularna.jpg'
 			},
 		relatedComicsLink: 
 			{
@@ -1331,19 +1331,30 @@ export const Comics = [
 		description: '<p>Oscar Martín autor <i>Solo: Legatus</i> znany jest najbardziej z tworzenia komiksów na potrzeby uniwersum Disneya. Za swoją kreację <i>Toma i Jerrego</i> zebrał masę nagród. Chciał jednak stworzyć komiks dla dorosłego czytelnika. Tak powstało uniwersum Solo. Brutalne i krwawe, bo to świat po apokalipsie. Mutacje, anarchia, mordy i powszechny kanibalizm. <i>Solo: Legatus</i> to nowa opowieść w tym uniwersum.</p><p><b>UMARŁ SOLO - NIECH ŻYJE SOLO!</b></p><p>Legendy nie umierają. Muszą trwać, by dawać nadzieję. Zwłaszcza w takim okrutnym, postapokaliptycznym świecie. Waleczny szczur zginął, ale na szczęście zostawił po sobie spuściznę. Walka mutantów z terrorem okrutnych ludzi będzie więc trwać. Na jej czele stanie jednak nie szczur, a pies.</p>',
 		img: 
 			{
-			coverMainSiteDesktop: 'img/komiks/solo-3/solo-3-legatus_okladka-desktop.jpg',
-			coverMainSiteMobile: 'img/komiks/solo-3/solo-3-legatus_okladka-mobile.jpg',
+			coverMainSiteDesktop: 'img/komiks/solo-3-legatus/solo-3-legatus_okladka-desktop.jpg',
+			coverMainSiteMobile: 'img/komiks/solo-3-legatus/solo-3-legatus_okladka-mobile.jpg',
 			coverImgAlt: 'okładka komiksu Solo: Legatus',
-			coverBasic: '../img/komiks/solo-3/solo_3_okladka_regularna.jpg',
-			coverBasicThumbnail: '../img/komiks/solo-3/solo_3_okladka_regularna.jpg',
-			coverAlternative1: '../img/komiks/solo-3/solo_3_okladka_alternatywna1.jpg',
-			coverAlternative2: '../img/komiks/solo-3/solo_3_okladka_alternatywna2.jpg',
+			coverBasic: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-podstawowa-big.jpg',
+			coverBasicThumbnail: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-podstawowa-thumbnail.jpg',
+			coverBasicOriginal: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-podstawowa.jpg',
+			coverAlternative1: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-limitowana-a-big.jpg',
+			coverAlternative1Thumbnail: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-limitowana-a-thumbnail.jpg',
+			coverAlternative1Original: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-limitowana-a.jpg',
+			coverAlternative2: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-limitowana-b-big.jpg',
+			coverAlternative2Thumbnail: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-limitowana-b-thumbnail.jpg',
+			coverAlternative2Original: '../img/komiks/solo-3-legatus/solo-3-legatus_okladka-limitowana-a.jpg',
 			insidePanels:
 				{
-				inside1: '../img/komiks/solo-3/solo_3-str1.jpg',
-				inside2: '../img/komiks/solo-3/solo_3-str2.jpg',
-				inside3: '../img/komiks/solo-3/solo_3-str3.jpg'
+				inside1: '../img/komiks/solo-3-legatus/solo-3-legatus_str-1.jpg',
+				inside2: '../img/komiks/solo-3-legatus/solo-3-legatus_str-2.jpg',
+				inside3: '../img/komiks/solo-3-legatus/solo-3-legatus_str-3.jpg'
 				},
+			insidePanelsThumbnails:
+				{
+				inside1Thumbnail: '../img/komiks/solo-3-legatus/solo-3-legatus_str-1-thumbnail.jpg',
+				inside2Thumbnail: '../img/komiks/solo-3-legatus/solo-3-legatus_str-2-thumbnail.jpg',
+				inside3Thumbnail: '../img/komiks/solo-3-legatus/solo-3-legatus_str-3-thumbnail.jpg',
+				},	
 			insidePanelsAlt:
 				{
 				inside1Alt: 'przykładowa plansza komiksu Solo: Legatus - 1',
@@ -1371,8 +1382,8 @@ export const Comics = [
 			},
 		relatedComics: 
 			{
-			img1: '../img/komiks/solo-1/solo_1_okladka_regularna.jpg',
-			img2: '../img/komiks/solo-2/solo_2_okladka_regularna.jpg'
+			img1: '../img/komiks/solo-1/solo_1_okladka-podstawowa-thumbnail.jpg',
+			img2: '../img/komiks/solo-2/solo_2_okladka-podstawowa-thumbnail.jpg'
 			},
 		relatedComicsLink: 
 			{
@@ -1413,15 +1424,26 @@ export const Comics = [
 			coverMainSiteDesktop: 'img/komiks/duam/duam_okladka-desktop.jpg',
 			coverMainSiteMobile: 'img/komiks/duam/duam_okladka-mobile.jpg',
 			coverImgAlt: 'okładka komiksu Duam',
-			coverBasic: '../img/komiks/duam/duam_okladka_regularna.jpeg',
-			coverBasicThumbnail: '../img/komiks/duam/duam_okladka_regularna.jpg',
-			coverAlternative1: '../img/komiks/duam/duam_okladka_alternatywna1.jpg',
-			coverAlternative2: '../img/komiks/duam/duam_okladka_alternatywna2.jpg',
+			coverBasic: '../img/komiks/duam/duam_okladka-podstawowa-big.jpg',
+			coverBasicThumbnail: '../img/komiks/duam/duam_okladka-podstawowa-thumbnail.jpg',
+			coverBasicOriginal: '../img/komiks/duam/duam_okladka-podstawowa.jpeg',
+			coverAlternative1: '../img/komiks/duam/duam_okladka-limitowana-a-big.jpg',
+			coverAlternative1Thumbnail: '../img/komiks/duam/duam_okladka-limitowana-a-thumbnail.jpg',
+			coverAlternative1Original: '../img/komiks/duam/duam_okladka-limitowana-a.jpg',
+			coverAlternative2: '../img/komiks/duam/duam_okladka-limitowana-b-big.jpg',
+			coverAlternative2Thumbnail: '../img/komiks/duam/duam_okladka-limitowana-b-thumbnail.jpg',
+			coverAlternative2Original: '../img/komiks/duam/duam_okladka-limitowana-b.jpg',
 			insidePanels:
 				{
-				inside1: '../img/komiks/duam/duam_str1.jpeg',
-				inside2: '../img/komiks/duam/duam_str2.jpeg',
-				inside3: '../img/komiks/duam/duam_str3.jpeg'
+				inside1: '../img/komiks/duam/duam_str-1.jpeg',
+				inside2: '../img/komiks/duam/duam_str-2.jpeg',
+				inside3: '../img/komiks/duam/duam_str-3.jpeg'
+				},
+			insidePanelsThumbnails:
+				{
+				inside1Thumbnail: '../img/komiks/duam/duam_str-1-thumbnail.jpg',
+				inside2Thumbnail: '../img/komiks/duam/duam_str-2-thumbnail.jpg',
+				inside3Thumbnail: '../img/komiks/duam/duam_str-3-thumbnail.jpg',
 				},
 			insidePanelsAlt:
 				{
@@ -1484,7 +1506,7 @@ export const Comics = [
 			coverMainSiteMobile: 'img/komiks/button-man-cyngiel/button-man-cyngiel_okladka-mobile.jpg',
 			coverImgAlt: 'okładka komiksu Button Man - Cyngiel',
 			coverBasic: '../img/komiks/button-man-cyngiel/button-man-cyngiel_okladka-podstawowa-big.jpg',
-			coverBasicThumbnail: '../img/komiks/button-man-cyngiel/button-man-cyngiel_okladka-thumbnail.jpg',
+			coverBasicThumbnail: '../img/komiks/button-man-cyngiel/button-man-cyngiel_okladka-podstawowa-thumbnail.jpg',
 			coverBasicOriginal: '../img/komiks/button-man-cyngiel/button-man-cyngiel_okladka-podstawowa.jpg',
 			coverAlternative1: '../img/komiks/button-man-cyngiel/button-man-cyngiel_okladka-limitowana-a-big.jpg',
 			coverAlternative1Thumbnail: '../img/komiks/button-man-cyngiel/button-man-cyngiel_okladka-limitowana-a-thumbnail.jpg',
@@ -1566,21 +1588,44 @@ export const Comics = [
 			coverMainSiteDesktop: 'img/komiks/catamount/catamount_okladka-desktop.jpg',
 			coverMainSiteMobile: 'img/komiks/catamount/catamount_okladka-mobile.jpg',
 			coverImgAlt: 'okładka komiksu Catamount',
-			coverBasic: '../img/komiks/catamount/catamount-okladka-regularna.jpg',
-			coverBasicThumbnail: '../img/komiks/catamount/catamount-okladka-regularna-miniatura.jpg',
-			coverAlternative1: '../img/komiks/catamount/catamount-okladka-alternatywna-a.jpg',
-			coverAlternative2: '../img/komiks/catamount/catamount-okladka-alternatywna-b.jpg',
+			coverBasic: '../img/komiks/catamount/catamount_okladka-podstawowa-big.jpg',
+			coverBasicThumbnail: '../img/komiks/catamount/catamount_okladka-podstawowa-thumbnail.jpg',
+			coverBasicOriginal: '../img/komiks/catamount/catamount_okladka-podstawowa.jpg',
+			coverAlternative1: '../img/komiks/catamount/catamount_okladka-limitowana-a-big.jpg',
+			coverAlternative1Thumbnail: '../img/komiks/catamount/catamount_okladka-limitowana-a-thumbnail.jpg',
+			coverAlternative1Original: '../img/komiks/catamount/catamount_okladka-limitowana-a.jpg',
+			coverAlternative2: '../img/komiks/catamount/catamount_okladka-limitowana-b-big.jpg',
+			coverAlternative2Thumbnail: '../img/komiks/catamount/catamount_okladka-limitowana-b-thumbnail.jpg',
+			coverAlternative2Original: '../img/komiks/catamount/catamount_okladka-limitowana-b.jpg',
 			insidePanels:
 				{
-			//	inside1: '../img/komiks/catamount/catamount_str1.jpg',
-			//	inside2: '../img/komiks/catamount/catamount_str2.jpg',
-			//	inside3: '../img/komiks/catamount/catamount_str3.jpg',
+				inside1: '../img/komiks/catamount/catamount_str-5.jpg',
+				inside2: '../img/komiks/catamount/catamount_str-6.jpg',
+				inside3: '../img/komiks/catamount/catamount_str-7.jpg',
+				inside4: '../img/komiks/catamount/catamount_str-8.jpg',
+				inside5: '../img/komiks/catamount/catamount_str-11.jpg',
+				inside6: '../img/komiks/catamount/catamount_str-12.jpg',
+				inside7: '../img/komiks/catamount/catamount_str-13.jpg',
+				},
+			insidePanelsThumbnails:
+				{
+				inside1Thumbnail: '../img/komiks/catamount/catamount_str-5-thumbnail.jpg',
+				inside2Thumbnail: '../img/komiks/catamount/catamount_str-6-thumbnail.jpg',
+				inside3Thumbnail: '../img/komiks/catamount/catamount_str-7-thumbnail.jpg',
+				inside4Thumbnail: '../img/komiks/catamount/catamount_str-8-thumbnail.jpg',
+				inside5Thumbnail: '../img/komiks/catamount/catamount_str-11-thumbnail.jpg',
+				inside6Thumbnail: '../img/komiks/catamount/catamount_str-12-thumbnail.jpg',
+				inside7Thumbnail: '../img/komiks/catamount/catamount_str-13-thumbnail.jpg',
 				},
 			insidePanelsAlt:
 				{
-			//	inside1Alt: 'przykładowa plansza komiksu Catamount - 1',
-			//	inside2Alt: 'przykładowa plansza komiksu Catamount - 2',
-			//	inside3Alt: 'przykładowa plansza komiksu Catamount - 3',
+				inside1Alt: 'przykładowa plansza komiksu Catamount - 1',
+				inside2Alt: 'przykładowa plansza komiksu Catamount - 2',
+				inside3Alt: 'przykładowa plansza komiksu Catamount - 3',
+				inside4Alt: 'przykładowa plansza komiksu Catamount - 4',
+				inside5Alt: 'przykładowa plansza komiksu Catamount - 5',
+				inside6Alt: 'przykładowa plansza komiksu Catamount - 6',
+				inside7Alt: 'przykładowa plansza komiksu Catamount - 7',
 				},		
 			},	
 		details:
@@ -1635,21 +1680,44 @@ export const Comics = [
 			coverMainSiteDesktop: 'img/komiks/sha/sha_okladka-desktop.jpg',
 			coverMainSiteMobile: 'img/komiks/sha/sha_okladka-mobile.jpg',
 			coverImgAlt: 'okładka komiksu Sha',
-			coverBasic: '../img/komiks/sha/sha_okladka-podstawowa.jpg',
-			coverBasicThumbnail: '../img/komiks/sha/sha_okladka-podstawowa.jpg',
-			coverAlternative1: '../img/komiks/sha/sha_okladka-limitowana-a.jpg',
+			coverBasic: '../img/komiks/sha/sha_okladka-podstawowa-big.jpg',
+			coverBasicThumbnail: '../img/komiks/sha/sha_okladka-podstawowa-thumbnail.jpg',
+			coverBasicOriginal: '../img/komiks/sha/sha_okladka-podstawowa.jpg',
+			coverAlternative1: '../img/komiks/sha/sha_okladka-limitowana-a-big.jpg',
+			coverAlternative1Thumbnail: '../img/komiks/sha/sha_okladka-limitowana-a-thumbnail.jpg',
+			coverAlternative1Original: '../img/komiks/sha/sha_okladka-limitowana-a.jpg',
 			coverAlternative2: '../img/komiks/sha/sha_okladka-limitowana-b.jpg',
+			coverAlternative2Thumbnail: '../img/komiks/sha/sha_okladka-limitowana-b-thumbnail.jpg',
+			coverAlternative2Original: '../img/komiks/sha/sha_okladka-limitowana-b-big.jpg',
 			insidePanels:
 				{
 				inside1: '../img/komiks/sha/sha_str-1.jpg',
-				inside2: '../img/komiks/sha/sha_str-2.jpg',
-				inside3: '../img/komiks/sha/sha_str-3.jpg',
+				inside2: '../img/komiks/sha/sha_str-2.jpeg',
+				inside3: '../img/komiks/sha/sha_str-3.jpeg',
+				inside4: '../img/komiks/sha/sha_str-4.jpeg',
+				inside5: '../img/komiks/sha/sha_str-5.jpeg',
+				inside6: '../img/komiks/sha/sha_str-6.jpeg',
+				inside7: '../img/komiks/sha/sha_str-7.jpeg',
 				},
+			insidePanelsThumbnails:
+				{
+				inside1Thumbnail: '../img/komiks/sha/sha_str-1-thumbnail.jpg',
+				inside2Thumbnail: '../img/komiks/sha/sha_str-2-thumbnail.jpg',
+				inside3Thumbnail: '../img/komiks/sha/sha_str-3-thumbnail.jpg',
+				inside4Thumbnail: '../img/komiks/sha/sha_str-4-thumbnail.jpg',
+				inside5Thumbnail: '../img/komiks/sha/sha_str-5-thumbnail.jpg',
+				inside6Thumbnail: '../img/komiks/sha/sha_str-6-thumbnail.jpg',
+				inside7Thumbnail: '../img/komiks/sha/sha_str-7-thumbnail.jpg',
+				},				
 			insidePanelsAlt:
 				{
 				inside1Alt: 'przykładowa plansza komiksu Sha - 1',
 				inside2Alt: 'przykładowa plansza komiksu Sha - 2',
 				inside3Alt: 'przykładowa plansza komiksu Sha - 3',
+				inside4Alt: 'przykładowa plansza komiksu Sha - 4',
+				inside5Alt: 'przykładowa plansza komiksu Sha - 5',
+				inside6Alt: 'przykładowa plansza komiksu Sha - 6',
+				inside7Alt: 'przykładowa plansza komiksu Sha - 7',
 				},		
 			},	
 		details:

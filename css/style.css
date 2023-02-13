@@ -585,6 +585,7 @@ footer {
 	margin-bottom: 15px;
 	line-height: 1.6rem;
 	padding-inline: 3.75rem;
+	padding-block-start: 1rem;
 }
 
 /* SECTION PANELS */
@@ -676,21 +677,9 @@ h1.title {
 }
 
 #cover-big {
-	/* width: 433px; */
-	height: 578px;
+	width: 433px;
+	/* height: 578px; */
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
-}
-
-#cover-regular-thumbnail,
-#cover-alternative1-thumbnail,
-#cover-alternative2-thumbnail {
-	width: 102px;
-/*	height: 137px; */
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
-	margin-right: 14px;
-	margin-bottom: 10px;
-	cursor: pointer;
-	display: none;
 }
 
 #choose-cover {
@@ -699,6 +688,45 @@ h1.title {
 	font-size: .9rem;
 	font-weight: 700;
 	color: #808080;
+}
+
+#covers-thumbnails {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.2rem;
+}
+
+#cover-regular-thumbnail,
+#cover-alternative1-thumbnail,
+#cover-alternative2-thumbnail {
+	width: 102px;
+	height: 141px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+	cursor: pointer;
+	display: none;
+}
+
+#cover-alternative1-thumbnail::after,
+#cover-alternative2-thumbnail::after {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(	--bright-color);
+	width: 1rem;
+	position: relative;
+	top: 6px;
+	left: 0;
+	padding: .1rem .4rem;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);	
+	background-color: #2D7A85;
+}
+
+#cover-alternative1-thumbnail::after {
+	content: "A";
+}
+
+#cover-alternative2-thumbnail::after {
+	content: "B";
 }
 
 .comics-data {
@@ -885,6 +913,22 @@ h1.title {
 	color: var(--white-color) !important;
 }
 
+/* **************** ABOUT US PAGE **************** */
+
+.bio {
+	display: flex;
+	gap: 2rem;
+}
+
+.image-logo {
+	width: 200px;
+}
+
+.contact {
+	line-height: 1rem;
+}
+
+
 /* **************** SMALL DEVICES **************** */
 
 
@@ -1033,6 +1077,7 @@ h1.title {
 
 	#container-page {
 		margin-top: 56px;
+		padding: 14px;
 	}
 
 	#related-comics-section {
@@ -1046,5 +1091,17 @@ h1.title {
 	.sold::before,
 	.last-items::before {
 		top: 17.9rem;
+	}
+}
+
+@media (max-width: 25rem) { /* 400px */
+
+	#inside-panels-headline {
+		gap: 0;
+		width: 80%;
+	}
+
+	#inside-samples {
+		text-align: center;
 	}
 }
