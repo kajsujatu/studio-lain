@@ -1,4 +1,8 @@
 # studio-lain
-Website for Publisher Studio Lain
+Website for Publisher Studio Lain.
 
-Watch online demo version: http://projektgrafika.cba.pl/studio-lain-demo-/
+Watch online: http://projektgrafika.cba.pl/studio-lain
+
+Site contains all published comics.
+
+
