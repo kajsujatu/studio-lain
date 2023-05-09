@@ -86,3 +86,9 @@ iconReturn.addEventListener('click', function() {
 	searchInput.value = '';
 	searchOutput.innerHTML = '';
 });
+
+
+// Current Year
+const currentYearSpan = document.getElementById('current-year');
+const currentYear = new Date().getFullYear();
+currentYearSpan.innerText = currentYear;

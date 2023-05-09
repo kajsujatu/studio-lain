@@ -9,7 +9,7 @@ import {
 // Back link
 const backLinkTop = document.getElementById('back-link-top');
 backLinkTop.addEventListener('click', function() {
-	history.go(-1);
+	window.history.back();
 });
 
 // Choose number of Comics and fill divs with data
@@ -75,6 +75,13 @@ export function chooseComics(num) {
 		document.getElementById('cover-alternative2-thumbnail').style.display = 'none';
 	}
 
+	// No alternative covers
+	if (comicsCoverAlt1Thumbnail == null) {
+		document.getElementById('choose-cover').style.display = 'none';
+		document.getElementById('cover-regular-thumbnail').style.display = 'none';
+		document.getElementById('container-covers').style.height = '600px';
+	}
+
 	// Functions for changing thumbnails
 	const coverBasicThumbnail = document.getElementById('cover-regular-thumbnail');
 	const coverBig = document.getElementById('cover-big');
@@ -112,7 +119,6 @@ export function chooseComics(num) {
 	});
 
 	// Inside Panels
-	//const imagesInside = document.querySelector('.gallery');
 	const insidePanels = document.getElementById('inside-panels');
 	const comicsInsideImages = Comics[num].img.insidePanels;
 	const comicsInsideImagesThumbnails = Comics[num].img.insidePanelsThumbnails;
@@ -135,7 +141,7 @@ export function chooseComics(num) {
 	}
 
 	window.addEventListener('load', () => {
-		new SimpleLightbox('.gallery a', {})
+		new SimpleLightbox('.gallery a', {});
 	});
 
 	// Links to Buy
@@ -214,6 +220,26 @@ export function chooseComics(num) {
 	const comicsDetailOriginalsEditionDate = Comics[num].detailsOriginalEdition.date;
 	document.getElementById('details-original-edition-date').innerHTML = comicsDetailOriginalsEditionDate;
 
+	// Reviews
+	const comicsReviewLinks = Comics[num].reviewLinks;
+	const comicsReviewTitles = Comics[num].reviewTitles;
+	const comicsReviewPanel = document.getElementById('review-panel');
+
+	if (Comics[num].reviewLinks.reviewLink1 == '') {
+		comicsReviewPanel.style.display = 'none';
+	} else {
+	for (let i=0; i<Object.values(comicsReviewLinks).length; i++) {
+		const reviewListItem = document.createElement('li');
+		reviewListItem.classList.add('review-link');
+		comicsReviewPanel.appendChild(reviewListItem);
+		const reviewListItemLink = document.createElement('a');
+		reviewListItem.appendChild(reviewListItemLink);
+		reviewListItemLink.setAttribute('target', '_blank');
+		reviewListItemLink.setAttribute('href', `${Object.values(comicsReviewLinks)[i]}`);
+		reviewListItemLink.textContent = `${Object.values(comicsReviewTitles)[i]}`;
+	}
+	}
+
 	// Related Comics
 	const comicsRelatedComics = Comics[num].relatedComics;
 	const comicsRelatedComicsLink = Comics[num].relatedComicsLink;
@@ -221,7 +247,7 @@ export function chooseComics(num) {
 
 	if (comicsRelatedComics != null) {
 	for (let i=0; i<Object.values(comicsRelatedComics).length; i++) {
-		relatedComicsDiv.style.display = 'grid';
+		relatedComicsDiv.style.display = 'flex';
 		const relatedComicsLink = document.createElement('a');
 		relatedComicsDiv.appendChild(relatedComicsLink);
 		const relatedComicsThumbnail = document.createElement('img');

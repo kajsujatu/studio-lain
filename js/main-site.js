@@ -60,7 +60,7 @@ for (let i=0; i<Comics.length; i++) {
 	titleUnderCover.classList.add('title-under-cover');
 	mainCover.appendChild(titleUnderCover);
 	
-	titleUnderCover.innerText = `${Comics[i].title}`;
+	titleUnderCover.innerHTML = `${Comics[i].title}`;
 
 	// Sorting options
 	sortInput.addEventListener('change', function() {	
@@ -112,12 +112,56 @@ for (let i=0; i<Comics.length; i++) {
 						if (coversByClass.classList.value.includes('antologie-integrale')) coversByClass.style.display = 'block';
 						else coversByClass.style.display = 'none';
 						break;
+					case 'alan-moore':
+						if (coversByClass.classList.value.includes('alan-moore')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;						
 					case 'enrique-fernandez':
 						if (coversByClass.classList.value.includes('enrique-fernandez')) coversByClass.style.display = 'block';
 						else coversByClass.style.display = 'none';
 						break;
+					case 'lukasz-kowalczuk':
+						if (coversByClass.classList.value.includes('lukasz-kowalczuk')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
+					case 'seria-abc-warriors':
+						if (coversByClass.classList.value.includes('seria-abc-warriors')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
+					case 'seria-absalom':
+						if (coversByClass.classList.value.includes('seria-absalom')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
+					case 'seria-sedzia-dredd':
+						if (coversByClass.classList.value.includes('seria-sedzia-dredd')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
+					case 'seria-uniwersum-dredda-sedzia-anderson':
+						if (coversByClass.classList.value.includes('seria-uniwersum-dredda-sedzia-anderson')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
+					case 'seria-uniwersum-dredda-lawless':
+						if (coversByClass.classList.value.includes('seria-uniwersum-dredda-lawless')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
+					case 'seria-uniwersum-dredda-mroczni-sedziowie':
+						if (coversByClass.classList.value.includes('seria-uniwersum-dredda-mroczni-sedziowie')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
+					case 'seria-slaine':
+						if (coversByClass.classList.value.includes('seria-slaine')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
 					case 'seria-solo':
 						if (coversByClass.classList.value.includes('seria-solo')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break;
+					case 'seria-stickleback':
+						if (coversByClass.classList.value.includes('seria-stickleback')) coversByClass.style.display = 'block';
+						else coversByClass.style.display = 'none';
+						break
+					case 'seria-straznicy-masery':
+						if (coversByClass.classList.value.includes('seria-straznicy-masery')) coversByClass.style.display = 'block';
 						else coversByClass.style.display = 'none';
 						break;	
 					case 'seria-yiu':
